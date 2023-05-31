@@ -98,6 +98,7 @@ public:
     Telemetry::GpsInfo gps_info() const;
     Telemetry::RawGps raw_gps() const;
     Telemetry::Battery battery() const;
+    Telemetry::VehicleType vehicle_type() const;
     Telemetry::FlightMode flight_mode() const;
     Telemetry::Health health() const;
     bool health_all_ok() const;
@@ -131,6 +132,7 @@ public:
     void subscribe_gps_info(Telemetry::GpsInfoCallback& callback);
     void subscribe_raw_gps(Telemetry::RawGpsCallback& callback);
     void subscribe_battery(Telemetry::BatteryCallback& callback);
+    void subscribe_vehicle_type(Telemetry::VehicleTypeCallback& callback);
     void subscribe_flight_mode(Telemetry::FlightModeCallback& callback);
     void subscribe_health(Telemetry::HealthCallback& callback);
     void subscribe_health_all_ok(Telemetry::HealthAllOkCallback& callback);
@@ -244,6 +246,9 @@ private:
 
     static Telemetry::LandedState to_landed_state(mavlink_extended_sys_state_t extended_sys_state);
     static Telemetry::VtolState to_vtol_state(mavlink_extended_sys_state_t extended_sys_state);
+
+    static Telemetry::VehicleType 
+    telemetry_vehicle_type_from_vehicle_type(MAV_TYPE vehicle_type);
 
     static Telemetry::FlightMode
     telemetry_flight_mode_from_flight_mode(SystemImpl::FlightMode flight_mode);
@@ -360,6 +365,7 @@ private:
     Telemetry::GpsInfoCallback _gps_info_subscription{nullptr};
     Telemetry::RawGpsCallback _raw_gps_subscription{nullptr};
     Telemetry::BatteryCallback _battery_subscription{nullptr};
+    Telemetry::VehicleTypeCallback _vehicle_type_subscription{nullptr};
     Telemetry::FlightModeCallback _flight_mode_subscription{nullptr};
     Telemetry::HealthCallback _health_subscription{nullptr};
     Telemetry::HealthAllOkCallback _health_all_ok_subscription{nullptr};

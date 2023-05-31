@@ -289,6 +289,22 @@ Telemetry::battery() const
 
 
 
+void Telemetry::subscribe_vehicle_type(VehicleTypeCallback callback)
+{
+    _impl->subscribe_vehicle_type(callback);
+}
+
+
+
+
+Telemetry::VehicleType
+Telemetry::vehicle_type() const
+{
+    return _impl->vehicle_type();
+}
+
+
+
 void Telemetry::subscribe_flight_mode(FlightModeCallback callback)
 {
     _impl->subscribe_flight_mode(callback);
@@ -1620,6 +1636,22 @@ std::ostream& operator<<(std::ostream& str, Telemetry::FixType const& fix_type)
             return str << "Rtk Float";
         case Telemetry::FixType::RtkFixed:
             return str << "Rtk Fixed";
+        default:
+            return str << "Unknown";
+    }
+}
+
+std::ostream& operator<<(std::ostream& str, Telemetry::VehicleType const& vehicle_type)
+{
+    switch (vehicle_type) {
+        case Telemetry::VehicleType::Unknown:
+            return str << "Unknown";
+        case Telemetry::VehicleType::FixedWing:
+            return str << "Fixed Wing";
+        case Telemetry::VehicleType::Multirotor:
+            return str << "Multirotor";
+        case Telemetry::VehicleType::Vtol:
+            return str << "Vtol";
         default:
             return str << "Unknown";
     }

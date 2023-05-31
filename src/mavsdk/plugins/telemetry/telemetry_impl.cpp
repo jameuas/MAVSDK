@@ -1194,6 +1194,12 @@ void TelemetryImpl::process_heartbeat(const mavlink_message_t& message)
         _parent->call_user_callback([callback, arg]() { callback(arg); });
     }
 
+    if (_vehicle_type_subscription) {
+        auto callback = _vehicle_type_subscription;
+        auto arg = telemetry_vehicle_type_from_vehicle_type(_parent->get_vehicle_type());
+        _parent->call_user_callback([callback, arg]() { callback(arg); });
+    }
+
     if (_flight_mode_subscription) {
         auto callback = _flight_mode_subscription;
         // The flight mode is already parsed in SystemImpl, so we can take it
@@ -1486,6 +1492,43 @@ Telemetry::VtolState TelemetryImpl::to_vtol_state(mavlink_extended_sys_state_t e
             return Telemetry::VtolState::Fw;
         default:
             return Telemetry::VtolState::Undefined;
+    }
+}
+
+Telemetry::VehicleType 
+TelemetryImpl::telemetry_vehicle_type_from_vehicle_type(MAV_TYPE vehicle_type)
+{
+    switch (vehicle_type) {
+        case MAV_TYPE::MAV_TYPE_FIXED_WING:
+            return Telemetry::VehicleType::FixedWing;
+        case MAV_TYPE::MAV_TYPE_QUADROTOR:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_COAXIAL:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_HELICOPTER:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_HEXAROTOR:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_OCTOROTOR:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_TRICOPTER:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_DODECAROTOR:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_DECAROTOR:
+            return Telemetry::VehicleType::Multirotor;
+        case MAV_TYPE::MAV_TYPE_VTOL_TAILSITTER_DUOROTOR:
+            return Telemetry::VehicleType::Vtol;
+        case MAV_TYPE::MAV_TYPE_VTOL_TAILSITTER_QUADROTOR:
+            return Telemetry::VehicleType::Vtol;
+        case MAV_TYPE::MAV_TYPE_VTOL_TILTROTOR:
+            return Telemetry::VehicleType::Vtol;
+        case MAV_TYPE::MAV_TYPE_VTOL_FIXEDROTOR:
+            return Telemetry::VehicleType::Vtol;
+        case MAV_TYPE::MAV_TYPE_VTOL_TAILSITTER:
+            return Telemetry::VehicleType::Vtol;
+        default:
+            return Telemetry::VehicleType::Unknown;
     }
 }
 
@@ -1958,6 +2001,11 @@ void TelemetryImpl::set_battery(Telemetry::Battery battery)
     _battery = battery;
 }
 
+Telemetry::VehicleType TelemetryImpl::vehicle_type() const
+{
+    return telemetry_vehicle_type_from_vehicle_type(_parent->get_vehicle_type());
+}
+
 Telemetry::FlightMode TelemetryImpl::flight_mode() const
 {
     return telemetry_flight_mode_from_flight_mode(_parent->get_flight_mode());
@@ -2271,6 +2319,12 @@ void TelemetryImpl::subscribe_battery(Telemetry::BatteryCallback& callback)
 {
     std::lock_guard<std::mutex> lock(_subscription_mutex);
     _battery_subscription = callback;
+}
+
+void TelemetryImpl::subscribe_vehicle_type(Telemetry::VehicleTypeCallback& callback)
+{
+    std::lock_guard<std::mutex> lock(_subscription_mutex);
+    _vehicle_type_subscription = callback;
 }
 
 void TelemetryImpl::subscribe_flight_mode(Telemetry::FlightModeCallback& callback)

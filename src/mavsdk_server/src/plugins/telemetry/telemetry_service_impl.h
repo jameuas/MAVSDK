@@ -86,6 +86,40 @@ public:
         }
     }
 
+    static rpc::telemetry::VehicleType translateToRpcVehicleType(const mavsdk::Telemetry::VehicleType& vehicle_type)
+    {
+        switch (vehicle_type) {
+            default:
+                LogErr() << "Unknown vehicle_type enum value: " << static_cast<int>(vehicle_type);
+            // FALLTHROUGH
+            case mavsdk::Telemetry::VehicleType::Unknown:
+                return rpc::telemetry::VEHICLE_TYPE_UNKNOWN;
+            case mavsdk::Telemetry::VehicleType::FixedWing:
+                return rpc::telemetry::VEHICLE_TYPE_FIXED_WING;
+            case mavsdk::Telemetry::VehicleType::Multirotor:
+                return rpc::telemetry::VEHICLE_TYPE_MULTIROTOR;
+            case mavsdk::Telemetry::VehicleType::Vtol:
+                return rpc::telemetry::VEHICLE_TYPE_VTOL;
+        }
+    }
+
+    static mavsdk::Telemetry::VehicleType translateFromRpcVehicleType(const rpc::telemetry::VehicleType vehicle_type)
+    {
+        switch (vehicle_type) {
+            default:
+                LogErr() << "Unknown vehicle_type enum value: " << static_cast<int>(vehicle_type);
+            // FALLTHROUGH
+            case rpc::telemetry::VEHICLE_TYPE_UNKNOWN:
+                return mavsdk::Telemetry::VehicleType::Unknown;
+            case rpc::telemetry::VEHICLE_TYPE_FIXED_WING:
+                return mavsdk::Telemetry::VehicleType::FixedWing;
+            case rpc::telemetry::VEHICLE_TYPE_MULTIROTOR:
+                return mavsdk::Telemetry::VehicleType::Multirotor;
+            case rpc::telemetry::VEHICLE_TYPE_VTOL:
+                return mavsdk::Telemetry::VehicleType::Vtol;
+        }
+    }
+
     static rpc::telemetry::FlightMode translateToRpcFlightMode(const mavsdk::Telemetry::FlightMode& flight_mode)
     {
         switch (flight_mode) {
@@ -2501,6 +2535,48 @@ public:
             if (!*is_finished && !writer->Write(rpc_response)) {
                 
                 _lazy_plugin.maybe_plugin()->subscribe_battery(nullptr);
+                
+                *is_finished = true;
+                unregister_stream_stop_promise(stream_closed_promise);
+                stream_closed_promise->set_value();
+            }
+        });
+
+        stream_closed_future.wait();
+        std::unique_lock<std::mutex> lock(*subscribe_mutex);
+        *is_finished = true;
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status SubscribeVehicleType(grpc::ServerContext* /* context */, const mavsdk::rpc::telemetry::SubscribeVehicleTypeRequest* /* request */, grpc::ServerWriter<rpc::telemetry::VehicleTypeResponse>* writer) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            return grpc::Status::OK;
+        }
+
+        auto stream_closed_promise = std::make_shared<std::promise<void>>();
+        auto stream_closed_future = stream_closed_promise->get_future();
+        register_stream_stop_promise(stream_closed_promise);
+
+        auto is_finished = std::make_shared<bool>(false);
+        auto subscribe_mutex = std::make_shared<std::mutex>();
+
+        _lazy_plugin.maybe_plugin()->subscribe_vehicle_type(
+            [this, &writer, &stream_closed_promise, is_finished, subscribe_mutex](const mavsdk::Telemetry::VehicleType vehicle_type) {
+
+            rpc::telemetry::VehicleTypeResponse rpc_response;
+        
+            rpc_response.set_vehicle_type(translateToRpcVehicleType(vehicle_type));
+        
+
+        
+
+            std::unique_lock<std::mutex> lock(*subscribe_mutex);
+            if (!*is_finished && !writer->Write(rpc_response)) {
+                
+                _lazy_plugin.maybe_plugin()->subscribe_vehicle_type(nullptr);
                 
                 *is_finished = true;
                 unregister_stream_stop_promise(stream_closed_promise);

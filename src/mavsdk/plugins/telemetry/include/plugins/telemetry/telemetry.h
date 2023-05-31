@@ -79,6 +79,23 @@ public:
     friend std::ostream& operator<<(std::ostream& str, Telemetry::FixType const& fix_type);
 
     /**
+     * @brief Vehicle type
+     */
+    enum class VehicleType {
+        Unknown, /**< @brief Mode not known. */
+        FixedWing, /**< @brief Fixed wing aircraft. */
+        Multirotor, /**< @brief Multirotor. */
+        Vtol, /**< @brief VTOL. */
+    };
+
+    /**
+     * @brief Stream operator to print information about a `Telemetry::VehicleType`.
+     *
+     * @return A reference to the stream.
+     */
+    friend std::ostream& operator<<(std::ostream& str, Telemetry::VehicleType const& vehicle_type);
+
+    /**
      * @brief Flight modes.
      *
      * For more information about flight modes, check out
@@ -1397,6 +1414,30 @@ public:
      * @return One Battery update.
      */
     Battery battery() const;
+
+
+
+
+        
+    /**
+    * @brief Callback type for subscribe_vehicle_type.
+    */
+        
+    using VehicleTypeCallback = std::function<void(VehicleType)>;
+
+    /**
+     * @brief Subscribe to 'vehicle type' updates.
+     */
+    void subscribe_vehicle_type(VehicleTypeCallback callback);
+
+
+
+    /**
+     * @brief Poll for 'VehicleType' (blocking).
+     *
+     * @return One VehicleType update.
+     */
+    VehicleType vehicle_type() const;
 
 
 

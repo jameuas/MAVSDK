@@ -48,7 +48,7 @@ struct TableStruct_telemetry_2ftelemetry_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[147]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[149]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -475,6 +475,9 @@ extern SubscribeStatusTextRequestDefaultTypeInternal _SubscribeStatusTextRequest
 class SubscribeUnixEpochTimeRequest;
 struct SubscribeUnixEpochTimeRequestDefaultTypeInternal;
 extern SubscribeUnixEpochTimeRequestDefaultTypeInternal _SubscribeUnixEpochTimeRequest_default_instance_;
+class SubscribeVehicleTypeRequest;
+struct SubscribeVehicleTypeRequestDefaultTypeInternal;
+extern SubscribeVehicleTypeRequestDefaultTypeInternal _SubscribeVehicleTypeRequest_default_instance_;
 class SubscribeVelocityNedRequest;
 struct SubscribeVelocityNedRequestDefaultTypeInternal;
 extern SubscribeVelocityNedRequestDefaultTypeInternal _SubscribeVelocityNedRequest_default_instance_;
@@ -487,6 +490,9 @@ extern TelemetryResultDefaultTypeInternal _TelemetryResult_default_instance_;
 class UnixEpochTimeResponse;
 struct UnixEpochTimeResponseDefaultTypeInternal;
 extern UnixEpochTimeResponseDefaultTypeInternal _UnixEpochTimeResponse_default_instance_;
+class VehicleTypeResponse;
+struct VehicleTypeResponseDefaultTypeInternal;
+extern VehicleTypeResponseDefaultTypeInternal _VehicleTypeResponse_default_instance_;
 class VelocityBody;
 struct VelocityBodyDefaultTypeInternal;
 extern VelocityBodyDefaultTypeInternal _VelocityBody_default_instance_;
@@ -642,10 +648,12 @@ template<> ::mavsdk::rpc::telemetry::SubscribeScaledImuRequest* Arena::CreateMay
 template<> ::mavsdk::rpc::telemetry::SubscribeScaledPressureRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::SubscribeScaledPressureRequest>(Arena*);
 template<> ::mavsdk::rpc::telemetry::SubscribeStatusTextRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::SubscribeStatusTextRequest>(Arena*);
 template<> ::mavsdk::rpc::telemetry::SubscribeUnixEpochTimeRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::SubscribeUnixEpochTimeRequest>(Arena*);
+template<> ::mavsdk::rpc::telemetry::SubscribeVehicleTypeRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::SubscribeVehicleTypeRequest>(Arena*);
 template<> ::mavsdk::rpc::telemetry::SubscribeVelocityNedRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::SubscribeVelocityNedRequest>(Arena*);
 template<> ::mavsdk::rpc::telemetry::SubscribeVtolStateRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::SubscribeVtolStateRequest>(Arena*);
 template<> ::mavsdk::rpc::telemetry::TelemetryResult* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::TelemetryResult>(Arena*);
 template<> ::mavsdk::rpc::telemetry::UnixEpochTimeResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::UnixEpochTimeResponse>(Arena*);
+template<> ::mavsdk::rpc::telemetry::VehicleTypeResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::VehicleTypeResponse>(Arena*);
 template<> ::mavsdk::rpc::telemetry::VelocityBody* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::VelocityBody>(Arena*);
 template<> ::mavsdk::rpc::telemetry::VelocityNed* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::VelocityNed>(Arena*);
 template<> ::mavsdk::rpc::telemetry::VelocityNedResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::telemetry::VelocityNedResponse>(Arena*);
@@ -742,6 +750,33 @@ inline bool FixType_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, FixType* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<FixType>(
     FixType_descriptor(), name, value);
+}
+enum VehicleType : int {
+  VEHICLE_TYPE_UNKNOWN = 0,
+  VEHICLE_TYPE_FIXED_WING = 1,
+  VEHICLE_TYPE_MULTIROTOR = 2,
+  VEHICLE_TYPE_VTOL = 3,
+  VehicleType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  VehicleType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool VehicleType_IsValid(int value);
+constexpr VehicleType VehicleType_MIN = VEHICLE_TYPE_UNKNOWN;
+constexpr VehicleType VehicleType_MAX = VEHICLE_TYPE_VTOL;
+constexpr int VehicleType_ARRAYSIZE = VehicleType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* VehicleType_descriptor();
+template<typename T>
+inline const std::string& VehicleType_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, VehicleType>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function VehicleType_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    VehicleType_descriptor(), enum_t_value);
+}
+inline bool VehicleType_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, VehicleType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<VehicleType>(
+    VehicleType_descriptor(), name, value);
 }
 enum FlightMode : int {
   FLIGHT_MODE_UNKNOWN = 0,
@@ -4944,6 +4979,271 @@ class BatteryResponse final :
 };
 // -------------------------------------------------------------------
 
+class SubscribeVehicleTypeRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.telemetry.SubscribeVehicleTypeRequest) */ {
+ public:
+  inline SubscribeVehicleTypeRequest() : SubscribeVehicleTypeRequest(nullptr) {}
+  ~SubscribeVehicleTypeRequest() override;
+  explicit constexpr SubscribeVehicleTypeRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  SubscribeVehicleTypeRequest(const SubscribeVehicleTypeRequest& from);
+  SubscribeVehicleTypeRequest(SubscribeVehicleTypeRequest&& from) noexcept
+    : SubscribeVehicleTypeRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline SubscribeVehicleTypeRequest& operator=(const SubscribeVehicleTypeRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SubscribeVehicleTypeRequest& operator=(SubscribeVehicleTypeRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SubscribeVehicleTypeRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SubscribeVehicleTypeRequest* internal_default_instance() {
+    return reinterpret_cast<const SubscribeVehicleTypeRequest*>(
+               &_SubscribeVehicleTypeRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    30;
+
+  friend void swap(SubscribeVehicleTypeRequest& a, SubscribeVehicleTypeRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SubscribeVehicleTypeRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SubscribeVehicleTypeRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SubscribeVehicleTypeRequest* New() const final {
+    return new SubscribeVehicleTypeRequest();
+  }
+
+  SubscribeVehicleTypeRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<SubscribeVehicleTypeRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const SubscribeVehicleTypeRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const SubscribeVehicleTypeRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SubscribeVehicleTypeRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.telemetry.SubscribeVehicleTypeRequest";
+  }
+  protected:
+  explicit SubscribeVehicleTypeRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.telemetry.SubscribeVehicleTypeRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_telemetry_2ftelemetry_2eproto;
+};
+// -------------------------------------------------------------------
+
+class VehicleTypeResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.telemetry.VehicleTypeResponse) */ {
+ public:
+  inline VehicleTypeResponse() : VehicleTypeResponse(nullptr) {}
+  ~VehicleTypeResponse() override;
+  explicit constexpr VehicleTypeResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  VehicleTypeResponse(const VehicleTypeResponse& from);
+  VehicleTypeResponse(VehicleTypeResponse&& from) noexcept
+    : VehicleTypeResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline VehicleTypeResponse& operator=(const VehicleTypeResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline VehicleTypeResponse& operator=(VehicleTypeResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const VehicleTypeResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const VehicleTypeResponse* internal_default_instance() {
+    return reinterpret_cast<const VehicleTypeResponse*>(
+               &_VehicleTypeResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    31;
+
+  friend void swap(VehicleTypeResponse& a, VehicleTypeResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(VehicleTypeResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(VehicleTypeResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline VehicleTypeResponse* New() const final {
+    return new VehicleTypeResponse();
+  }
+
+  VehicleTypeResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<VehicleTypeResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const VehicleTypeResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const VehicleTypeResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(VehicleTypeResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.telemetry.VehicleTypeResponse";
+  }
+  protected:
+  explicit VehicleTypeResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kVehicleTypeFieldNumber = 1,
+  };
+  // .mavsdk.rpc.telemetry.VehicleType vehicle_type = 1;
+  void clear_vehicle_type();
+  ::mavsdk::rpc::telemetry::VehicleType vehicle_type() const;
+  void set_vehicle_type(::mavsdk::rpc::telemetry::VehicleType value);
+  private:
+  ::mavsdk::rpc::telemetry::VehicleType _internal_vehicle_type() const;
+  void _internal_set_vehicle_type(::mavsdk::rpc::telemetry::VehicleType value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.telemetry.VehicleTypeResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  int vehicle_type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_telemetry_2ftelemetry_2eproto;
+};
+// -------------------------------------------------------------------
+
 class SubscribeFlightModeRequest final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.telemetry.SubscribeFlightModeRequest) */ {
  public:
@@ -4988,7 +5288,7 @@ class SubscribeFlightModeRequest final :
                &_SubscribeFlightModeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    32;
 
   friend void swap(SubscribeFlightModeRequest& a, SubscribeFlightModeRequest& b) {
     a.Swap(&b);
@@ -5114,7 +5414,7 @@ class FlightModeResponse final :
                &_FlightModeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    33;
 
   friend void swap(FlightModeResponse& a, FlightModeResponse& b) {
     a.Swap(&b);
@@ -5253,7 +5553,7 @@ class SubscribeHealthRequest final :
                &_SubscribeHealthRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    34;
 
   friend void swap(SubscribeHealthRequest& a, SubscribeHealthRequest& b) {
     a.Swap(&b);
@@ -5379,7 +5679,7 @@ class HealthResponse final :
                &_HealthResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    35;
 
   friend void swap(HealthResponse& a, HealthResponse& b) {
     a.Swap(&b);
@@ -5527,7 +5827,7 @@ class SubscribeRcStatusRequest final :
                &_SubscribeRcStatusRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    36;
 
   friend void swap(SubscribeRcStatusRequest& a, SubscribeRcStatusRequest& b) {
     a.Swap(&b);
@@ -5653,7 +5953,7 @@ class RcStatusResponse final :
                &_RcStatusResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    37;
 
   friend void swap(RcStatusResponse& a, RcStatusResponse& b) {
     a.Swap(&b);
@@ -5801,7 +6101,7 @@ class SubscribeStatusTextRequest final :
                &_SubscribeStatusTextRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    38;
 
   friend void swap(SubscribeStatusTextRequest& a, SubscribeStatusTextRequest& b) {
     a.Swap(&b);
@@ -5927,7 +6227,7 @@ class StatusTextResponse final :
                &_StatusTextResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    39;
 
   friend void swap(StatusTextResponse& a, StatusTextResponse& b) {
     a.Swap(&b);
@@ -6075,7 +6375,7 @@ class SubscribeActuatorControlTargetRequest final :
                &_SubscribeActuatorControlTargetRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    40;
 
   friend void swap(SubscribeActuatorControlTargetRequest& a, SubscribeActuatorControlTargetRequest& b) {
     a.Swap(&b);
@@ -6201,7 +6501,7 @@ class ActuatorControlTargetResponse final :
                &_ActuatorControlTargetResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    41;
 
   friend void swap(ActuatorControlTargetResponse& a, ActuatorControlTargetResponse& b) {
     a.Swap(&b);
@@ -6349,7 +6649,7 @@ class SubscribeActuatorOutputStatusRequest final :
                &_SubscribeActuatorOutputStatusRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    42;
 
   friend void swap(SubscribeActuatorOutputStatusRequest& a, SubscribeActuatorOutputStatusRequest& b) {
     a.Swap(&b);
@@ -6475,7 +6775,7 @@ class ActuatorOutputStatusResponse final :
                &_ActuatorOutputStatusResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    43;
 
   friend void swap(ActuatorOutputStatusResponse& a, ActuatorOutputStatusResponse& b) {
     a.Swap(&b);
@@ -6623,7 +6923,7 @@ class SubscribeOdometryRequest final :
                &_SubscribeOdometryRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    44;
 
   friend void swap(SubscribeOdometryRequest& a, SubscribeOdometryRequest& b) {
     a.Swap(&b);
@@ -6749,7 +7049,7 @@ class OdometryResponse final :
                &_OdometryResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    45;
 
   friend void swap(OdometryResponse& a, OdometryResponse& b) {
     a.Swap(&b);
@@ -6897,7 +7197,7 @@ class SubscribePositionVelocityNedRequest final :
                &_SubscribePositionVelocityNedRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    46;
 
   friend void swap(SubscribePositionVelocityNedRequest& a, SubscribePositionVelocityNedRequest& b) {
     a.Swap(&b);
@@ -7023,7 +7323,7 @@ class PositionVelocityNedResponse final :
                &_PositionVelocityNedResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    47;
 
   friend void swap(PositionVelocityNedResponse& a, PositionVelocityNedResponse& b) {
     a.Swap(&b);
@@ -7171,7 +7471,7 @@ class SubscribeGroundTruthRequest final :
                &_SubscribeGroundTruthRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    48;
 
   friend void swap(SubscribeGroundTruthRequest& a, SubscribeGroundTruthRequest& b) {
     a.Swap(&b);
@@ -7297,7 +7597,7 @@ class GroundTruthResponse final :
                &_GroundTruthResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    49;
 
   friend void swap(GroundTruthResponse& a, GroundTruthResponse& b) {
     a.Swap(&b);
@@ -7445,7 +7745,7 @@ class SubscribeFixedwingMetricsRequest final :
                &_SubscribeFixedwingMetricsRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    50;
 
   friend void swap(SubscribeFixedwingMetricsRequest& a, SubscribeFixedwingMetricsRequest& b) {
     a.Swap(&b);
@@ -7571,7 +7871,7 @@ class FixedwingMetricsResponse final :
                &_FixedwingMetricsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    51;
 
   friend void swap(FixedwingMetricsResponse& a, FixedwingMetricsResponse& b) {
     a.Swap(&b);
@@ -7719,7 +8019,7 @@ class SubscribeImuRequest final :
                &_SubscribeImuRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    52;
 
   friend void swap(SubscribeImuRequest& a, SubscribeImuRequest& b) {
     a.Swap(&b);
@@ -7845,7 +8145,7 @@ class ImuResponse final :
                &_ImuResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    53;
 
   friend void swap(ImuResponse& a, ImuResponse& b) {
     a.Swap(&b);
@@ -7993,7 +8293,7 @@ class SubscribeScaledImuRequest final :
                &_SubscribeScaledImuRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    54;
 
   friend void swap(SubscribeScaledImuRequest& a, SubscribeScaledImuRequest& b) {
     a.Swap(&b);
@@ -8119,7 +8419,7 @@ class ScaledImuResponse final :
                &_ScaledImuResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    53;
+    55;
 
   friend void swap(ScaledImuResponse& a, ScaledImuResponse& b) {
     a.Swap(&b);
@@ -8267,7 +8567,7 @@ class SubscribeRawImuRequest final :
                &_SubscribeRawImuRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    54;
+    56;
 
   friend void swap(SubscribeRawImuRequest& a, SubscribeRawImuRequest& b) {
     a.Swap(&b);
@@ -8393,7 +8693,7 @@ class RawImuResponse final :
                &_RawImuResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    55;
+    57;
 
   friend void swap(RawImuResponse& a, RawImuResponse& b) {
     a.Swap(&b);
@@ -8541,7 +8841,7 @@ class SubscribeHealthAllOkRequest final :
                &_SubscribeHealthAllOkRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    56;
+    58;
 
   friend void swap(SubscribeHealthAllOkRequest& a, SubscribeHealthAllOkRequest& b) {
     a.Swap(&b);
@@ -8667,7 +8967,7 @@ class HealthAllOkResponse final :
                &_HealthAllOkResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    57;
+    59;
 
   friend void swap(HealthAllOkResponse& a, HealthAllOkResponse& b) {
     a.Swap(&b);
@@ -8806,7 +9106,7 @@ class SubscribeUnixEpochTimeRequest final :
                &_SubscribeUnixEpochTimeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    60;
 
   friend void swap(SubscribeUnixEpochTimeRequest& a, SubscribeUnixEpochTimeRequest& b) {
     a.Swap(&b);
@@ -8932,7 +9232,7 @@ class UnixEpochTimeResponse final :
                &_UnixEpochTimeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    61;
 
   friend void swap(UnixEpochTimeResponse& a, UnixEpochTimeResponse& b) {
     a.Swap(&b);
@@ -9071,7 +9371,7 @@ class SubscribeDistanceSensorRequest final :
                &_SubscribeDistanceSensorRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    62;
 
   friend void swap(SubscribeDistanceSensorRequest& a, SubscribeDistanceSensorRequest& b) {
     a.Swap(&b);
@@ -9197,7 +9497,7 @@ class DistanceSensorResponse final :
                &_DistanceSensorResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    63;
 
   friend void swap(DistanceSensorResponse& a, DistanceSensorResponse& b) {
     a.Swap(&b);
@@ -9345,7 +9645,7 @@ class SubscribeScaledPressureRequest final :
                &_SubscribeScaledPressureRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    64;
 
   friend void swap(SubscribeScaledPressureRequest& a, SubscribeScaledPressureRequest& b) {
     a.Swap(&b);
@@ -9471,7 +9771,7 @@ class ScaledPressureResponse final :
                &_ScaledPressureResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    63;
+    65;
 
   friend void swap(ScaledPressureResponse& a, ScaledPressureResponse& b) {
     a.Swap(&b);
@@ -9619,7 +9919,7 @@ class SubscribeHeadingRequest final :
                &_SubscribeHeadingRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    66;
 
   friend void swap(SubscribeHeadingRequest& a, SubscribeHeadingRequest& b) {
     a.Swap(&b);
@@ -9745,7 +10045,7 @@ class HeadingResponse final :
                &_HeadingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    65;
+    67;
 
   friend void swap(HeadingResponse& a, HeadingResponse& b) {
     a.Swap(&b);
@@ -9893,7 +10193,7 @@ class SetRatePositionRequest final :
                &_SetRatePositionRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    68;
 
   friend void swap(SetRatePositionRequest& a, SetRatePositionRequest& b) {
     a.Swap(&b);
@@ -10032,7 +10332,7 @@ class SetRatePositionResponse final :
                &_SetRatePositionResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    69;
 
   friend void swap(SetRatePositionResponse& a, SetRatePositionResponse& b) {
     a.Swap(&b);
@@ -10180,7 +10480,7 @@ class SetRateHomeRequest final :
                &_SetRateHomeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    70;
 
   friend void swap(SetRateHomeRequest& a, SetRateHomeRequest& b) {
     a.Swap(&b);
@@ -10319,7 +10619,7 @@ class SetRateHomeResponse final :
                &_SetRateHomeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    71;
 
   friend void swap(SetRateHomeResponse& a, SetRateHomeResponse& b) {
     a.Swap(&b);
@@ -10467,7 +10767,7 @@ class SetRateInAirRequest final :
                &_SetRateInAirRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    72;
 
   friend void swap(SetRateInAirRequest& a, SetRateInAirRequest& b) {
     a.Swap(&b);
@@ -10606,7 +10906,7 @@ class SetRateInAirResponse final :
                &_SetRateInAirResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    73;
 
   friend void swap(SetRateInAirResponse& a, SetRateInAirResponse& b) {
     a.Swap(&b);
@@ -10754,7 +11054,7 @@ class SetRateLandedStateRequest final :
                &_SetRateLandedStateRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    74;
 
   friend void swap(SetRateLandedStateRequest& a, SetRateLandedStateRequest& b) {
     a.Swap(&b);
@@ -10893,7 +11193,7 @@ class SetRateLandedStateResponse final :
                &_SetRateLandedStateResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    73;
+    75;
 
   friend void swap(SetRateLandedStateResponse& a, SetRateLandedStateResponse& b) {
     a.Swap(&b);
@@ -11041,7 +11341,7 @@ class SetRateVtolStateRequest final :
                &_SetRateVtolStateRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    74;
+    76;
 
   friend void swap(SetRateVtolStateRequest& a, SetRateVtolStateRequest& b) {
     a.Swap(&b);
@@ -11180,7 +11480,7 @@ class SetRateVtolStateResponse final :
                &_SetRateVtolStateResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    75;
+    77;
 
   friend void swap(SetRateVtolStateResponse& a, SetRateVtolStateResponse& b) {
     a.Swap(&b);
@@ -11328,7 +11628,7 @@ class SetRateAttitudeRequest final :
                &_SetRateAttitudeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    76;
+    78;
 
   friend void swap(SetRateAttitudeRequest& a, SetRateAttitudeRequest& b) {
     a.Swap(&b);
@@ -11467,7 +11767,7 @@ class SetRateAttitudeResponse final :
                &_SetRateAttitudeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    77;
+    79;
 
   friend void swap(SetRateAttitudeResponse& a, SetRateAttitudeResponse& b) {
     a.Swap(&b);
@@ -11615,7 +11915,7 @@ class SetRateAttitudeAngularVelocityBodyRequest final :
                &_SetRateAttitudeAngularVelocityBodyRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    78;
+    80;
 
   friend void swap(SetRateAttitudeAngularVelocityBodyRequest& a, SetRateAttitudeAngularVelocityBodyRequest& b) {
     a.Swap(&b);
@@ -11754,7 +12054,7 @@ class SetRateAttitudeAngularVelocityBodyResponse final :
                &_SetRateAttitudeAngularVelocityBodyResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    79;
+    81;
 
   friend void swap(SetRateAttitudeAngularVelocityBodyResponse& a, SetRateAttitudeAngularVelocityBodyResponse& b) {
     a.Swap(&b);
@@ -11902,7 +12202,7 @@ class SetRateCameraAttitudeQuaternionRequest final :
                &_SetRateCameraAttitudeQuaternionRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    80;
+    82;
 
   friend void swap(SetRateCameraAttitudeQuaternionRequest& a, SetRateCameraAttitudeQuaternionRequest& b) {
     a.Swap(&b);
@@ -12041,7 +12341,7 @@ class SetRateCameraAttitudeQuaternionResponse final :
                &_SetRateCameraAttitudeQuaternionResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    81;
+    83;
 
   friend void swap(SetRateCameraAttitudeQuaternionResponse& a, SetRateCameraAttitudeQuaternionResponse& b) {
     a.Swap(&b);
@@ -12189,7 +12489,7 @@ class SetRateCameraAttitudeRequest final :
                &_SetRateCameraAttitudeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    82;
+    84;
 
   friend void swap(SetRateCameraAttitudeRequest& a, SetRateCameraAttitudeRequest& b) {
     a.Swap(&b);
@@ -12328,7 +12628,7 @@ class SetRateCameraAttitudeResponse final :
                &_SetRateCameraAttitudeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    83;
+    85;
 
   friend void swap(SetRateCameraAttitudeResponse& a, SetRateCameraAttitudeResponse& b) {
     a.Swap(&b);
@@ -12476,7 +12776,7 @@ class SetRateVelocityNedRequest final :
                &_SetRateVelocityNedRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    84;
+    86;
 
   friend void swap(SetRateVelocityNedRequest& a, SetRateVelocityNedRequest& b) {
     a.Swap(&b);
@@ -12615,7 +12915,7 @@ class SetRateVelocityNedResponse final :
                &_SetRateVelocityNedResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    85;
+    87;
 
   friend void swap(SetRateVelocityNedResponse& a, SetRateVelocityNedResponse& b) {
     a.Swap(&b);
@@ -12763,7 +13063,7 @@ class SetRateGpsInfoRequest final :
                &_SetRateGpsInfoRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    86;
+    88;
 
   friend void swap(SetRateGpsInfoRequest& a, SetRateGpsInfoRequest& b) {
     a.Swap(&b);
@@ -12902,7 +13202,7 @@ class SetRateGpsInfoResponse final :
                &_SetRateGpsInfoResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    87;
+    89;
 
   friend void swap(SetRateGpsInfoResponse& a, SetRateGpsInfoResponse& b) {
     a.Swap(&b);
@@ -13050,7 +13350,7 @@ class SetRateRawGpsRequest final :
                &_SetRateRawGpsRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    88;
+    90;
 
   friend void swap(SetRateRawGpsRequest& a, SetRateRawGpsRequest& b) {
     a.Swap(&b);
@@ -13189,7 +13489,7 @@ class SetRateBatteryRequest final :
                &_SetRateBatteryRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    89;
+    91;
 
   friend void swap(SetRateBatteryRequest& a, SetRateBatteryRequest& b) {
     a.Swap(&b);
@@ -13328,7 +13628,7 @@ class SetRateBatteryResponse final :
                &_SetRateBatteryResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    90;
+    92;
 
   friend void swap(SetRateBatteryResponse& a, SetRateBatteryResponse& b) {
     a.Swap(&b);
@@ -13476,7 +13776,7 @@ class SetRateRcStatusRequest final :
                &_SetRateRcStatusRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    91;
+    93;
 
   friend void swap(SetRateRcStatusRequest& a, SetRateRcStatusRequest& b) {
     a.Swap(&b);
@@ -13615,7 +13915,7 @@ class SetRateRcStatusResponse final :
                &_SetRateRcStatusResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    92;
+    94;
 
   friend void swap(SetRateRcStatusResponse& a, SetRateRcStatusResponse& b) {
     a.Swap(&b);
@@ -13763,7 +14063,7 @@ class SetRateActuatorControlTargetRequest final :
                &_SetRateActuatorControlTargetRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    93;
+    95;
 
   friend void swap(SetRateActuatorControlTargetRequest& a, SetRateActuatorControlTargetRequest& b) {
     a.Swap(&b);
@@ -13902,7 +14202,7 @@ class SetRateActuatorControlTargetResponse final :
                &_SetRateActuatorControlTargetResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    94;
+    96;
 
   friend void swap(SetRateActuatorControlTargetResponse& a, SetRateActuatorControlTargetResponse& b) {
     a.Swap(&b);
@@ -14050,7 +14350,7 @@ class SetRateActuatorOutputStatusRequest final :
                &_SetRateActuatorOutputStatusRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    95;
+    97;
 
   friend void swap(SetRateActuatorOutputStatusRequest& a, SetRateActuatorOutputStatusRequest& b) {
     a.Swap(&b);
@@ -14189,7 +14489,7 @@ class SetRateActuatorOutputStatusResponse final :
                &_SetRateActuatorOutputStatusResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    96;
+    98;
 
   friend void swap(SetRateActuatorOutputStatusResponse& a, SetRateActuatorOutputStatusResponse& b) {
     a.Swap(&b);
@@ -14337,7 +14637,7 @@ class SetRateOdometryRequest final :
                &_SetRateOdometryRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    97;
+    99;
 
   friend void swap(SetRateOdometryRequest& a, SetRateOdometryRequest& b) {
     a.Swap(&b);
@@ -14476,7 +14776,7 @@ class SetRateOdometryResponse final :
                &_SetRateOdometryResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    98;
+    100;
 
   friend void swap(SetRateOdometryResponse& a, SetRateOdometryResponse& b) {
     a.Swap(&b);
@@ -14624,7 +14924,7 @@ class SetRatePositionVelocityNedRequest final :
                &_SetRatePositionVelocityNedRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    99;
+    101;
 
   friend void swap(SetRatePositionVelocityNedRequest& a, SetRatePositionVelocityNedRequest& b) {
     a.Swap(&b);
@@ -14763,7 +15063,7 @@ class SetRatePositionVelocityNedResponse final :
                &_SetRatePositionVelocityNedResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    100;
+    102;
 
   friend void swap(SetRatePositionVelocityNedResponse& a, SetRatePositionVelocityNedResponse& b) {
     a.Swap(&b);
@@ -14911,7 +15211,7 @@ class SetRateGroundTruthRequest final :
                &_SetRateGroundTruthRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    101;
+    103;
 
   friend void swap(SetRateGroundTruthRequest& a, SetRateGroundTruthRequest& b) {
     a.Swap(&b);
@@ -15050,7 +15350,7 @@ class SetRateGroundTruthResponse final :
                &_SetRateGroundTruthResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    102;
+    104;
 
   friend void swap(SetRateGroundTruthResponse& a, SetRateGroundTruthResponse& b) {
     a.Swap(&b);
@@ -15198,7 +15498,7 @@ class SetRateFixedwingMetricsRequest final :
                &_SetRateFixedwingMetricsRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    103;
+    105;
 
   friend void swap(SetRateFixedwingMetricsRequest& a, SetRateFixedwingMetricsRequest& b) {
     a.Swap(&b);
@@ -15337,7 +15637,7 @@ class SetRateFixedwingMetricsResponse final :
                &_SetRateFixedwingMetricsResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    104;
+    106;
 
   friend void swap(SetRateFixedwingMetricsResponse& a, SetRateFixedwingMetricsResponse& b) {
     a.Swap(&b);
@@ -15485,7 +15785,7 @@ class SetRateImuRequest final :
                &_SetRateImuRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    105;
+    107;
 
   friend void swap(SetRateImuRequest& a, SetRateImuRequest& b) {
     a.Swap(&b);
@@ -15624,7 +15924,7 @@ class SetRateImuResponse final :
                &_SetRateImuResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    106;
+    108;
 
   friend void swap(SetRateImuResponse& a, SetRateImuResponse& b) {
     a.Swap(&b);
@@ -15772,7 +16072,7 @@ class SetRateScaledImuRequest final :
                &_SetRateScaledImuRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    107;
+    109;
 
   friend void swap(SetRateScaledImuRequest& a, SetRateScaledImuRequest& b) {
     a.Swap(&b);
@@ -15911,7 +16211,7 @@ class SetRateScaledImuResponse final :
                &_SetRateScaledImuResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    108;
+    110;
 
   friend void swap(SetRateScaledImuResponse& a, SetRateScaledImuResponse& b) {
     a.Swap(&b);
@@ -16059,7 +16359,7 @@ class SetRateRawImuRequest final :
                &_SetRateRawImuRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    109;
+    111;
 
   friend void swap(SetRateRawImuRequest& a, SetRateRawImuRequest& b) {
     a.Swap(&b);
@@ -16198,7 +16498,7 @@ class SetRateRawImuResponse final :
                &_SetRateRawImuResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    110;
+    112;
 
   friend void swap(SetRateRawImuResponse& a, SetRateRawImuResponse& b) {
     a.Swap(&b);
@@ -16346,7 +16646,7 @@ class SetRateUnixEpochTimeRequest final :
                &_SetRateUnixEpochTimeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    111;
+    113;
 
   friend void swap(SetRateUnixEpochTimeRequest& a, SetRateUnixEpochTimeRequest& b) {
     a.Swap(&b);
@@ -16485,7 +16785,7 @@ class SetRateUnixEpochTimeResponse final :
                &_SetRateUnixEpochTimeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    112;
+    114;
 
   friend void swap(SetRateUnixEpochTimeResponse& a, SetRateUnixEpochTimeResponse& b) {
     a.Swap(&b);
@@ -16633,7 +16933,7 @@ class SetRateDistanceSensorRequest final :
                &_SetRateDistanceSensorRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    113;
+    115;
 
   friend void swap(SetRateDistanceSensorRequest& a, SetRateDistanceSensorRequest& b) {
     a.Swap(&b);
@@ -16772,7 +17072,7 @@ class SetRateDistanceSensorResponse final :
                &_SetRateDistanceSensorResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    114;
+    116;
 
   friend void swap(SetRateDistanceSensorResponse& a, SetRateDistanceSensorResponse& b) {
     a.Swap(&b);
@@ -16920,7 +17220,7 @@ class GetGpsGlobalOriginRequest final :
                &_GetGpsGlobalOriginRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    115;
+    117;
 
   friend void swap(GetGpsGlobalOriginRequest& a, GetGpsGlobalOriginRequest& b) {
     a.Swap(&b);
@@ -17046,7 +17346,7 @@ class GetGpsGlobalOriginResponse final :
                &_GetGpsGlobalOriginResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    116;
+    118;
 
   friend void swap(GetGpsGlobalOriginResponse& a, GetGpsGlobalOriginResponse& b) {
     a.Swap(&b);
@@ -17214,7 +17514,7 @@ class Position final :
                &_Position_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    117;
+    119;
 
   friend void swap(Position& a, Position& b) {
     a.Swap(&b);
@@ -17386,7 +17686,7 @@ class Heading final :
                &_Heading_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    118;
+    120;
 
   friend void swap(Heading& a, Heading& b) {
     a.Swap(&b);
@@ -17525,7 +17825,7 @@ class Quaternion final :
                &_Quaternion_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    119;
+    121;
 
   friend void swap(Quaternion& a, Quaternion& b) {
     a.Swap(&b);
@@ -17708,7 +18008,7 @@ class EulerAngle final :
                &_EulerAngle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    120;
+    122;
 
   friend void swap(EulerAngle& a, EulerAngle& b) {
     a.Swap(&b);
@@ -17880,7 +18180,7 @@ class AngularVelocityBody final :
                &_AngularVelocityBody_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    121;
+    123;
 
   friend void swap(AngularVelocityBody& a, AngularVelocityBody& b) {
     a.Swap(&b);
@@ -18041,7 +18341,7 @@ class GpsInfo final :
                &_GpsInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    122;
+    124;
 
   friend void swap(GpsInfo& a, GpsInfo& b) {
     a.Swap(&b);
@@ -18191,7 +18491,7 @@ class RawGps final :
                &_RawGps_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    123;
+    125;
 
   friend void swap(RawGps& a, RawGps& b) {
     a.Swap(&b);
@@ -18473,7 +18773,7 @@ class Battery final :
                &_Battery_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    124;
+    126;
 
   friend void swap(Battery& a, Battery& b) {
     a.Swap(&b);
@@ -18634,7 +18934,7 @@ class Health final :
                &_Health_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    125;
+    127;
 
   friend void swap(Health& a, Health& b) {
     a.Swap(&b);
@@ -18839,7 +19139,7 @@ class RcStatus final :
                &_RcStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    126;
+    128;
 
   friend void swap(RcStatus& a, RcStatus& b) {
     a.Swap(&b);
@@ -19000,7 +19300,7 @@ class StatusText final :
                &_StatusText_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    127;
+    129;
 
   friend void swap(StatusText& a, StatusText& b) {
     a.Swap(&b);
@@ -19155,7 +19455,7 @@ class ActuatorControlTarget final :
                &_ActuatorControlTarget_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    128;
+    130;
 
   friend void swap(ActuatorControlTarget& a, ActuatorControlTarget& b) {
     a.Swap(&b);
@@ -19318,7 +19618,7 @@ class ActuatorOutputStatus final :
                &_ActuatorOutputStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    129;
+    131;
 
   friend void swap(ActuatorOutputStatus& a, ActuatorOutputStatus& b) {
     a.Swap(&b);
@@ -19481,7 +19781,7 @@ class Covariance final :
                &_Covariance_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    130;
+    132;
 
   friend void swap(Covariance& a, Covariance& b) {
     a.Swap(&b);
@@ -19633,7 +19933,7 @@ class VelocityBody final :
                &_VelocityBody_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    131;
+    133;
 
   friend void swap(VelocityBody& a, VelocityBody& b) {
     a.Swap(&b);
@@ -19794,7 +20094,7 @@ class PositionBody final :
                &_PositionBody_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    132;
+    134;
 
   friend void swap(PositionBody& a, PositionBody& b) {
     a.Swap(&b);
@@ -19955,7 +20255,7 @@ class Odometry final :
                &_Odometry_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    133;
+    135;
 
   friend void swap(Odometry& a, Odometry& b) {
     a.Swap(&b);
@@ -20270,7 +20570,7 @@ class DistanceSensor final :
                &_DistanceSensor_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    134;
+    136;
 
   friend void swap(DistanceSensor& a, DistanceSensor& b) {
     a.Swap(&b);
@@ -20431,7 +20731,7 @@ class ScaledPressure final :
                &_ScaledPressure_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    135;
+    137;
 
   friend void swap(ScaledPressure& a, ScaledPressure& b) {
     a.Swap(&b);
@@ -20614,7 +20914,7 @@ class PositionNed final :
                &_PositionNed_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    136;
+    138;
 
   friend void swap(PositionNed& a, PositionNed& b) {
     a.Swap(&b);
@@ -20775,7 +21075,7 @@ class VelocityNed final :
                &_VelocityNed_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    137;
+    139;
 
   friend void swap(VelocityNed& a, VelocityNed& b) {
     a.Swap(&b);
@@ -20936,7 +21236,7 @@ class PositionVelocityNed final :
                &_PositionVelocityNed_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    138;
+    140;
 
   friend void swap(PositionVelocityNed& a, PositionVelocityNed& b) {
     a.Swap(&b);
@@ -21104,7 +21404,7 @@ class GroundTruth final :
                &_GroundTruth_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    139;
+    141;
 
   friend void swap(GroundTruth& a, GroundTruth& b) {
     a.Swap(&b);
@@ -21265,7 +21565,7 @@ class FixedwingMetrics final :
                &_FixedwingMetrics_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    140;
+    142;
 
   friend void swap(FixedwingMetrics& a, FixedwingMetrics& b) {
     a.Swap(&b);
@@ -21426,7 +21726,7 @@ class AccelerationFrd final :
                &_AccelerationFrd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    141;
+    143;
 
   friend void swap(AccelerationFrd& a, AccelerationFrd& b) {
     a.Swap(&b);
@@ -21587,7 +21887,7 @@ class AngularVelocityFrd final :
                &_AngularVelocityFrd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    142;
+    144;
 
   friend void swap(AngularVelocityFrd& a, AngularVelocityFrd& b) {
     a.Swap(&b);
@@ -21748,7 +22048,7 @@ class MagneticFieldFrd final :
                &_MagneticFieldFrd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    143;
+    145;
 
   friend void swap(MagneticFieldFrd& a, MagneticFieldFrd& b) {
     a.Swap(&b);
@@ -21909,7 +22209,7 @@ class Imu final :
                &_Imu_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    144;
+    146;
 
   friend void swap(Imu& a, Imu& b) {
     a.Swap(&b);
@@ -22119,7 +22419,7 @@ class GpsGlobalOrigin final :
                &_GpsGlobalOrigin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    145;
+    147;
 
   friend void swap(GpsGlobalOrigin& a, GpsGlobalOrigin& b) {
     a.Swap(&b);
@@ -22280,7 +22580,7 @@ class TelemetryResult final :
                &_TelemetryResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    146;
+    148;
 
   friend void swap(TelemetryResult& a, TelemetryResult& b) {
     a.Swap(&b);
@@ -23626,6 +23926,34 @@ inline void BatteryResponse::set_allocated_battery(::mavsdk::rpc::telemetry::Bat
   }
   battery_ = battery;
   // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.telemetry.BatteryResponse.battery)
+}
+
+// -------------------------------------------------------------------
+
+// SubscribeVehicleTypeRequest
+
+// -------------------------------------------------------------------
+
+// VehicleTypeResponse
+
+// .mavsdk.rpc.telemetry.VehicleType vehicle_type = 1;
+inline void VehicleTypeResponse::clear_vehicle_type() {
+  vehicle_type_ = 0;
+}
+inline ::mavsdk::rpc::telemetry::VehicleType VehicleTypeResponse::_internal_vehicle_type() const {
+  return static_cast< ::mavsdk::rpc::telemetry::VehicleType >(vehicle_type_);
+}
+inline ::mavsdk::rpc::telemetry::VehicleType VehicleTypeResponse::vehicle_type() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.telemetry.VehicleTypeResponse.vehicle_type)
+  return _internal_vehicle_type();
+}
+inline void VehicleTypeResponse::_internal_set_vehicle_type(::mavsdk::rpc::telemetry::VehicleType value) {
+  
+  vehicle_type_ = value;
+}
+inline void VehicleTypeResponse::set_vehicle_type(::mavsdk::rpc::telemetry::VehicleType value) {
+  _internal_set_vehicle_type(value);
+  // @@protoc_insertion_point(field_set:mavsdk.rpc.telemetry.VehicleTypeResponse.vehicle_type)
 }
 
 // -------------------------------------------------------------------
@@ -31724,6 +32052,10 @@ inline void TelemetryResult::set_allocated_result_str(std::string* result_str) {
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -31747,6 +32079,11 @@ template <> struct is_proto_enum< ::mavsdk::rpc::telemetry::FixType> : ::std::tr
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::mavsdk::rpc::telemetry::FixType>() {
   return ::mavsdk::rpc::telemetry::FixType_descriptor();
+}
+template <> struct is_proto_enum< ::mavsdk::rpc::telemetry::VehicleType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::mavsdk::rpc::telemetry::VehicleType>() {
+  return ::mavsdk::rpc::telemetry::VehicleType_descriptor();
 }
 template <> struct is_proto_enum< ::mavsdk::rpc::telemetry::FlightMode> : ::std::true_type {};
 template <>

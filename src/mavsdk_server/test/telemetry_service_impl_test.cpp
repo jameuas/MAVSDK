@@ -35,6 +35,9 @@ using RPCFixType = mavsdk::rpc::telemetry::FixType;
 
 using Battery = mavsdk::Telemetry::Battery;
 
+using VehicleType = mavsdk::Telemetry::VehicleType;
+using RPCVehicleType= mavsdk::rpc::telemetry::VehicleType;
+
 using FlightMode = mavsdk::Telemetry::FlightMode;
 using RPCFlightMode = mavsdk::rpc::telemetry::FlightMode;
 
@@ -104,6 +107,10 @@ protected:
     Battery
     createBattery(const uint32_t id, const float voltage_v, const float remaining_percent) const;
     std::future<void> subscribeBatteryAsync(std::vector<Battery>& battery_events) const;
+
+    void checkSendsVehicleTypeEvents(const std::vector<VehicleType>& vehicle_type_events) const;
+    VehicleType translateRPCVehicleType(const RPCVehicleType rpc_vehicle_type) const;
+    std::future<void> subscribeVehicleTypeAsync(std::vector<VehicleType>& vehicle_type_events) const;
 
     void checkSendsFlightModeEvents(const std::vector<FlightMode>& flight_mode_events) const;
     FlightMode translateRPCFlightMode(const RPCFlightMode rpc_flight_mode) const;
@@ -873,6 +880,105 @@ TEST_F(TelemetryServiceImplTest, sendsMultipleBatteryEvents)
     battery_events.push_back(createBattery(3, 5.7f, 1.0f));
 
     checkSendsBatteryEvents(battery_events);
+}
+
+TEST_F(TelemetryServiceImplTest, registersToTelemetryVehicleTypeAsync)
+{
+    EXPECT_CALL(*_telemetry, subscribe_vehicle_type(_)).Times(1);
+
+    std::vector<VehicleType> vehicle_type_events;
+    auto vehicle_type_stream_future = subscribeVehicleTypeAsync(vehicle_type_events);
+
+    _telemetry_service->stop();
+    vehicle_type_stream_future.wait();
+}
+
+std::future<void> TelemetryServiceImplTest::subscribeVehicleTypeAsync(
+    std::vector<VehicleType>& vehicle_type_events) const
+{
+    return std::async(std::launch::async, [&]() {
+        grpc::ClientContext context;
+        mavsdk::rpc::telemetry::SubscribeVehicleTypeRequest request;
+        auto response_reader = _stub->SubscribeVehicleType(&context, request);
+
+        mavsdk::rpc::telemetry::VehicleTypeResponse response;
+        while (response_reader->Read(&response)) {
+            VehicleType vehicle_type = translateRPCVehicleType(response.vehicle_type());
+            vehicle_type_events.push_back(vehicle_type);
+        }
+
+        response_reader->Finish();
+    });
+}
+
+VehicleType
+TelemetryServiceImplTest::translateRPCVehicleType(const RPCVehicleType rpc_vehicle_type) const
+{
+    switch (rpc_vehicle_type) {
+        default:
+        case RPCVehicleType::VEHICLE_TYPE_UNKNOWN:
+            return VehicleType::Unknown;
+        case RPCVehicleType::VEHICLE_TYPE_FIXED_WING:
+            return VehicleType::FixedWing;
+        case RPCVehicleType::VEHICLE_TYPE_MULTIROTOR:
+            return VehicleType::Multirotor;
+        case RPCVehicleType::VEHICLE_TYPE_VTOL:
+            return VehicleType::Vtol;
+    }
+}
+
+TEST_F(TelemetryServiceImplTest, doesNotSendVehicleTypeInfoIfCallbackNotCalled)
+{
+    std::vector<VehicleType> vehicle_type_events;
+    auto vehicle_type_stream_future = subscribeVehicleTypeAsync(vehicle_type_events);
+
+    _telemetry_service->stop();
+    vehicle_type_stream_future.wait();
+
+    EXPECT_EQ(0, vehicle_type_events.size());
+}
+
+TEST_F(TelemetryServiceImplTest, sendsOneVehicleTypeEvent)
+{
+    std::vector<VehicleType> vehicle_type_events;
+    vehicle_type_events.push_back(VehicleType::Unknown);
+
+    checkSendsVehicleTypeEvents(vehicle_type_events);
+}
+
+void TelemetryServiceImplTest::checkSendsVehicleTypeEvents(
+    const std::vector<VehicleType>& vehicle_type_events) const
+{
+    std::promise<void> subscription_promise;
+    auto subscription_future = subscription_promise.get_future();
+    mavsdk::Telemetry::VehicleTypeCallback vehicle_type_callback;
+    EXPECT_CALL(*_telemetry, subscribe_vehicle_type(_))
+        .WillOnce(SaveCallback(&vehicle_type_callback, &subscription_promise));
+
+    std::vector<VehicleType> received_vehicle_type_events;
+    auto vehicle_type_stream_future = subscribeVehicleTypeAsync(received_vehicle_type_events);
+    subscription_future.wait();
+    for (const auto& vehicle_type : vehicle_type_events) {
+        vehicle_type_callback(vehicle_type);
+    }
+    _telemetry_service->stop();
+    vehicle_type_stream_future.wait();
+
+    ASSERT_EQ(vehicle_type_events.size(), received_vehicle_type_events.size());
+    for (size_t i = 0; i < vehicle_type_events.size(); i++) {
+        EXPECT_EQ(vehicle_type_events.at(i), received_vehicle_type_events.at(i));
+    }
+}
+
+TEST_F(TelemetryServiceImplTest, sendsMultipleVehicleTypeEvents)
+{
+    std::vector<VehicleType> vehicle_type_events;
+    vehicle_type_events.push_back(VehicleType::Unknown);
+    vehicle_type_events.push_back(VehicleType::FixedWing);
+    vehicle_type_events.push_back(VehicleType::Multirotor);
+    vehicle_type_events.push_back(VehicleType::Vtol);
+
+    checkSendsVehicleTypeEvents(vehicle_type_events);
 }
 
 TEST_F(TelemetryServiceImplTest, registersToTelemetryFlightModeAsync)
