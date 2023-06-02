@@ -24,6 +24,18 @@ public:
     MOCK_CONST_METHOD0(kill, Action::Result()){};
     MOCK_CONST_METHOD0(return_to_launch, Action::Result()){};
     MOCK_CONST_METHOD0(hold, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_takeoff, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_hold, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_mission, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_return_to_launch, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_land, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_offboard, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_follow_me, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_manual, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_altitude_control, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_position_control, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_acro, Action::Result()){};
+    MOCK_CONST_METHOD0(mode_stabilized, Action::Result()){};
     MOCK_CONST_METHOD0(transition_to_fixedwing, Action::Result()){};
     MOCK_CONST_METHOD0(transition_to_multicopter, Action::Result()){};
     MOCK_CONST_METHOD0(get_takeoff_altitude, std::pair<Action::Result, float>()){};

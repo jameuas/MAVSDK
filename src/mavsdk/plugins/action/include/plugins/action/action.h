@@ -450,6 +450,258 @@ public:
 
 
     /**
+     * @brief Send command to change to Hold flight mode for dev-gcs.
+     *
+     * This function is non-blocking. See 'mode_takeoff' for the blocking counterpart.
+     */
+    void mode_takeoff_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief Send command to change to Hold flight mode for dev-gcs.
+     *
+     * This function is blocking. See 'mode_takeoff_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_takeoff() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_hold' for the blocking counterpart.
+     */
+    void mode_hold_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_hold_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_hold() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_mission' for the blocking counterpart.
+     */
+    void mode_mission_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_mission_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_mission() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_return_to_launch' for the blocking counterpart.
+     */
+    void mode_return_to_launch_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_return_to_launch_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_return_to_launch() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_land' for the blocking counterpart.
+     */
+    void mode_land_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_land_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_land() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_offboard' for the blocking counterpart.
+     */
+    void mode_offboard_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_offboard_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_offboard() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_follow_me' for the blocking counterpart.
+     */
+    void mode_follow_me_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_follow_me_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_follow_me() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_manual' for the blocking counterpart.
+     */
+    void mode_manual_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_manual_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_manual() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_altitude_control' for the blocking counterpart.
+     */
+    void mode_altitude_control_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_altitude_control_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_altitude_control() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_position_control' for the blocking counterpart.
+     */
+    void mode_position_control_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_position_control_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_position_control() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_acro' for the blocking counterpart.
+     */
+    void mode_acro_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_acro_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_acro() const;
+
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is non-blocking. See 'mode_stabilized' for the blocking counterpart.
+     */
+    void mode_stabilized_async(const ResultCallback callback);
+
+
+
+    /**
+     * @brief 
+     *
+     * This function is blocking. See 'mode_stabilized_async' for the non-blocking counterpart.
+     *
+     * @return Result of request.
+     */
+    Result mode_stabilized() const;
+
+
+
+
+    /**
      * @brief Send command to set the value of an actuator.
      *
      * This function is non-blocking. See 'set_actuator' for the blocking counterpart.

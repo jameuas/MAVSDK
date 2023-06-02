@@ -48,7 +48,7 @@ struct TableStruct_action_2faction_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[45]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[69]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -121,6 +121,78 @@ extern LandRequestDefaultTypeInternal _LandRequest_default_instance_;
 class LandResponse;
 struct LandResponseDefaultTypeInternal;
 extern LandResponseDefaultTypeInternal _LandResponse_default_instance_;
+class ModeAcroRequest;
+struct ModeAcroRequestDefaultTypeInternal;
+extern ModeAcroRequestDefaultTypeInternal _ModeAcroRequest_default_instance_;
+class ModeAcroResponse;
+struct ModeAcroResponseDefaultTypeInternal;
+extern ModeAcroResponseDefaultTypeInternal _ModeAcroResponse_default_instance_;
+class ModeAltitudeControlRequest;
+struct ModeAltitudeControlRequestDefaultTypeInternal;
+extern ModeAltitudeControlRequestDefaultTypeInternal _ModeAltitudeControlRequest_default_instance_;
+class ModeAltitudeControlResponse;
+struct ModeAltitudeControlResponseDefaultTypeInternal;
+extern ModeAltitudeControlResponseDefaultTypeInternal _ModeAltitudeControlResponse_default_instance_;
+class ModeFollowMeRequest;
+struct ModeFollowMeRequestDefaultTypeInternal;
+extern ModeFollowMeRequestDefaultTypeInternal _ModeFollowMeRequest_default_instance_;
+class ModeFollowMeResponse;
+struct ModeFollowMeResponseDefaultTypeInternal;
+extern ModeFollowMeResponseDefaultTypeInternal _ModeFollowMeResponse_default_instance_;
+class ModeHoldRequest;
+struct ModeHoldRequestDefaultTypeInternal;
+extern ModeHoldRequestDefaultTypeInternal _ModeHoldRequest_default_instance_;
+class ModeHoldResponse;
+struct ModeHoldResponseDefaultTypeInternal;
+extern ModeHoldResponseDefaultTypeInternal _ModeHoldResponse_default_instance_;
+class ModeLandRequest;
+struct ModeLandRequestDefaultTypeInternal;
+extern ModeLandRequestDefaultTypeInternal _ModeLandRequest_default_instance_;
+class ModeLandResponse;
+struct ModeLandResponseDefaultTypeInternal;
+extern ModeLandResponseDefaultTypeInternal _ModeLandResponse_default_instance_;
+class ModeManualRequest;
+struct ModeManualRequestDefaultTypeInternal;
+extern ModeManualRequestDefaultTypeInternal _ModeManualRequest_default_instance_;
+class ModeManualResponse;
+struct ModeManualResponseDefaultTypeInternal;
+extern ModeManualResponseDefaultTypeInternal _ModeManualResponse_default_instance_;
+class ModeMissionRequest;
+struct ModeMissionRequestDefaultTypeInternal;
+extern ModeMissionRequestDefaultTypeInternal _ModeMissionRequest_default_instance_;
+class ModeMissionResponse;
+struct ModeMissionResponseDefaultTypeInternal;
+extern ModeMissionResponseDefaultTypeInternal _ModeMissionResponse_default_instance_;
+class ModeOffboardRequest;
+struct ModeOffboardRequestDefaultTypeInternal;
+extern ModeOffboardRequestDefaultTypeInternal _ModeOffboardRequest_default_instance_;
+class ModeOffboardResponse;
+struct ModeOffboardResponseDefaultTypeInternal;
+extern ModeOffboardResponseDefaultTypeInternal _ModeOffboardResponse_default_instance_;
+class ModePositionControlRequest;
+struct ModePositionControlRequestDefaultTypeInternal;
+extern ModePositionControlRequestDefaultTypeInternal _ModePositionControlRequest_default_instance_;
+class ModePositionControlResponse;
+struct ModePositionControlResponseDefaultTypeInternal;
+extern ModePositionControlResponseDefaultTypeInternal _ModePositionControlResponse_default_instance_;
+class ModeReturnToLaunchRequest;
+struct ModeReturnToLaunchRequestDefaultTypeInternal;
+extern ModeReturnToLaunchRequestDefaultTypeInternal _ModeReturnToLaunchRequest_default_instance_;
+class ModeReturnToLaunchResponse;
+struct ModeReturnToLaunchResponseDefaultTypeInternal;
+extern ModeReturnToLaunchResponseDefaultTypeInternal _ModeReturnToLaunchResponse_default_instance_;
+class ModeStabilizedRequest;
+struct ModeStabilizedRequestDefaultTypeInternal;
+extern ModeStabilizedRequestDefaultTypeInternal _ModeStabilizedRequest_default_instance_;
+class ModeStabilizedResponse;
+struct ModeStabilizedResponseDefaultTypeInternal;
+extern ModeStabilizedResponseDefaultTypeInternal _ModeStabilizedResponse_default_instance_;
+class ModeTakeoffRequest;
+struct ModeTakeoffRequestDefaultTypeInternal;
+extern ModeTakeoffRequestDefaultTypeInternal _ModeTakeoffRequest_default_instance_;
+class ModeTakeoffResponse;
+struct ModeTakeoffResponseDefaultTypeInternal;
+extern ModeTakeoffResponseDefaultTypeInternal _ModeTakeoffResponse_default_instance_;
 class RebootRequest;
 struct RebootRequestDefaultTypeInternal;
 extern RebootRequestDefaultTypeInternal _RebootRequest_default_instance_;
@@ -218,6 +290,30 @@ template<> ::mavsdk::rpc::action::KillRequest* Arena::CreateMaybeMessage<::mavsd
 template<> ::mavsdk::rpc::action::KillResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::KillResponse>(Arena*);
 template<> ::mavsdk::rpc::action::LandRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::LandRequest>(Arena*);
 template<> ::mavsdk::rpc::action::LandResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::LandResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeAcroRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeAcroRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeAcroResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeAcroResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeAltitudeControlRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeAltitudeControlRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeAltitudeControlResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeAltitudeControlResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeFollowMeRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeFollowMeRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeFollowMeResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeFollowMeResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeHoldRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeHoldRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeHoldResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeHoldResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeLandRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeLandRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeLandResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeLandResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeManualRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeManualRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeManualResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeManualResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeMissionRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeMissionRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeMissionResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeMissionResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeOffboardRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeOffboardRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeOffboardResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeOffboardResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModePositionControlRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModePositionControlRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModePositionControlResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModePositionControlResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeReturnToLaunchRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeReturnToLaunchRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeReturnToLaunchResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeReturnToLaunchResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeStabilizedRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeStabilizedRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeStabilizedResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeStabilizedResponse>(Arena*);
+template<> ::mavsdk::rpc::action::ModeTakeoffRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeTakeoffRequest>(Arena*);
+template<> ::mavsdk::rpc::action::ModeTakeoffResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ModeTakeoffResponse>(Arena*);
 template<> ::mavsdk::rpc::action::RebootRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::RebootRequest>(Arena*);
 template<> ::mavsdk::rpc::action::RebootResponse* Arena::CreateMaybeMessage<::mavsdk::rpc::action::RebootResponse>(Arena*);
 template<> ::mavsdk::rpc::action::ReturnToLaunchRequest* Arena::CreateMaybeMessage<::mavsdk::rpc::action::ReturnToLaunchRequest>(Arena*);
@@ -3715,6 +3811,3294 @@ class HoldResponse final :
 };
 // -------------------------------------------------------------------
 
+class ModeTakeoffRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeTakeoffRequest) */ {
+ public:
+  inline ModeTakeoffRequest() : ModeTakeoffRequest(nullptr) {}
+  ~ModeTakeoffRequest() override;
+  explicit constexpr ModeTakeoffRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeTakeoffRequest(const ModeTakeoffRequest& from);
+  ModeTakeoffRequest(ModeTakeoffRequest&& from) noexcept
+    : ModeTakeoffRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeTakeoffRequest& operator=(const ModeTakeoffRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeTakeoffRequest& operator=(ModeTakeoffRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeTakeoffRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeTakeoffRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeTakeoffRequest*>(
+               &_ModeTakeoffRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    24;
+
+  friend void swap(ModeTakeoffRequest& a, ModeTakeoffRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeTakeoffRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeTakeoffRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeTakeoffRequest* New() const final {
+    return new ModeTakeoffRequest();
+  }
+
+  ModeTakeoffRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeTakeoffRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeTakeoffRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeTakeoffRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeTakeoffRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeTakeoffRequest";
+  }
+  protected:
+  explicit ModeTakeoffRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeTakeoffRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeTakeoffResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeTakeoffResponse) */ {
+ public:
+  inline ModeTakeoffResponse() : ModeTakeoffResponse(nullptr) {}
+  ~ModeTakeoffResponse() override;
+  explicit constexpr ModeTakeoffResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeTakeoffResponse(const ModeTakeoffResponse& from);
+  ModeTakeoffResponse(ModeTakeoffResponse&& from) noexcept
+    : ModeTakeoffResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeTakeoffResponse& operator=(const ModeTakeoffResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeTakeoffResponse& operator=(ModeTakeoffResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeTakeoffResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeTakeoffResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeTakeoffResponse*>(
+               &_ModeTakeoffResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    25;
+
+  friend void swap(ModeTakeoffResponse& a, ModeTakeoffResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeTakeoffResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeTakeoffResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeTakeoffResponse* New() const final {
+    return new ModeTakeoffResponse();
+  }
+
+  ModeTakeoffResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeTakeoffResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeTakeoffResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeTakeoffResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeTakeoffResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeTakeoffResponse";
+  }
+  protected:
+  explicit ModeTakeoffResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeTakeoffResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeHoldRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeHoldRequest) */ {
+ public:
+  inline ModeHoldRequest() : ModeHoldRequest(nullptr) {}
+  ~ModeHoldRequest() override;
+  explicit constexpr ModeHoldRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeHoldRequest(const ModeHoldRequest& from);
+  ModeHoldRequest(ModeHoldRequest&& from) noexcept
+    : ModeHoldRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeHoldRequest& operator=(const ModeHoldRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeHoldRequest& operator=(ModeHoldRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeHoldRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeHoldRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeHoldRequest*>(
+               &_ModeHoldRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    26;
+
+  friend void swap(ModeHoldRequest& a, ModeHoldRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeHoldRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeHoldRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeHoldRequest* New() const final {
+    return new ModeHoldRequest();
+  }
+
+  ModeHoldRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeHoldRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeHoldRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeHoldRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeHoldRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeHoldRequest";
+  }
+  protected:
+  explicit ModeHoldRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeHoldRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeHoldResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeHoldResponse) */ {
+ public:
+  inline ModeHoldResponse() : ModeHoldResponse(nullptr) {}
+  ~ModeHoldResponse() override;
+  explicit constexpr ModeHoldResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeHoldResponse(const ModeHoldResponse& from);
+  ModeHoldResponse(ModeHoldResponse&& from) noexcept
+    : ModeHoldResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeHoldResponse& operator=(const ModeHoldResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeHoldResponse& operator=(ModeHoldResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeHoldResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeHoldResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeHoldResponse*>(
+               &_ModeHoldResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    27;
+
+  friend void swap(ModeHoldResponse& a, ModeHoldResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeHoldResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeHoldResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeHoldResponse* New() const final {
+    return new ModeHoldResponse();
+  }
+
+  ModeHoldResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeHoldResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeHoldResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeHoldResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeHoldResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeHoldResponse";
+  }
+  protected:
+  explicit ModeHoldResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeHoldResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeMissionRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeMissionRequest) */ {
+ public:
+  inline ModeMissionRequest() : ModeMissionRequest(nullptr) {}
+  ~ModeMissionRequest() override;
+  explicit constexpr ModeMissionRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeMissionRequest(const ModeMissionRequest& from);
+  ModeMissionRequest(ModeMissionRequest&& from) noexcept
+    : ModeMissionRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeMissionRequest& operator=(const ModeMissionRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeMissionRequest& operator=(ModeMissionRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeMissionRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeMissionRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeMissionRequest*>(
+               &_ModeMissionRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    28;
+
+  friend void swap(ModeMissionRequest& a, ModeMissionRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeMissionRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeMissionRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeMissionRequest* New() const final {
+    return new ModeMissionRequest();
+  }
+
+  ModeMissionRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeMissionRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeMissionRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeMissionRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeMissionRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeMissionRequest";
+  }
+  protected:
+  explicit ModeMissionRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeMissionRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeMissionResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeMissionResponse) */ {
+ public:
+  inline ModeMissionResponse() : ModeMissionResponse(nullptr) {}
+  ~ModeMissionResponse() override;
+  explicit constexpr ModeMissionResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeMissionResponse(const ModeMissionResponse& from);
+  ModeMissionResponse(ModeMissionResponse&& from) noexcept
+    : ModeMissionResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeMissionResponse& operator=(const ModeMissionResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeMissionResponse& operator=(ModeMissionResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeMissionResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeMissionResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeMissionResponse*>(
+               &_ModeMissionResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    29;
+
+  friend void swap(ModeMissionResponse& a, ModeMissionResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeMissionResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeMissionResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeMissionResponse* New() const final {
+    return new ModeMissionResponse();
+  }
+
+  ModeMissionResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeMissionResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeMissionResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeMissionResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeMissionResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeMissionResponse";
+  }
+  protected:
+  explicit ModeMissionResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeMissionResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeReturnToLaunchRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeReturnToLaunchRequest) */ {
+ public:
+  inline ModeReturnToLaunchRequest() : ModeReturnToLaunchRequest(nullptr) {}
+  ~ModeReturnToLaunchRequest() override;
+  explicit constexpr ModeReturnToLaunchRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeReturnToLaunchRequest(const ModeReturnToLaunchRequest& from);
+  ModeReturnToLaunchRequest(ModeReturnToLaunchRequest&& from) noexcept
+    : ModeReturnToLaunchRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeReturnToLaunchRequest& operator=(const ModeReturnToLaunchRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeReturnToLaunchRequest& operator=(ModeReturnToLaunchRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeReturnToLaunchRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeReturnToLaunchRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeReturnToLaunchRequest*>(
+               &_ModeReturnToLaunchRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    30;
+
+  friend void swap(ModeReturnToLaunchRequest& a, ModeReturnToLaunchRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeReturnToLaunchRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeReturnToLaunchRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeReturnToLaunchRequest* New() const final {
+    return new ModeReturnToLaunchRequest();
+  }
+
+  ModeReturnToLaunchRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeReturnToLaunchRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeReturnToLaunchRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeReturnToLaunchRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeReturnToLaunchRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeReturnToLaunchRequest";
+  }
+  protected:
+  explicit ModeReturnToLaunchRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeReturnToLaunchResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeReturnToLaunchResponse) */ {
+ public:
+  inline ModeReturnToLaunchResponse() : ModeReturnToLaunchResponse(nullptr) {}
+  ~ModeReturnToLaunchResponse() override;
+  explicit constexpr ModeReturnToLaunchResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeReturnToLaunchResponse(const ModeReturnToLaunchResponse& from);
+  ModeReturnToLaunchResponse(ModeReturnToLaunchResponse&& from) noexcept
+    : ModeReturnToLaunchResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeReturnToLaunchResponse& operator=(const ModeReturnToLaunchResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeReturnToLaunchResponse& operator=(ModeReturnToLaunchResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeReturnToLaunchResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeReturnToLaunchResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeReturnToLaunchResponse*>(
+               &_ModeReturnToLaunchResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    31;
+
+  friend void swap(ModeReturnToLaunchResponse& a, ModeReturnToLaunchResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeReturnToLaunchResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeReturnToLaunchResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeReturnToLaunchResponse* New() const final {
+    return new ModeReturnToLaunchResponse();
+  }
+
+  ModeReturnToLaunchResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeReturnToLaunchResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeReturnToLaunchResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeReturnToLaunchResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeReturnToLaunchResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeReturnToLaunchResponse";
+  }
+  protected:
+  explicit ModeReturnToLaunchResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeLandRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeLandRequest) */ {
+ public:
+  inline ModeLandRequest() : ModeLandRequest(nullptr) {}
+  ~ModeLandRequest() override;
+  explicit constexpr ModeLandRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeLandRequest(const ModeLandRequest& from);
+  ModeLandRequest(ModeLandRequest&& from) noexcept
+    : ModeLandRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeLandRequest& operator=(const ModeLandRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeLandRequest& operator=(ModeLandRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeLandRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeLandRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeLandRequest*>(
+               &_ModeLandRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    32;
+
+  friend void swap(ModeLandRequest& a, ModeLandRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeLandRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeLandRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeLandRequest* New() const final {
+    return new ModeLandRequest();
+  }
+
+  ModeLandRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeLandRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeLandRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeLandRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeLandRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeLandRequest";
+  }
+  protected:
+  explicit ModeLandRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeLandRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeLandResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeLandResponse) */ {
+ public:
+  inline ModeLandResponse() : ModeLandResponse(nullptr) {}
+  ~ModeLandResponse() override;
+  explicit constexpr ModeLandResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeLandResponse(const ModeLandResponse& from);
+  ModeLandResponse(ModeLandResponse&& from) noexcept
+    : ModeLandResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeLandResponse& operator=(const ModeLandResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeLandResponse& operator=(ModeLandResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeLandResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeLandResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeLandResponse*>(
+               &_ModeLandResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    33;
+
+  friend void swap(ModeLandResponse& a, ModeLandResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeLandResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeLandResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeLandResponse* New() const final {
+    return new ModeLandResponse();
+  }
+
+  ModeLandResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeLandResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeLandResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeLandResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeLandResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeLandResponse";
+  }
+  protected:
+  explicit ModeLandResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeLandResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeOffboardRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeOffboardRequest) */ {
+ public:
+  inline ModeOffboardRequest() : ModeOffboardRequest(nullptr) {}
+  ~ModeOffboardRequest() override;
+  explicit constexpr ModeOffboardRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeOffboardRequest(const ModeOffboardRequest& from);
+  ModeOffboardRequest(ModeOffboardRequest&& from) noexcept
+    : ModeOffboardRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeOffboardRequest& operator=(const ModeOffboardRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeOffboardRequest& operator=(ModeOffboardRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeOffboardRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeOffboardRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeOffboardRequest*>(
+               &_ModeOffboardRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    34;
+
+  friend void swap(ModeOffboardRequest& a, ModeOffboardRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeOffboardRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeOffboardRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeOffboardRequest* New() const final {
+    return new ModeOffboardRequest();
+  }
+
+  ModeOffboardRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeOffboardRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeOffboardRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeOffboardRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeOffboardRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeOffboardRequest";
+  }
+  protected:
+  explicit ModeOffboardRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeOffboardRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeOffboardResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeOffboardResponse) */ {
+ public:
+  inline ModeOffboardResponse() : ModeOffboardResponse(nullptr) {}
+  ~ModeOffboardResponse() override;
+  explicit constexpr ModeOffboardResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeOffboardResponse(const ModeOffboardResponse& from);
+  ModeOffboardResponse(ModeOffboardResponse&& from) noexcept
+    : ModeOffboardResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeOffboardResponse& operator=(const ModeOffboardResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeOffboardResponse& operator=(ModeOffboardResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeOffboardResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeOffboardResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeOffboardResponse*>(
+               &_ModeOffboardResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    35;
+
+  friend void swap(ModeOffboardResponse& a, ModeOffboardResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeOffboardResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeOffboardResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeOffboardResponse* New() const final {
+    return new ModeOffboardResponse();
+  }
+
+  ModeOffboardResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeOffboardResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeOffboardResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeOffboardResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeOffboardResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeOffboardResponse";
+  }
+  protected:
+  explicit ModeOffboardResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeOffboardResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeFollowMeRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeFollowMeRequest) */ {
+ public:
+  inline ModeFollowMeRequest() : ModeFollowMeRequest(nullptr) {}
+  ~ModeFollowMeRequest() override;
+  explicit constexpr ModeFollowMeRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeFollowMeRequest(const ModeFollowMeRequest& from);
+  ModeFollowMeRequest(ModeFollowMeRequest&& from) noexcept
+    : ModeFollowMeRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeFollowMeRequest& operator=(const ModeFollowMeRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeFollowMeRequest& operator=(ModeFollowMeRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeFollowMeRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeFollowMeRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeFollowMeRequest*>(
+               &_ModeFollowMeRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    36;
+
+  friend void swap(ModeFollowMeRequest& a, ModeFollowMeRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeFollowMeRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeFollowMeRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeFollowMeRequest* New() const final {
+    return new ModeFollowMeRequest();
+  }
+
+  ModeFollowMeRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeFollowMeRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeFollowMeRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeFollowMeRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeFollowMeRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeFollowMeRequest";
+  }
+  protected:
+  explicit ModeFollowMeRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeFollowMeRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeFollowMeResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeFollowMeResponse) */ {
+ public:
+  inline ModeFollowMeResponse() : ModeFollowMeResponse(nullptr) {}
+  ~ModeFollowMeResponse() override;
+  explicit constexpr ModeFollowMeResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeFollowMeResponse(const ModeFollowMeResponse& from);
+  ModeFollowMeResponse(ModeFollowMeResponse&& from) noexcept
+    : ModeFollowMeResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeFollowMeResponse& operator=(const ModeFollowMeResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeFollowMeResponse& operator=(ModeFollowMeResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeFollowMeResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeFollowMeResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeFollowMeResponse*>(
+               &_ModeFollowMeResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    37;
+
+  friend void swap(ModeFollowMeResponse& a, ModeFollowMeResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeFollowMeResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeFollowMeResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeFollowMeResponse* New() const final {
+    return new ModeFollowMeResponse();
+  }
+
+  ModeFollowMeResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeFollowMeResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeFollowMeResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeFollowMeResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeFollowMeResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeFollowMeResponse";
+  }
+  protected:
+  explicit ModeFollowMeResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeFollowMeResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeManualRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeManualRequest) */ {
+ public:
+  inline ModeManualRequest() : ModeManualRequest(nullptr) {}
+  ~ModeManualRequest() override;
+  explicit constexpr ModeManualRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeManualRequest(const ModeManualRequest& from);
+  ModeManualRequest(ModeManualRequest&& from) noexcept
+    : ModeManualRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeManualRequest& operator=(const ModeManualRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeManualRequest& operator=(ModeManualRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeManualRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeManualRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeManualRequest*>(
+               &_ModeManualRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    38;
+
+  friend void swap(ModeManualRequest& a, ModeManualRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeManualRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeManualRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeManualRequest* New() const final {
+    return new ModeManualRequest();
+  }
+
+  ModeManualRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeManualRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeManualRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeManualRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeManualRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeManualRequest";
+  }
+  protected:
+  explicit ModeManualRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeManualRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeManualResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeManualResponse) */ {
+ public:
+  inline ModeManualResponse() : ModeManualResponse(nullptr) {}
+  ~ModeManualResponse() override;
+  explicit constexpr ModeManualResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeManualResponse(const ModeManualResponse& from);
+  ModeManualResponse(ModeManualResponse&& from) noexcept
+    : ModeManualResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeManualResponse& operator=(const ModeManualResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeManualResponse& operator=(ModeManualResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeManualResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeManualResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeManualResponse*>(
+               &_ModeManualResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    39;
+
+  friend void swap(ModeManualResponse& a, ModeManualResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeManualResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeManualResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeManualResponse* New() const final {
+    return new ModeManualResponse();
+  }
+
+  ModeManualResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeManualResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeManualResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeManualResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeManualResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeManualResponse";
+  }
+  protected:
+  explicit ModeManualResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeManualResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeAltitudeControlRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeAltitudeControlRequest) */ {
+ public:
+  inline ModeAltitudeControlRequest() : ModeAltitudeControlRequest(nullptr) {}
+  ~ModeAltitudeControlRequest() override;
+  explicit constexpr ModeAltitudeControlRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeAltitudeControlRequest(const ModeAltitudeControlRequest& from);
+  ModeAltitudeControlRequest(ModeAltitudeControlRequest&& from) noexcept
+    : ModeAltitudeControlRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeAltitudeControlRequest& operator=(const ModeAltitudeControlRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeAltitudeControlRequest& operator=(ModeAltitudeControlRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeAltitudeControlRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeAltitudeControlRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeAltitudeControlRequest*>(
+               &_ModeAltitudeControlRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    40;
+
+  friend void swap(ModeAltitudeControlRequest& a, ModeAltitudeControlRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeAltitudeControlRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeAltitudeControlRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeAltitudeControlRequest* New() const final {
+    return new ModeAltitudeControlRequest();
+  }
+
+  ModeAltitudeControlRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeAltitudeControlRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeAltitudeControlRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeAltitudeControlRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeAltitudeControlRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeAltitudeControlRequest";
+  }
+  protected:
+  explicit ModeAltitudeControlRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeAltitudeControlRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeAltitudeControlResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeAltitudeControlResponse) */ {
+ public:
+  inline ModeAltitudeControlResponse() : ModeAltitudeControlResponse(nullptr) {}
+  ~ModeAltitudeControlResponse() override;
+  explicit constexpr ModeAltitudeControlResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeAltitudeControlResponse(const ModeAltitudeControlResponse& from);
+  ModeAltitudeControlResponse(ModeAltitudeControlResponse&& from) noexcept
+    : ModeAltitudeControlResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeAltitudeControlResponse& operator=(const ModeAltitudeControlResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeAltitudeControlResponse& operator=(ModeAltitudeControlResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeAltitudeControlResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeAltitudeControlResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeAltitudeControlResponse*>(
+               &_ModeAltitudeControlResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    41;
+
+  friend void swap(ModeAltitudeControlResponse& a, ModeAltitudeControlResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeAltitudeControlResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeAltitudeControlResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeAltitudeControlResponse* New() const final {
+    return new ModeAltitudeControlResponse();
+  }
+
+  ModeAltitudeControlResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeAltitudeControlResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeAltitudeControlResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeAltitudeControlResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeAltitudeControlResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeAltitudeControlResponse";
+  }
+  protected:
+  explicit ModeAltitudeControlResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeAltitudeControlResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModePositionControlRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModePositionControlRequest) */ {
+ public:
+  inline ModePositionControlRequest() : ModePositionControlRequest(nullptr) {}
+  ~ModePositionControlRequest() override;
+  explicit constexpr ModePositionControlRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModePositionControlRequest(const ModePositionControlRequest& from);
+  ModePositionControlRequest(ModePositionControlRequest&& from) noexcept
+    : ModePositionControlRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModePositionControlRequest& operator=(const ModePositionControlRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModePositionControlRequest& operator=(ModePositionControlRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModePositionControlRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModePositionControlRequest* internal_default_instance() {
+    return reinterpret_cast<const ModePositionControlRequest*>(
+               &_ModePositionControlRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    42;
+
+  friend void swap(ModePositionControlRequest& a, ModePositionControlRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModePositionControlRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModePositionControlRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModePositionControlRequest* New() const final {
+    return new ModePositionControlRequest();
+  }
+
+  ModePositionControlRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModePositionControlRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModePositionControlRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModePositionControlRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModePositionControlRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModePositionControlRequest";
+  }
+  protected:
+  explicit ModePositionControlRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModePositionControlRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModePositionControlResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModePositionControlResponse) */ {
+ public:
+  inline ModePositionControlResponse() : ModePositionControlResponse(nullptr) {}
+  ~ModePositionControlResponse() override;
+  explicit constexpr ModePositionControlResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModePositionControlResponse(const ModePositionControlResponse& from);
+  ModePositionControlResponse(ModePositionControlResponse&& from) noexcept
+    : ModePositionControlResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModePositionControlResponse& operator=(const ModePositionControlResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModePositionControlResponse& operator=(ModePositionControlResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModePositionControlResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModePositionControlResponse* internal_default_instance() {
+    return reinterpret_cast<const ModePositionControlResponse*>(
+               &_ModePositionControlResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    43;
+
+  friend void swap(ModePositionControlResponse& a, ModePositionControlResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModePositionControlResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModePositionControlResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModePositionControlResponse* New() const final {
+    return new ModePositionControlResponse();
+  }
+
+  ModePositionControlResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModePositionControlResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModePositionControlResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModePositionControlResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModePositionControlResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModePositionControlResponse";
+  }
+  protected:
+  explicit ModePositionControlResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModePositionControlResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeAcroRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeAcroRequest) */ {
+ public:
+  inline ModeAcroRequest() : ModeAcroRequest(nullptr) {}
+  ~ModeAcroRequest() override;
+  explicit constexpr ModeAcroRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeAcroRequest(const ModeAcroRequest& from);
+  ModeAcroRequest(ModeAcroRequest&& from) noexcept
+    : ModeAcroRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeAcroRequest& operator=(const ModeAcroRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeAcroRequest& operator=(ModeAcroRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeAcroRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeAcroRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeAcroRequest*>(
+               &_ModeAcroRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    44;
+
+  friend void swap(ModeAcroRequest& a, ModeAcroRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeAcroRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeAcroRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeAcroRequest* New() const final {
+    return new ModeAcroRequest();
+  }
+
+  ModeAcroRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeAcroRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeAcroRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeAcroRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeAcroRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeAcroRequest";
+  }
+  protected:
+  explicit ModeAcroRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeAcroRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeAcroResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeAcroResponse) */ {
+ public:
+  inline ModeAcroResponse() : ModeAcroResponse(nullptr) {}
+  ~ModeAcroResponse() override;
+  explicit constexpr ModeAcroResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeAcroResponse(const ModeAcroResponse& from);
+  ModeAcroResponse(ModeAcroResponse&& from) noexcept
+    : ModeAcroResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeAcroResponse& operator=(const ModeAcroResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeAcroResponse& operator=(ModeAcroResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeAcroResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeAcroResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeAcroResponse*>(
+               &_ModeAcroResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    45;
+
+  friend void swap(ModeAcroResponse& a, ModeAcroResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeAcroResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeAcroResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeAcroResponse* New() const final {
+    return new ModeAcroResponse();
+  }
+
+  ModeAcroResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeAcroResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeAcroResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeAcroResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeAcroResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeAcroResponse";
+  }
+  protected:
+  explicit ModeAcroResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeAcroResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeStabilizedRequest final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeStabilizedRequest) */ {
+ public:
+  inline ModeStabilizedRequest() : ModeStabilizedRequest(nullptr) {}
+  ~ModeStabilizedRequest() override;
+  explicit constexpr ModeStabilizedRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeStabilizedRequest(const ModeStabilizedRequest& from);
+  ModeStabilizedRequest(ModeStabilizedRequest&& from) noexcept
+    : ModeStabilizedRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeStabilizedRequest& operator=(const ModeStabilizedRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeStabilizedRequest& operator=(ModeStabilizedRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeStabilizedRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeStabilizedRequest* internal_default_instance() {
+    return reinterpret_cast<const ModeStabilizedRequest*>(
+               &_ModeStabilizedRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    46;
+
+  friend void swap(ModeStabilizedRequest& a, ModeStabilizedRequest& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeStabilizedRequest* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeStabilizedRequest* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeStabilizedRequest* New() const final {
+    return new ModeStabilizedRequest();
+  }
+
+  ModeStabilizedRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeStabilizedRequest>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeStabilizedRequest& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeStabilizedRequest& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeStabilizedRequest* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeStabilizedRequest";
+  }
+  protected:
+  explicit ModeStabilizedRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeStabilizedRequest)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ModeStabilizedResponse final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.ModeStabilizedResponse) */ {
+ public:
+  inline ModeStabilizedResponse() : ModeStabilizedResponse(nullptr) {}
+  ~ModeStabilizedResponse() override;
+  explicit constexpr ModeStabilizedResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ModeStabilizedResponse(const ModeStabilizedResponse& from);
+  ModeStabilizedResponse(ModeStabilizedResponse&& from) noexcept
+    : ModeStabilizedResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline ModeStabilizedResponse& operator=(const ModeStabilizedResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ModeStabilizedResponse& operator=(ModeStabilizedResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ModeStabilizedResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ModeStabilizedResponse* internal_default_instance() {
+    return reinterpret_cast<const ModeStabilizedResponse*>(
+               &_ModeStabilizedResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    47;
+
+  friend void swap(ModeStabilizedResponse& a, ModeStabilizedResponse& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ModeStabilizedResponse* other) {
+    if (other == this) return;
+    if (GetOwningArena() == other->GetOwningArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ModeStabilizedResponse* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ModeStabilizedResponse* New() const final {
+    return new ModeStabilizedResponse();
+  }
+
+  ModeStabilizedResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ModeStabilizedResponse>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ModeStabilizedResponse& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const ModeStabilizedResponse& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to, const ::PROTOBUF_NAMESPACE_ID::Message&from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ModeStabilizedResponse* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "mavsdk.rpc.action.ModeStabilizedResponse";
+  }
+  protected:
+  explicit ModeStabilizedResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  private:
+  bool _internal_has_action_result() const;
+  public:
+  void clear_action_result();
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_MUST_USE_RESULT ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result);
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+  public:
+  void unsafe_arena_set_allocated_action_result(
+      ::mavsdk::rpc::action::ActionResult* action_result);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.ModeStabilizedResponse)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::mavsdk::rpc::action::ActionResult* action_result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
 class SetActuatorRequest final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.SetActuatorRequest) */ {
  public:
@@ -3759,7 +7143,7 @@ class SetActuatorRequest final :
                &_SetActuatorRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    48;
 
   friend void swap(SetActuatorRequest& a, SetActuatorRequest& b) {
     a.Swap(&b);
@@ -3909,7 +7293,7 @@ class SetActuatorResponse final :
                &_SetActuatorResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    49;
 
   friend void swap(SetActuatorResponse& a, SetActuatorResponse& b) {
     a.Swap(&b);
@@ -4057,7 +7441,7 @@ class TransitionToFixedwingRequest final :
                &_TransitionToFixedwingRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    50;
 
   friend void swap(TransitionToFixedwingRequest& a, TransitionToFixedwingRequest& b) {
     a.Swap(&b);
@@ -4183,7 +7567,7 @@ class TransitionToFixedwingResponse final :
                &_TransitionToFixedwingResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    51;
 
   friend void swap(TransitionToFixedwingResponse& a, TransitionToFixedwingResponse& b) {
     a.Swap(&b);
@@ -4331,7 +7715,7 @@ class TransitionToMulticopterRequest final :
                &_TransitionToMulticopterRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    52;
 
   friend void swap(TransitionToMulticopterRequest& a, TransitionToMulticopterRequest& b) {
     a.Swap(&b);
@@ -4457,7 +7841,7 @@ class TransitionToMulticopterResponse final :
                &_TransitionToMulticopterResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    53;
 
   friend void swap(TransitionToMulticopterResponse& a, TransitionToMulticopterResponse& b) {
     a.Swap(&b);
@@ -4605,7 +7989,7 @@ class GetTakeoffAltitudeRequest final :
                &_GetTakeoffAltitudeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    54;
 
   friend void swap(GetTakeoffAltitudeRequest& a, GetTakeoffAltitudeRequest& b) {
     a.Swap(&b);
@@ -4731,7 +8115,7 @@ class GetTakeoffAltitudeResponse final :
                &_GetTakeoffAltitudeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    55;
 
   friend void swap(GetTakeoffAltitudeResponse& a, GetTakeoffAltitudeResponse& b) {
     a.Swap(&b);
@@ -4890,7 +8274,7 @@ class SetTakeoffAltitudeRequest final :
                &_SetTakeoffAltitudeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    56;
 
   friend void swap(SetTakeoffAltitudeRequest& a, SetTakeoffAltitudeRequest& b) {
     a.Swap(&b);
@@ -5029,7 +8413,7 @@ class SetTakeoffAltitudeResponse final :
                &_SetTakeoffAltitudeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    57;
 
   friend void swap(SetTakeoffAltitudeResponse& a, SetTakeoffAltitudeResponse& b) {
     a.Swap(&b);
@@ -5177,7 +8561,7 @@ class GetMaximumSpeedRequest final :
                &_GetMaximumSpeedRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    58;
 
   friend void swap(GetMaximumSpeedRequest& a, GetMaximumSpeedRequest& b) {
     a.Swap(&b);
@@ -5303,7 +8687,7 @@ class GetMaximumSpeedResponse final :
                &_GetMaximumSpeedResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    59;
 
   friend void swap(GetMaximumSpeedResponse& a, GetMaximumSpeedResponse& b) {
     a.Swap(&b);
@@ -5462,7 +8846,7 @@ class SetMaximumSpeedRequest final :
                &_SetMaximumSpeedRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    60;
 
   friend void swap(SetMaximumSpeedRequest& a, SetMaximumSpeedRequest& b) {
     a.Swap(&b);
@@ -5601,7 +8985,7 @@ class SetMaximumSpeedResponse final :
                &_SetMaximumSpeedResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    61;
 
   friend void swap(SetMaximumSpeedResponse& a, SetMaximumSpeedResponse& b) {
     a.Swap(&b);
@@ -5749,7 +9133,7 @@ class GetReturnToLaunchAltitudeRequest final :
                &_GetReturnToLaunchAltitudeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    62;
 
   friend void swap(GetReturnToLaunchAltitudeRequest& a, GetReturnToLaunchAltitudeRequest& b) {
     a.Swap(&b);
@@ -5875,7 +9259,7 @@ class GetReturnToLaunchAltitudeResponse final :
                &_GetReturnToLaunchAltitudeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    63;
 
   friend void swap(GetReturnToLaunchAltitudeResponse& a, GetReturnToLaunchAltitudeResponse& b) {
     a.Swap(&b);
@@ -6034,7 +9418,7 @@ class SetReturnToLaunchAltitudeRequest final :
                &_SetReturnToLaunchAltitudeRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    64;
 
   friend void swap(SetReturnToLaunchAltitudeRequest& a, SetReturnToLaunchAltitudeRequest& b) {
     a.Swap(&b);
@@ -6173,7 +9557,7 @@ class SetReturnToLaunchAltitudeResponse final :
                &_SetReturnToLaunchAltitudeResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    65;
 
   friend void swap(SetReturnToLaunchAltitudeResponse& a, SetReturnToLaunchAltitudeResponse& b) {
     a.Swap(&b);
@@ -6321,7 +9705,7 @@ class SetCurrentSpeedRequest final :
                &_SetCurrentSpeedRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    66;
 
   friend void swap(SetCurrentSpeedRequest& a, SetCurrentSpeedRequest& b) {
     a.Swap(&b);
@@ -6460,7 +9844,7 @@ class SetCurrentSpeedResponse final :
                &_SetCurrentSpeedResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    67;
 
   friend void swap(SetCurrentSpeedResponse& a, SetCurrentSpeedResponse& b) {
     a.Swap(&b);
@@ -6608,7 +9992,7 @@ class ActionResult final :
                &_ActionResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    68;
 
   friend void swap(ActionResult& a, ActionResult& b) {
     a.Swap(&b);
@@ -8154,6 +11538,1182 @@ inline void HoldResponse::set_allocated_action_result(::mavsdk::rpc::action::Act
 
 // -------------------------------------------------------------------
 
+// ModeTakeoffRequest
+
+// -------------------------------------------------------------------
+
+// ModeTakeoffResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeTakeoffResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeTakeoffResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeTakeoffResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeTakeoffResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeTakeoffResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeTakeoffResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeTakeoffResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeTakeoffResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeTakeoffResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeTakeoffResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeTakeoffResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeTakeoffResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeTakeoffResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeTakeoffResponse.action_result)
+  return _msg;
+}
+inline void ModeTakeoffResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeTakeoffResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeHoldRequest
+
+// -------------------------------------------------------------------
+
+// ModeHoldResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeHoldResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeHoldResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeHoldResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeHoldResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeHoldResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeHoldResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeHoldResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeHoldResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeHoldResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeHoldResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeHoldResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeHoldResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeHoldResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeHoldResponse.action_result)
+  return _msg;
+}
+inline void ModeHoldResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeHoldResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeMissionRequest
+
+// -------------------------------------------------------------------
+
+// ModeMissionResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeMissionResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeMissionResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeMissionResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeMissionResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeMissionResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeMissionResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeMissionResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeMissionResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeMissionResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeMissionResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeMissionResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeMissionResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeMissionResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeMissionResponse.action_result)
+  return _msg;
+}
+inline void ModeMissionResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeMissionResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeReturnToLaunchRequest
+
+// -------------------------------------------------------------------
+
+// ModeReturnToLaunchResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeReturnToLaunchResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeReturnToLaunchResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeReturnToLaunchResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeReturnToLaunchResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeReturnToLaunchResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeReturnToLaunchResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeReturnToLaunchResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeReturnToLaunchResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeReturnToLaunchResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeReturnToLaunchResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeReturnToLaunchResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeReturnToLaunchResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeReturnToLaunchResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeReturnToLaunchResponse.action_result)
+  return _msg;
+}
+inline void ModeReturnToLaunchResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeReturnToLaunchResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeLandRequest
+
+// -------------------------------------------------------------------
+
+// ModeLandResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeLandResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeLandResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeLandResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeLandResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeLandResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeLandResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeLandResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeLandResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeLandResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeLandResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeLandResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeLandResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeLandResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeLandResponse.action_result)
+  return _msg;
+}
+inline void ModeLandResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeLandResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeOffboardRequest
+
+// -------------------------------------------------------------------
+
+// ModeOffboardResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeOffboardResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeOffboardResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeOffboardResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeOffboardResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeOffboardResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeOffboardResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeOffboardResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeOffboardResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeOffboardResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeOffboardResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeOffboardResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeOffboardResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeOffboardResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeOffboardResponse.action_result)
+  return _msg;
+}
+inline void ModeOffboardResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeOffboardResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeFollowMeRequest
+
+// -------------------------------------------------------------------
+
+// ModeFollowMeResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeFollowMeResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeFollowMeResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeFollowMeResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeFollowMeResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeFollowMeResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeFollowMeResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeFollowMeResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeFollowMeResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeFollowMeResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeFollowMeResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeFollowMeResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeFollowMeResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeFollowMeResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeFollowMeResponse.action_result)
+  return _msg;
+}
+inline void ModeFollowMeResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeFollowMeResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeManualRequest
+
+// -------------------------------------------------------------------
+
+// ModeManualResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeManualResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeManualResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeManualResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeManualResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeManualResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeManualResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeManualResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeManualResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeManualResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeManualResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeManualResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeManualResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeManualResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeManualResponse.action_result)
+  return _msg;
+}
+inline void ModeManualResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeManualResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeAltitudeControlRequest
+
+// -------------------------------------------------------------------
+
+// ModeAltitudeControlResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeAltitudeControlResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeAltitudeControlResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeAltitudeControlResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeAltitudeControlResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeAltitudeControlResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeAltitudeControlResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeAltitudeControlResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeAltitudeControlResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAltitudeControlResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAltitudeControlResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeAltitudeControlResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAltitudeControlResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAltitudeControlResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeAltitudeControlResponse.action_result)
+  return _msg;
+}
+inline void ModeAltitudeControlResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeAltitudeControlResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModePositionControlRequest
+
+// -------------------------------------------------------------------
+
+// ModePositionControlResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModePositionControlResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModePositionControlResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModePositionControlResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModePositionControlResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModePositionControlResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModePositionControlResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModePositionControlResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModePositionControlResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModePositionControlResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModePositionControlResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModePositionControlResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModePositionControlResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModePositionControlResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModePositionControlResponse.action_result)
+  return _msg;
+}
+inline void ModePositionControlResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModePositionControlResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeAcroRequest
+
+// -------------------------------------------------------------------
+
+// ModeAcroResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeAcroResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeAcroResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeAcroResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeAcroResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeAcroResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeAcroResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeAcroResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeAcroResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAcroResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAcroResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeAcroResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAcroResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeAcroResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeAcroResponse.action_result)
+  return _msg;
+}
+inline void ModeAcroResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeAcroResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
+// ModeStabilizedRequest
+
+// -------------------------------------------------------------------
+
+// ModeStabilizedResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool ModeStabilizedResponse::_internal_has_action_result() const {
+  return this != internal_default_instance() && action_result_ != nullptr;
+}
+inline bool ModeStabilizedResponse::has_action_result() const {
+  return _internal_has_action_result();
+}
+inline void ModeStabilizedResponse::clear_action_result() {
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeStabilizedResponse::_internal_action_result() const {
+  const ::mavsdk::rpc::action::ActionResult* p = action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(
+      ::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& ModeStabilizedResponse::action_result() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.ModeStabilizedResponse.action_result)
+  return _internal_action_result();
+}
+inline void ModeStabilizedResponse::unsafe_arena_set_allocated_action_result(
+    ::mavsdk::rpc::action::ActionResult* action_result) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(action_result_);
+  }
+  action_result_ = action_result;
+  if (action_result) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.ModeStabilizedResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeStabilizedResponse::release_action_result() {
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeStabilizedResponse::unsafe_arena_release_action_result() {
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.ModeStabilizedResponse.action_result)
+  
+  ::mavsdk::rpc::action::ActionResult* temp = action_result_;
+  action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeStabilizedResponse::_internal_mutable_action_result() {
+  
+  if (action_result_ == nullptr) {
+    auto* p = CreateMaybeMessage<::mavsdk::rpc::action::ActionResult>(GetArenaForAllocation());
+    action_result_ = p;
+  }
+  return action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* ModeStabilizedResponse::mutable_action_result() {
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.ModeStabilizedResponse.action_result)
+  return _msg;
+}
+inline void ModeStabilizedResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* action_result) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete action_result_;
+  }
+  if (action_result) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::mavsdk::rpc::action::ActionResult>::GetOwningArena(action_result);
+    if (message_arena != submessage_arena) {
+      action_result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, action_result, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  action_result_ = action_result;
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.ModeStabilizedResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
 // SetActuatorRequest
 
 // int32 index = 1;
@@ -9385,6 +13945,54 @@ inline void ActionResult::set_allocated_result_str(std::string* result_str) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

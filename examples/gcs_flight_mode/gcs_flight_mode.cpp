@@ -78,7 +78,7 @@ int main(int argc, char** argv)
     // Instantiate plugins.
     auto telemetry = Telemetry{system};
 
-        while (true) {
+    while (true) {
         telemetry.subscribe_vehicle_type([](Telemetry::VehicleType vehicle_type) {
             if (_vehicle_type != vehicle_type) {
                 _vehicle_type = vehicle_type; // Save updated type.

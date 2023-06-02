@@ -191,6 +191,126 @@ Action::Result ActionImpl::hold() const
     return fut.get();
 }
 
+Action::Result ActionImpl::mode_takeoff() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_takeoff_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_hold() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_hold_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_mission() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_mission_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_return_to_launch() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_return_to_launch_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_land() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_land_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_offboard() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_offboard_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_follow_me() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_follow_me_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_manual() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_manual_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_altitude_control() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_altitude_control_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_position_control() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_position_control_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_acro() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_acro_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
+Action::Result ActionImpl::mode_stabilized() const
+{
+    auto prom = std::promise<Action::Result>();
+    auto fut = prom.get_future();
+
+    mode_stabilized_async([&prom](Action::Result result) { prom.set_value(result); });
+
+    return fut.get();
+}
+
 Action::Result ActionImpl::set_actuator(const int index, const float value)
 {
     auto prom = std::promise<Action::Result>();
@@ -452,6 +572,103 @@ void ActionImpl::hold_async(const Action::ResultCallback& callback) const
 {
     _parent->set_flight_mode_async(
         SystemImpl::FlightMode::Hold, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_takeoff_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Takeoff, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_hold_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Hold, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+
+void ActionImpl::mode_mission_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Mission, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_return_to_launch_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::ReturnToLaunch, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_land_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Land, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_offboard_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Offboard, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_follow_me_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::FollowMe, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_manual_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Manual, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_altitude_control_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Altctl, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_position_control_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Posctl, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_acro_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Acro, [this, callback](MavlinkCommandSender::Result result, float) {
+            command_result_callback(result, callback);
+        });
+}
+
+void ActionImpl::mode_stabilized_async(const Action::ResultCallback& callback) const
+{
+    _parent->set_flight_mode_async(
+        SystemImpl::FlightMode::Stabilized, [this, callback](MavlinkCommandSender::Result result, float) {
             command_result_callback(result, callback);
         });
 }

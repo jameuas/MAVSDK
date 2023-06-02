@@ -188,6 +188,92 @@ class ActionService final {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::HoldResponse>>(PrepareAsyncHoldRaw(context, request, cq));
     }
     //
+    // Send command to change to Hold flight mode for dev-gcs.
+    virtual ::grpc::Status ModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::mavsdk::rpc::action::ModeTakeoffResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeTakeoffResponse>> AsyncModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeTakeoffResponse>>(AsyncModeTakeoffRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeTakeoffResponse>> PrepareAsyncModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeTakeoffResponse>>(PrepareAsyncModeTakeoffRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::mavsdk::rpc::action::ModeHoldResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeHoldResponse>> AsyncModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeHoldResponse>>(AsyncModeHoldRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeHoldResponse>> PrepareAsyncModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeHoldResponse>>(PrepareAsyncModeHoldRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::mavsdk::rpc::action::ModeMissionResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeMissionResponse>> AsyncModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeMissionResponse>>(AsyncModeMissionRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeMissionResponse>> PrepareAsyncModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeMissionResponse>>(PrepareAsyncModeMissionRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>> AsyncModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>>(AsyncModeReturnToLaunchRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>> PrepareAsyncModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>>(PrepareAsyncModeReturnToLaunchRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::mavsdk::rpc::action::ModeLandResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeLandResponse>> AsyncModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeLandResponse>>(AsyncModeLandRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeLandResponse>> PrepareAsyncModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeLandResponse>>(PrepareAsyncModeLandRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::mavsdk::rpc::action::ModeOffboardResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeOffboardResponse>> AsyncModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeOffboardResponse>>(AsyncModeOffboardRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeOffboardResponse>> PrepareAsyncModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeOffboardResponse>>(PrepareAsyncModeOffboardRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::mavsdk::rpc::action::ModeFollowMeResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeFollowMeResponse>> AsyncModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeFollowMeResponse>>(AsyncModeFollowMeRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeFollowMeResponse>> PrepareAsyncModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeFollowMeResponse>>(PrepareAsyncModeFollowMeRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::mavsdk::rpc::action::ModeManualResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeManualResponse>> AsyncModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeManualResponse>>(AsyncModeManualRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeManualResponse>> PrepareAsyncModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeManualResponse>>(PrepareAsyncModeManualRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAltitudeControlResponse>> AsyncModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAltitudeControlResponse>>(AsyncModeAltitudeControlRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAltitudeControlResponse>> PrepareAsyncModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAltitudeControlResponse>>(PrepareAsyncModeAltitudeControlRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::mavsdk::rpc::action::ModePositionControlResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModePositionControlResponse>> AsyncModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModePositionControlResponse>>(AsyncModePositionControlRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModePositionControlResponse>> PrepareAsyncModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModePositionControlResponse>>(PrepareAsyncModePositionControlRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::mavsdk::rpc::action::ModeAcroResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAcroResponse>> AsyncModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAcroResponse>>(AsyncModeAcroRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAcroResponse>> PrepareAsyncModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAcroResponse>>(PrepareAsyncModeAcroRaw(context, request, cq));
+    }
+    virtual ::grpc::Status ModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::mavsdk::rpc::action::ModeStabilizedResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeStabilizedResponse>> AsyncModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeStabilizedResponse>>(AsyncModeStabilizedRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeStabilizedResponse>> PrepareAsyncModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeStabilizedResponse>>(PrepareAsyncModeStabilizedRaw(context, request, cq));
+    }
+    //
     // Send command to set the value of an actuator.
     virtual ::grpc::Status SetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::mavsdk::rpc::action::SetActuatorResponse* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::SetActuatorResponse>> AsyncSetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::grpc::CompletionQueue* cq) {
@@ -381,6 +467,32 @@ class ActionService final {
       virtual void Hold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest* request, ::mavsdk::rpc::action::HoldResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Hold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest* request, ::mavsdk::rpc::action::HoldResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       //
+      // Send command to change to Hold flight mode for dev-gcs.
+      virtual void ModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest* request, ::mavsdk::rpc::action::ModeTakeoffResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest* request, ::mavsdk::rpc::action::ModeTakeoffResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest* request, ::mavsdk::rpc::action::ModeHoldResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest* request, ::mavsdk::rpc::action::ModeHoldResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest* request, ::mavsdk::rpc::action::ModeMissionResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest* request, ::mavsdk::rpc::action::ModeMissionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest* request, ::mavsdk::rpc::action::ModeLandResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest* request, ::mavsdk::rpc::action::ModeLandResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest* request, ::mavsdk::rpc::action::ModeOffboardResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest* request, ::mavsdk::rpc::action::ModeOffboardResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest* request, ::mavsdk::rpc::action::ModeFollowMeResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest* request, ::mavsdk::rpc::action::ModeFollowMeResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest* request, ::mavsdk::rpc::action::ModeManualResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest* request, ::mavsdk::rpc::action::ModeManualResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest* request, ::mavsdk::rpc::action::ModePositionControlResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest* request, ::mavsdk::rpc::action::ModePositionControlResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest* request, ::mavsdk::rpc::action::ModeAcroResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest* request, ::mavsdk::rpc::action::ModeAcroResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest* request, ::mavsdk::rpc::action::ModeStabilizedResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest* request, ::mavsdk::rpc::action::ModeStabilizedResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      //
       // Send command to set the value of an actuator.
       virtual void SetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest* request, ::mavsdk::rpc::action::SetActuatorResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void SetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest* request, ::mavsdk::rpc::action::SetActuatorResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
@@ -460,6 +572,30 @@ class ActionService final {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::DoOrbitResponse>* PrepareAsyncDoOrbitRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::DoOrbitRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::HoldResponse>* AsyncHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::HoldResponse>* PrepareAsyncHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeTakeoffResponse>* AsyncModeTakeoffRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeTakeoffResponse>* PrepareAsyncModeTakeoffRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeHoldResponse>* AsyncModeHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeHoldResponse>* PrepareAsyncModeHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeMissionResponse>* AsyncModeMissionRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeMissionResponse>* PrepareAsyncModeMissionRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>* AsyncModeReturnToLaunchRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>* PrepareAsyncModeReturnToLaunchRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeLandResponse>* AsyncModeLandRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeLandResponse>* PrepareAsyncModeLandRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeOffboardResponse>* AsyncModeOffboardRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeOffboardResponse>* PrepareAsyncModeOffboardRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeFollowMeResponse>* AsyncModeFollowMeRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeFollowMeResponse>* PrepareAsyncModeFollowMeRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeManualResponse>* AsyncModeManualRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeManualResponse>* PrepareAsyncModeManualRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAltitudeControlResponse>* AsyncModeAltitudeControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAltitudeControlResponse>* PrepareAsyncModeAltitudeControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModePositionControlResponse>* AsyncModePositionControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModePositionControlResponse>* PrepareAsyncModePositionControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAcroResponse>* AsyncModeAcroRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeAcroResponse>* PrepareAsyncModeAcroRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeStabilizedResponse>* AsyncModeStabilizedRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::ModeStabilizedResponse>* PrepareAsyncModeStabilizedRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::SetActuatorResponse>* AsyncSetActuatorRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::SetActuatorResponse>* PrepareAsyncSetActuatorRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::mavsdk::rpc::action::TransitionToFixedwingResponse>* AsyncTransitionToFixedwingRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::TransitionToFixedwingRequest& request, ::grpc::CompletionQueue* cq) = 0;
@@ -568,6 +704,90 @@ class ActionService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::HoldResponse>> PrepareAsyncHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::HoldResponse>>(PrepareAsyncHoldRaw(context, request, cq));
     }
+    ::grpc::Status ModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::mavsdk::rpc::action::ModeTakeoffResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeTakeoffResponse>> AsyncModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeTakeoffResponse>>(AsyncModeTakeoffRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeTakeoffResponse>> PrepareAsyncModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeTakeoffResponse>>(PrepareAsyncModeTakeoffRaw(context, request, cq));
+    }
+    ::grpc::Status ModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::mavsdk::rpc::action::ModeHoldResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeHoldResponse>> AsyncModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeHoldResponse>>(AsyncModeHoldRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeHoldResponse>> PrepareAsyncModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeHoldResponse>>(PrepareAsyncModeHoldRaw(context, request, cq));
+    }
+    ::grpc::Status ModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::mavsdk::rpc::action::ModeMissionResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeMissionResponse>> AsyncModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeMissionResponse>>(AsyncModeMissionRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeMissionResponse>> PrepareAsyncModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeMissionResponse>>(PrepareAsyncModeMissionRaw(context, request, cq));
+    }
+    ::grpc::Status ModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>> AsyncModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>>(AsyncModeReturnToLaunchRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>> PrepareAsyncModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>>(PrepareAsyncModeReturnToLaunchRaw(context, request, cq));
+    }
+    ::grpc::Status ModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::mavsdk::rpc::action::ModeLandResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeLandResponse>> AsyncModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeLandResponse>>(AsyncModeLandRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeLandResponse>> PrepareAsyncModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeLandResponse>>(PrepareAsyncModeLandRaw(context, request, cq));
+    }
+    ::grpc::Status ModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::mavsdk::rpc::action::ModeOffboardResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeOffboardResponse>> AsyncModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeOffboardResponse>>(AsyncModeOffboardRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeOffboardResponse>> PrepareAsyncModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeOffboardResponse>>(PrepareAsyncModeOffboardRaw(context, request, cq));
+    }
+    ::grpc::Status ModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::mavsdk::rpc::action::ModeFollowMeResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeFollowMeResponse>> AsyncModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeFollowMeResponse>>(AsyncModeFollowMeRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeFollowMeResponse>> PrepareAsyncModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeFollowMeResponse>>(PrepareAsyncModeFollowMeRaw(context, request, cq));
+    }
+    ::grpc::Status ModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::mavsdk::rpc::action::ModeManualResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeManualResponse>> AsyncModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeManualResponse>>(AsyncModeManualRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeManualResponse>> PrepareAsyncModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeManualResponse>>(PrepareAsyncModeManualRaw(context, request, cq));
+    }
+    ::grpc::Status ModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAltitudeControlResponse>> AsyncModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAltitudeControlResponse>>(AsyncModeAltitudeControlRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAltitudeControlResponse>> PrepareAsyncModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAltitudeControlResponse>>(PrepareAsyncModeAltitudeControlRaw(context, request, cq));
+    }
+    ::grpc::Status ModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::mavsdk::rpc::action::ModePositionControlResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModePositionControlResponse>> AsyncModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModePositionControlResponse>>(AsyncModePositionControlRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModePositionControlResponse>> PrepareAsyncModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModePositionControlResponse>>(PrepareAsyncModePositionControlRaw(context, request, cq));
+    }
+    ::grpc::Status ModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::mavsdk::rpc::action::ModeAcroResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAcroResponse>> AsyncModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAcroResponse>>(AsyncModeAcroRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAcroResponse>> PrepareAsyncModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAcroResponse>>(PrepareAsyncModeAcroRaw(context, request, cq));
+    }
+    ::grpc::Status ModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::mavsdk::rpc::action::ModeStabilizedResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeStabilizedResponse>> AsyncModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeStabilizedResponse>>(AsyncModeStabilizedRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeStabilizedResponse>> PrepareAsyncModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeStabilizedResponse>>(PrepareAsyncModeStabilizedRaw(context, request, cq));
+    }
     ::grpc::Status SetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::mavsdk::rpc::action::SetActuatorResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::SetActuatorResponse>> AsyncSetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::SetActuatorResponse>>(AsyncSetActuatorRaw(context, request, cq));
@@ -665,6 +885,30 @@ class ActionService final {
       void DoOrbit(::grpc::ClientContext* context, const ::mavsdk::rpc::action::DoOrbitRequest* request, ::mavsdk::rpc::action::DoOrbitResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
       void Hold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest* request, ::mavsdk::rpc::action::HoldResponse* response, std::function<void(::grpc::Status)>) override;
       void Hold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest* request, ::mavsdk::rpc::action::HoldResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest* request, ::mavsdk::rpc::action::ModeTakeoffResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeTakeoff(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest* request, ::mavsdk::rpc::action::ModeTakeoffResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest* request, ::mavsdk::rpc::action::ModeHoldResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeHold(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest* request, ::mavsdk::rpc::action::ModeHoldResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest* request, ::mavsdk::rpc::action::ModeMissionResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeMission(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest* request, ::mavsdk::rpc::action::ModeMissionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeReturnToLaunch(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest* request, ::mavsdk::rpc::action::ModeLandResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeLand(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest* request, ::mavsdk::rpc::action::ModeLandResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest* request, ::mavsdk::rpc::action::ModeOffboardResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeOffboard(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest* request, ::mavsdk::rpc::action::ModeOffboardResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest* request, ::mavsdk::rpc::action::ModeFollowMeResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeFollowMe(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest* request, ::mavsdk::rpc::action::ModeFollowMeResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest* request, ::mavsdk::rpc::action::ModeManualResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeManual(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest* request, ::mavsdk::rpc::action::ModeManualResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeAltitudeControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest* request, ::mavsdk::rpc::action::ModePositionControlResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModePositionControl(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest* request, ::mavsdk::rpc::action::ModePositionControlResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest* request, ::mavsdk::rpc::action::ModeAcroResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeAcro(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest* request, ::mavsdk::rpc::action::ModeAcroResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest* request, ::mavsdk::rpc::action::ModeStabilizedResponse* response, std::function<void(::grpc::Status)>) override;
+      void ModeStabilized(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest* request, ::mavsdk::rpc::action::ModeStabilizedResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
       void SetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest* request, ::mavsdk::rpc::action::SetActuatorResponse* response, std::function<void(::grpc::Status)>) override;
       void SetActuator(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest* request, ::mavsdk::rpc::action::SetActuatorResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
       void TransitionToFixedwing(::grpc::ClientContext* context, const ::mavsdk::rpc::action::TransitionToFixedwingRequest* request, ::mavsdk::rpc::action::TransitionToFixedwingResponse* response, std::function<void(::grpc::Status)>) override;
@@ -720,6 +964,30 @@ class ActionService final {
     ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::DoOrbitResponse>* PrepareAsyncDoOrbitRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::DoOrbitRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::HoldResponse>* AsyncHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::HoldResponse>* PrepareAsyncHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::HoldRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeTakeoffResponse>* AsyncModeTakeoffRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeTakeoffResponse>* PrepareAsyncModeTakeoffRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeHoldResponse>* AsyncModeHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeHoldResponse>* PrepareAsyncModeHoldRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeHoldRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeMissionResponse>* AsyncModeMissionRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeMissionResponse>* PrepareAsyncModeMissionRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeMissionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>* AsyncModeReturnToLaunchRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>* PrepareAsyncModeReturnToLaunchRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeLandResponse>* AsyncModeLandRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeLandResponse>* PrepareAsyncModeLandRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeLandRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeOffboardResponse>* AsyncModeOffboardRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeOffboardResponse>* PrepareAsyncModeOffboardRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeFollowMeResponse>* AsyncModeFollowMeRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeFollowMeResponse>* PrepareAsyncModeFollowMeRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeManualResponse>* AsyncModeManualRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeManualResponse>* PrepareAsyncModeManualRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeManualRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAltitudeControlResponse>* AsyncModeAltitudeControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAltitudeControlResponse>* PrepareAsyncModeAltitudeControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModePositionControlResponse>* AsyncModePositionControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModePositionControlResponse>* PrepareAsyncModePositionControlRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAcroResponse>* AsyncModeAcroRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeAcroResponse>* PrepareAsyncModeAcroRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeAcroRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeStabilizedResponse>* AsyncModeStabilizedRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::ModeStabilizedResponse>* PrepareAsyncModeStabilizedRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::SetActuatorResponse>* AsyncSetActuatorRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::SetActuatorResponse>* PrepareAsyncSetActuatorRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::SetActuatorRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::mavsdk::rpc::action::TransitionToFixedwingResponse>* AsyncTransitionToFixedwingRaw(::grpc::ClientContext* context, const ::mavsdk::rpc::action::TransitionToFixedwingRequest& request, ::grpc::CompletionQueue* cq) override;
@@ -752,6 +1020,18 @@ class ActionService final {
     const ::grpc::internal::RpcMethod rpcmethod_GotoLocation_;
     const ::grpc::internal::RpcMethod rpcmethod_DoOrbit_;
     const ::grpc::internal::RpcMethod rpcmethod_Hold_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeTakeoff_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeHold_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeMission_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeReturnToLaunch_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeLand_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeOffboard_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeFollowMe_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeManual_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeAltitudeControl_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModePositionControl_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeAcro_;
+    const ::grpc::internal::RpcMethod rpcmethod_ModeStabilized_;
     const ::grpc::internal::RpcMethod rpcmethod_SetActuator_;
     const ::grpc::internal::RpcMethod rpcmethod_TransitionToFixedwing_;
     const ::grpc::internal::RpcMethod rpcmethod_TransitionToMulticopter_;
@@ -846,6 +1126,20 @@ class ActionService final {
     // Note: this command is specific to the PX4 Autopilot flight stack as
     // it implies a change to a PX4-specific mode.
     virtual ::grpc::Status Hold(::grpc::ServerContext* context, const ::mavsdk::rpc::action::HoldRequest* request, ::mavsdk::rpc::action::HoldResponse* response);
+    //
+    // Send command to change to Hold flight mode for dev-gcs.
+    virtual ::grpc::Status ModeTakeoff(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest* request, ::mavsdk::rpc::action::ModeTakeoffResponse* response);
+    virtual ::grpc::Status ModeHold(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeHoldRequest* request, ::mavsdk::rpc::action::ModeHoldResponse* response);
+    virtual ::grpc::Status ModeMission(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeMissionRequest* request, ::mavsdk::rpc::action::ModeMissionResponse* response);
+    virtual ::grpc::Status ModeReturnToLaunch(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response);
+    virtual ::grpc::Status ModeLand(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeLandRequest* request, ::mavsdk::rpc::action::ModeLandResponse* response);
+    virtual ::grpc::Status ModeOffboard(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest* request, ::mavsdk::rpc::action::ModeOffboardResponse* response);
+    virtual ::grpc::Status ModeFollowMe(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest* request, ::mavsdk::rpc::action::ModeFollowMeResponse* response);
+    virtual ::grpc::Status ModeManual(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeManualRequest* request, ::mavsdk::rpc::action::ModeManualResponse* response);
+    virtual ::grpc::Status ModeAltitudeControl(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response);
+    virtual ::grpc::Status ModePositionControl(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest* request, ::mavsdk::rpc::action::ModePositionControlResponse* response);
+    virtual ::grpc::Status ModeAcro(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeAcroRequest* request, ::mavsdk::rpc::action::ModeAcroResponse* response);
+    virtual ::grpc::Status ModeStabilized(::grpc::ServerContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest* request, ::mavsdk::rpc::action::ModeStabilizedResponse* response);
     //
     // Send command to set the value of an actuator.
     virtual ::grpc::Status SetActuator(::grpc::ServerContext* context, const ::mavsdk::rpc::action::SetActuatorRequest* request, ::mavsdk::rpc::action::SetActuatorResponse* response);
@@ -1129,12 +1423,252 @@ class ActionService final {
     }
   };
   template <class BaseClass>
+  class WithAsyncMethod_ModeTakeoff : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeTakeoff() {
+      ::grpc::Service::MarkMethodAsync(12);
+    }
+    ~WithAsyncMethod_ModeTakeoff() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeTakeoff(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeTakeoffRequest* /*request*/, ::mavsdk::rpc::action::ModeTakeoffResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeTakeoff(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeTakeoffRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeTakeoffResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(12, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeHold : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeHold() {
+      ::grpc::Service::MarkMethodAsync(13);
+    }
+    ~WithAsyncMethod_ModeHold() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeHold(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeHoldRequest* /*request*/, ::mavsdk::rpc::action::ModeHoldResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeHold(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeHoldRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeHoldResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(13, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeMission : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeMission() {
+      ::grpc::Service::MarkMethodAsync(14);
+    }
+    ~WithAsyncMethod_ModeMission() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeMission(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeMissionRequest* /*request*/, ::mavsdk::rpc::action::ModeMissionResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeMission(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeMissionRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeMissionResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(14, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeReturnToLaunch : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeReturnToLaunch() {
+      ::grpc::Service::MarkMethodAsync(15);
+    }
+    ~WithAsyncMethod_ModeReturnToLaunch() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeReturnToLaunch(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* /*request*/, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeReturnToLaunch(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeReturnToLaunchRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeReturnToLaunchResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(15, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeLand : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeLand() {
+      ::grpc::Service::MarkMethodAsync(16);
+    }
+    ~WithAsyncMethod_ModeLand() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeLand(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeLandRequest* /*request*/, ::mavsdk::rpc::action::ModeLandResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeLand(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeLandRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeLandResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(16, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeOffboard : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeOffboard() {
+      ::grpc::Service::MarkMethodAsync(17);
+    }
+    ~WithAsyncMethod_ModeOffboard() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeOffboard(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeOffboardRequest* /*request*/, ::mavsdk::rpc::action::ModeOffboardResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeOffboard(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeOffboardRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeOffboardResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(17, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeFollowMe : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeFollowMe() {
+      ::grpc::Service::MarkMethodAsync(18);
+    }
+    ~WithAsyncMethod_ModeFollowMe() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeFollowMe(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeFollowMeRequest* /*request*/, ::mavsdk::rpc::action::ModeFollowMeResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeFollowMe(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeFollowMeRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeFollowMeResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(18, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeManual : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeManual() {
+      ::grpc::Service::MarkMethodAsync(19);
+    }
+    ~WithAsyncMethod_ModeManual() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeManual(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeManualRequest* /*request*/, ::mavsdk::rpc::action::ModeManualResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeManual(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeManualRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeManualResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(19, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeAltitudeControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeAltitudeControl() {
+      ::grpc::Service::MarkMethodAsync(20);
+    }
+    ~WithAsyncMethod_ModeAltitudeControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAltitudeControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* /*request*/, ::mavsdk::rpc::action::ModeAltitudeControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeAltitudeControl(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeAltitudeControlRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeAltitudeControlResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(20, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModePositionControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModePositionControl() {
+      ::grpc::Service::MarkMethodAsync(21);
+    }
+    ~WithAsyncMethod_ModePositionControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModePositionControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModePositionControlRequest* /*request*/, ::mavsdk::rpc::action::ModePositionControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModePositionControl(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModePositionControlRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModePositionControlResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(21, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeAcro : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeAcro() {
+      ::grpc::Service::MarkMethodAsync(22);
+    }
+    ~WithAsyncMethod_ModeAcro() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAcro(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAcroRequest* /*request*/, ::mavsdk::rpc::action::ModeAcroResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeAcro(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeAcroRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeAcroResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(22, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_ModeStabilized : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ModeStabilized() {
+      ::grpc::Service::MarkMethodAsync(23);
+    }
+    ~WithAsyncMethod_ModeStabilized() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeStabilized(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeStabilizedRequest* /*request*/, ::mavsdk::rpc::action::ModeStabilizedResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeStabilized(::grpc::ServerContext* context, ::mavsdk::rpc::action::ModeStabilizedRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::ModeStabilizedResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(23, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
   class WithAsyncMethod_SetActuator : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_SetActuator() {
-      ::grpc::Service::MarkMethodAsync(12);
+      ::grpc::Service::MarkMethodAsync(24);
     }
     ~WithAsyncMethod_SetActuator() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1145,7 +1679,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetActuator(::grpc::ServerContext* context, ::mavsdk::rpc::action::SetActuatorRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::SetActuatorResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(12, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(24, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1154,7 +1688,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_TransitionToFixedwing() {
-      ::grpc::Service::MarkMethodAsync(13);
+      ::grpc::Service::MarkMethodAsync(25);
     }
     ~WithAsyncMethod_TransitionToFixedwing() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1165,7 +1699,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestTransitionToFixedwing(::grpc::ServerContext* context, ::mavsdk::rpc::action::TransitionToFixedwingRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::TransitionToFixedwingResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(13, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(25, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1174,7 +1708,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_TransitionToMulticopter() {
-      ::grpc::Service::MarkMethodAsync(14);
+      ::grpc::Service::MarkMethodAsync(26);
     }
     ~WithAsyncMethod_TransitionToMulticopter() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1185,7 +1719,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestTransitionToMulticopter(::grpc::ServerContext* context, ::mavsdk::rpc::action::TransitionToMulticopterRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::TransitionToMulticopterResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(14, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(26, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1194,7 +1728,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_GetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodAsync(15);
+      ::grpc::Service::MarkMethodAsync(27);
     }
     ~WithAsyncMethod_GetTakeoffAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1205,7 +1739,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestGetTakeoffAltitude(::grpc::ServerContext* context, ::mavsdk::rpc::action::GetTakeoffAltitudeRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::GetTakeoffAltitudeResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(15, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(27, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1214,7 +1748,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_SetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodAsync(16);
+      ::grpc::Service::MarkMethodAsync(28);
     }
     ~WithAsyncMethod_SetTakeoffAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1225,7 +1759,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetTakeoffAltitude(::grpc::ServerContext* context, ::mavsdk::rpc::action::SetTakeoffAltitudeRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::SetTakeoffAltitudeResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(16, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(28, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1234,7 +1768,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_GetMaximumSpeed() {
-      ::grpc::Service::MarkMethodAsync(17);
+      ::grpc::Service::MarkMethodAsync(29);
     }
     ~WithAsyncMethod_GetMaximumSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1245,7 +1779,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestGetMaximumSpeed(::grpc::ServerContext* context, ::mavsdk::rpc::action::GetMaximumSpeedRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::GetMaximumSpeedResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(17, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(29, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1254,7 +1788,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_SetMaximumSpeed() {
-      ::grpc::Service::MarkMethodAsync(18);
+      ::grpc::Service::MarkMethodAsync(30);
     }
     ~WithAsyncMethod_SetMaximumSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1265,7 +1799,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetMaximumSpeed(::grpc::ServerContext* context, ::mavsdk::rpc::action::SetMaximumSpeedRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::SetMaximumSpeedResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(18, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(30, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1274,7 +1808,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_GetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodAsync(19);
+      ::grpc::Service::MarkMethodAsync(31);
     }
     ~WithAsyncMethod_GetReturnToLaunchAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1285,7 +1819,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestGetReturnToLaunchAltitude(::grpc::ServerContext* context, ::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(19, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(31, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1294,7 +1828,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_SetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodAsync(20);
+      ::grpc::Service::MarkMethodAsync(32);
     }
     ~WithAsyncMethod_SetReturnToLaunchAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1305,7 +1839,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetReturnToLaunchAltitude(::grpc::ServerContext* context, ::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(20, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(32, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -1314,7 +1848,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithAsyncMethod_SetCurrentSpeed() {
-      ::grpc::Service::MarkMethodAsync(21);
+      ::grpc::Service::MarkMethodAsync(33);
     }
     ~WithAsyncMethod_SetCurrentSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1325,10 +1859,10 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetCurrentSpeed(::grpc::ServerContext* context, ::mavsdk::rpc::action::SetCurrentSpeedRequest* request, ::grpc::ServerAsyncResponseWriter< ::mavsdk::rpc::action::SetCurrentSpeedResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(21, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(33, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
-  typedef WithAsyncMethod_Arm<WithAsyncMethod_Disarm<WithAsyncMethod_Takeoff<WithAsyncMethod_Land<WithAsyncMethod_Reboot<WithAsyncMethod_Shutdown<WithAsyncMethod_Terminate<WithAsyncMethod_Kill<WithAsyncMethod_ReturnToLaunch<WithAsyncMethod_GotoLocation<WithAsyncMethod_DoOrbit<WithAsyncMethod_Hold<WithAsyncMethod_SetActuator<WithAsyncMethod_TransitionToFixedwing<WithAsyncMethod_TransitionToMulticopter<WithAsyncMethod_GetTakeoffAltitude<WithAsyncMethod_SetTakeoffAltitude<WithAsyncMethod_GetMaximumSpeed<WithAsyncMethod_SetMaximumSpeed<WithAsyncMethod_GetReturnToLaunchAltitude<WithAsyncMethod_SetReturnToLaunchAltitude<WithAsyncMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > AsyncService;
+  typedef WithAsyncMethod_Arm<WithAsyncMethod_Disarm<WithAsyncMethod_Takeoff<WithAsyncMethod_Land<WithAsyncMethod_Reboot<WithAsyncMethod_Shutdown<WithAsyncMethod_Terminate<WithAsyncMethod_Kill<WithAsyncMethod_ReturnToLaunch<WithAsyncMethod_GotoLocation<WithAsyncMethod_DoOrbit<WithAsyncMethod_Hold<WithAsyncMethod_ModeTakeoff<WithAsyncMethod_ModeHold<WithAsyncMethod_ModeMission<WithAsyncMethod_ModeReturnToLaunch<WithAsyncMethod_ModeLand<WithAsyncMethod_ModeOffboard<WithAsyncMethod_ModeFollowMe<WithAsyncMethod_ModeManual<WithAsyncMethod_ModeAltitudeControl<WithAsyncMethod_ModePositionControl<WithAsyncMethod_ModeAcro<WithAsyncMethod_ModeStabilized<WithAsyncMethod_SetActuator<WithAsyncMethod_TransitionToFixedwing<WithAsyncMethod_TransitionToMulticopter<WithAsyncMethod_GetTakeoffAltitude<WithAsyncMethod_SetTakeoffAltitude<WithAsyncMethod_GetMaximumSpeed<WithAsyncMethod_SetMaximumSpeed<WithAsyncMethod_GetReturnToLaunchAltitude<WithAsyncMethod_SetReturnToLaunchAltitude<WithAsyncMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > AsyncService;
   template <class BaseClass>
   class WithCallbackMethod_Arm : public BaseClass {
    private:
@@ -1654,18 +2188,342 @@ class ActionService final {
       ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::HoldRequest* /*request*/, ::mavsdk::rpc::action::HoldResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
+  class WithCallbackMethod_ModeTakeoff : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeTakeoff() {
+      ::grpc::Service::MarkMethodCallback(12,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeTakeoffRequest, ::mavsdk::rpc::action::ModeTakeoffResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeTakeoffRequest* request, ::mavsdk::rpc::action::ModeTakeoffResponse* response) { return this->ModeTakeoff(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeTakeoff(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeTakeoffRequest, ::mavsdk::rpc::action::ModeTakeoffResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(12);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeTakeoffRequest, ::mavsdk::rpc::action::ModeTakeoffResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeTakeoff() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeTakeoff(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeTakeoffRequest* /*request*/, ::mavsdk::rpc::action::ModeTakeoffResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeTakeoff(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeTakeoffRequest* /*request*/, ::mavsdk::rpc::action::ModeTakeoffResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeHold : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeHold() {
+      ::grpc::Service::MarkMethodCallback(13,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeHoldRequest, ::mavsdk::rpc::action::ModeHoldResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeHoldRequest* request, ::mavsdk::rpc::action::ModeHoldResponse* response) { return this->ModeHold(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeHold(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeHoldRequest, ::mavsdk::rpc::action::ModeHoldResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(13);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeHoldRequest, ::mavsdk::rpc::action::ModeHoldResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeHold() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeHold(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeHoldRequest* /*request*/, ::mavsdk::rpc::action::ModeHoldResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeHold(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeHoldRequest* /*request*/, ::mavsdk::rpc::action::ModeHoldResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeMission : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeMission() {
+      ::grpc::Service::MarkMethodCallback(14,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeMissionRequest, ::mavsdk::rpc::action::ModeMissionResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeMissionRequest* request, ::mavsdk::rpc::action::ModeMissionResponse* response) { return this->ModeMission(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeMission(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeMissionRequest, ::mavsdk::rpc::action::ModeMissionResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(14);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeMissionRequest, ::mavsdk::rpc::action::ModeMissionResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeMission() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeMission(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeMissionRequest* /*request*/, ::mavsdk::rpc::action::ModeMissionResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeMission(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeMissionRequest* /*request*/, ::mavsdk::rpc::action::ModeMissionResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeReturnToLaunch : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeReturnToLaunch() {
+      ::grpc::Service::MarkMethodCallback(15,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeReturnToLaunchRequest, ::mavsdk::rpc::action::ModeReturnToLaunchResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* request, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* response) { return this->ModeReturnToLaunch(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeReturnToLaunch(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeReturnToLaunchRequest, ::mavsdk::rpc::action::ModeReturnToLaunchResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(15);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeReturnToLaunchRequest, ::mavsdk::rpc::action::ModeReturnToLaunchResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeReturnToLaunch() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeReturnToLaunch(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* /*request*/, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeReturnToLaunch(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* /*request*/, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeLand : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeLand() {
+      ::grpc::Service::MarkMethodCallback(16,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeLandRequest, ::mavsdk::rpc::action::ModeLandResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeLandRequest* request, ::mavsdk::rpc::action::ModeLandResponse* response) { return this->ModeLand(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeLand(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeLandRequest, ::mavsdk::rpc::action::ModeLandResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(16);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeLandRequest, ::mavsdk::rpc::action::ModeLandResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeLand() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeLand(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeLandRequest* /*request*/, ::mavsdk::rpc::action::ModeLandResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeLand(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeLandRequest* /*request*/, ::mavsdk::rpc::action::ModeLandResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeOffboard : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeOffboard() {
+      ::grpc::Service::MarkMethodCallback(17,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeOffboardRequest, ::mavsdk::rpc::action::ModeOffboardResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeOffboardRequest* request, ::mavsdk::rpc::action::ModeOffboardResponse* response) { return this->ModeOffboard(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeOffboard(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeOffboardRequest, ::mavsdk::rpc::action::ModeOffboardResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(17);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeOffboardRequest, ::mavsdk::rpc::action::ModeOffboardResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeOffboard() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeOffboard(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeOffboardRequest* /*request*/, ::mavsdk::rpc::action::ModeOffboardResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeOffboard(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeOffboardRequest* /*request*/, ::mavsdk::rpc::action::ModeOffboardResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeFollowMe : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeFollowMe() {
+      ::grpc::Service::MarkMethodCallback(18,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeFollowMeRequest, ::mavsdk::rpc::action::ModeFollowMeResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeFollowMeRequest* request, ::mavsdk::rpc::action::ModeFollowMeResponse* response) { return this->ModeFollowMe(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeFollowMe(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeFollowMeRequest, ::mavsdk::rpc::action::ModeFollowMeResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(18);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeFollowMeRequest, ::mavsdk::rpc::action::ModeFollowMeResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeFollowMe() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeFollowMe(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeFollowMeRequest* /*request*/, ::mavsdk::rpc::action::ModeFollowMeResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeFollowMe(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeFollowMeRequest* /*request*/, ::mavsdk::rpc::action::ModeFollowMeResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeManual : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeManual() {
+      ::grpc::Service::MarkMethodCallback(19,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeManualRequest, ::mavsdk::rpc::action::ModeManualResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeManualRequest* request, ::mavsdk::rpc::action::ModeManualResponse* response) { return this->ModeManual(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeManual(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeManualRequest, ::mavsdk::rpc::action::ModeManualResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(19);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeManualRequest, ::mavsdk::rpc::action::ModeManualResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeManual() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeManual(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeManualRequest* /*request*/, ::mavsdk::rpc::action::ModeManualResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeManual(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeManualRequest* /*request*/, ::mavsdk::rpc::action::ModeManualResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeAltitudeControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeAltitudeControl() {
+      ::grpc::Service::MarkMethodCallback(20,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeAltitudeControlRequest, ::mavsdk::rpc::action::ModeAltitudeControlResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* request, ::mavsdk::rpc::action::ModeAltitudeControlResponse* response) { return this->ModeAltitudeControl(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeAltitudeControl(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeAltitudeControlRequest, ::mavsdk::rpc::action::ModeAltitudeControlResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(20);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeAltitudeControlRequest, ::mavsdk::rpc::action::ModeAltitudeControlResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeAltitudeControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAltitudeControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* /*request*/, ::mavsdk::rpc::action::ModeAltitudeControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeAltitudeControl(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* /*request*/, ::mavsdk::rpc::action::ModeAltitudeControlResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModePositionControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModePositionControl() {
+      ::grpc::Service::MarkMethodCallback(21,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModePositionControlRequest, ::mavsdk::rpc::action::ModePositionControlResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModePositionControlRequest* request, ::mavsdk::rpc::action::ModePositionControlResponse* response) { return this->ModePositionControl(context, request, response); }));}
+    void SetMessageAllocatorFor_ModePositionControl(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModePositionControlRequest, ::mavsdk::rpc::action::ModePositionControlResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(21);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModePositionControlRequest, ::mavsdk::rpc::action::ModePositionControlResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModePositionControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModePositionControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModePositionControlRequest* /*request*/, ::mavsdk::rpc::action::ModePositionControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModePositionControl(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModePositionControlRequest* /*request*/, ::mavsdk::rpc::action::ModePositionControlResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeAcro : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeAcro() {
+      ::grpc::Service::MarkMethodCallback(22,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeAcroRequest, ::mavsdk::rpc::action::ModeAcroResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeAcroRequest* request, ::mavsdk::rpc::action::ModeAcroResponse* response) { return this->ModeAcro(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeAcro(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeAcroRequest, ::mavsdk::rpc::action::ModeAcroResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(22);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeAcroRequest, ::mavsdk::rpc::action::ModeAcroResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeAcro() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAcro(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAcroRequest* /*request*/, ::mavsdk::rpc::action::ModeAcroResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeAcro(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAcroRequest* /*request*/, ::mavsdk::rpc::action::ModeAcroResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_ModeStabilized : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ModeStabilized() {
+      ::grpc::Service::MarkMethodCallback(23,
+          new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeStabilizedRequest, ::mavsdk::rpc::action::ModeStabilizedResponse>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::ModeStabilizedRequest* request, ::mavsdk::rpc::action::ModeStabilizedResponse* response) { return this->ModeStabilized(context, request, response); }));}
+    void SetMessageAllocatorFor_ModeStabilized(
+        ::grpc::MessageAllocator< ::mavsdk::rpc::action::ModeStabilizedRequest, ::mavsdk::rpc::action::ModeStabilizedResponse>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(23);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::ModeStabilizedRequest, ::mavsdk::rpc::action::ModeStabilizedResponse>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ModeStabilized() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeStabilized(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeStabilizedRequest* /*request*/, ::mavsdk::rpc::action::ModeStabilizedResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeStabilized(
+      ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::ModeStabilizedRequest* /*request*/, ::mavsdk::rpc::action::ModeStabilizedResponse* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
   class WithCallbackMethod_SetActuator : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_SetActuator() {
-      ::grpc::Service::MarkMethodCallback(12,
+      ::grpc::Service::MarkMethodCallback(24,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetActuatorRequest, ::mavsdk::rpc::action::SetActuatorResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::SetActuatorRequest* request, ::mavsdk::rpc::action::SetActuatorResponse* response) { return this->SetActuator(context, request, response); }));}
     void SetMessageAllocatorFor_SetActuator(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::SetActuatorRequest, ::mavsdk::rpc::action::SetActuatorResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(12);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(24);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetActuatorRequest, ::mavsdk::rpc::action::SetActuatorResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1686,13 +2544,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_TransitionToFixedwing() {
-      ::grpc::Service::MarkMethodCallback(13,
+      ::grpc::Service::MarkMethodCallback(25,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::TransitionToFixedwingRequest, ::mavsdk::rpc::action::TransitionToFixedwingResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::TransitionToFixedwingRequest* request, ::mavsdk::rpc::action::TransitionToFixedwingResponse* response) { return this->TransitionToFixedwing(context, request, response); }));}
     void SetMessageAllocatorFor_TransitionToFixedwing(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::TransitionToFixedwingRequest, ::mavsdk::rpc::action::TransitionToFixedwingResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(13);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(25);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::TransitionToFixedwingRequest, ::mavsdk::rpc::action::TransitionToFixedwingResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1713,13 +2571,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_TransitionToMulticopter() {
-      ::grpc::Service::MarkMethodCallback(14,
+      ::grpc::Service::MarkMethodCallback(26,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::TransitionToMulticopterRequest, ::mavsdk::rpc::action::TransitionToMulticopterResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::TransitionToMulticopterRequest* request, ::mavsdk::rpc::action::TransitionToMulticopterResponse* response) { return this->TransitionToMulticopter(context, request, response); }));}
     void SetMessageAllocatorFor_TransitionToMulticopter(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::TransitionToMulticopterRequest, ::mavsdk::rpc::action::TransitionToMulticopterResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(14);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(26);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::TransitionToMulticopterRequest, ::mavsdk::rpc::action::TransitionToMulticopterResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1740,13 +2598,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_GetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodCallback(15,
+      ::grpc::Service::MarkMethodCallback(27,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::GetTakeoffAltitudeRequest, ::mavsdk::rpc::action::GetTakeoffAltitudeResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::GetTakeoffAltitudeRequest* request, ::mavsdk::rpc::action::GetTakeoffAltitudeResponse* response) { return this->GetTakeoffAltitude(context, request, response); }));}
     void SetMessageAllocatorFor_GetTakeoffAltitude(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::GetTakeoffAltitudeRequest, ::mavsdk::rpc::action::GetTakeoffAltitudeResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(15);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(27);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::GetTakeoffAltitudeRequest, ::mavsdk::rpc::action::GetTakeoffAltitudeResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1767,13 +2625,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_SetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodCallback(16,
+      ::grpc::Service::MarkMethodCallback(28,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetTakeoffAltitudeRequest, ::mavsdk::rpc::action::SetTakeoffAltitudeResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::SetTakeoffAltitudeRequest* request, ::mavsdk::rpc::action::SetTakeoffAltitudeResponse* response) { return this->SetTakeoffAltitude(context, request, response); }));}
     void SetMessageAllocatorFor_SetTakeoffAltitude(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::SetTakeoffAltitudeRequest, ::mavsdk::rpc::action::SetTakeoffAltitudeResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(16);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(28);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetTakeoffAltitudeRequest, ::mavsdk::rpc::action::SetTakeoffAltitudeResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1794,13 +2652,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_GetMaximumSpeed() {
-      ::grpc::Service::MarkMethodCallback(17,
+      ::grpc::Service::MarkMethodCallback(29,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::GetMaximumSpeedRequest, ::mavsdk::rpc::action::GetMaximumSpeedResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::GetMaximumSpeedRequest* request, ::mavsdk::rpc::action::GetMaximumSpeedResponse* response) { return this->GetMaximumSpeed(context, request, response); }));}
     void SetMessageAllocatorFor_GetMaximumSpeed(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::GetMaximumSpeedRequest, ::mavsdk::rpc::action::GetMaximumSpeedResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(17);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(29);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::GetMaximumSpeedRequest, ::mavsdk::rpc::action::GetMaximumSpeedResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1821,13 +2679,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_SetMaximumSpeed() {
-      ::grpc::Service::MarkMethodCallback(18,
+      ::grpc::Service::MarkMethodCallback(30,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetMaximumSpeedRequest, ::mavsdk::rpc::action::SetMaximumSpeedResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::SetMaximumSpeedRequest* request, ::mavsdk::rpc::action::SetMaximumSpeedResponse* response) { return this->SetMaximumSpeed(context, request, response); }));}
     void SetMessageAllocatorFor_SetMaximumSpeed(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::SetMaximumSpeedRequest, ::mavsdk::rpc::action::SetMaximumSpeedResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(18);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(30);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetMaximumSpeedRequest, ::mavsdk::rpc::action::SetMaximumSpeedResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1848,13 +2706,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_GetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodCallback(19,
+      ::grpc::Service::MarkMethodCallback(31,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest* request, ::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse* response) { return this->GetReturnToLaunchAltitude(context, request, response); }));}
     void SetMessageAllocatorFor_GetReturnToLaunchAltitude(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(19);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(31);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1875,13 +2733,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_SetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodCallback(20,
+      ::grpc::Service::MarkMethodCallback(32,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest* request, ::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse* response) { return this->SetReturnToLaunchAltitude(context, request, response); }));}
     void SetMessageAllocatorFor_SetReturnToLaunchAltitude(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(20);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(32);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1902,13 +2760,13 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithCallbackMethod_SetCurrentSpeed() {
-      ::grpc::Service::MarkMethodCallback(21,
+      ::grpc::Service::MarkMethodCallback(33,
           new ::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetCurrentSpeedRequest, ::mavsdk::rpc::action::SetCurrentSpeedResponse>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::mavsdk::rpc::action::SetCurrentSpeedRequest* request, ::mavsdk::rpc::action::SetCurrentSpeedResponse* response) { return this->SetCurrentSpeed(context, request, response); }));}
     void SetMessageAllocatorFor_SetCurrentSpeed(
         ::grpc::MessageAllocator< ::mavsdk::rpc::action::SetCurrentSpeedRequest, ::mavsdk::rpc::action::SetCurrentSpeedResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(21);
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(33);
       static_cast<::grpc::internal::CallbackUnaryHandler< ::mavsdk::rpc::action::SetCurrentSpeedRequest, ::mavsdk::rpc::action::SetCurrentSpeedResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
@@ -1923,7 +2781,7 @@ class ActionService final {
     virtual ::grpc::ServerUnaryReactor* SetCurrentSpeed(
       ::grpc::CallbackServerContext* /*context*/, const ::mavsdk::rpc::action::SetCurrentSpeedRequest* /*request*/, ::mavsdk::rpc::action::SetCurrentSpeedResponse* /*response*/)  { return nullptr; }
   };
-  typedef WithCallbackMethod_Arm<WithCallbackMethod_Disarm<WithCallbackMethod_Takeoff<WithCallbackMethod_Land<WithCallbackMethod_Reboot<WithCallbackMethod_Shutdown<WithCallbackMethod_Terminate<WithCallbackMethod_Kill<WithCallbackMethod_ReturnToLaunch<WithCallbackMethod_GotoLocation<WithCallbackMethod_DoOrbit<WithCallbackMethod_Hold<WithCallbackMethod_SetActuator<WithCallbackMethod_TransitionToFixedwing<WithCallbackMethod_TransitionToMulticopter<WithCallbackMethod_GetTakeoffAltitude<WithCallbackMethod_SetTakeoffAltitude<WithCallbackMethod_GetMaximumSpeed<WithCallbackMethod_SetMaximumSpeed<WithCallbackMethod_GetReturnToLaunchAltitude<WithCallbackMethod_SetReturnToLaunchAltitude<WithCallbackMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > CallbackService;
+  typedef WithCallbackMethod_Arm<WithCallbackMethod_Disarm<WithCallbackMethod_Takeoff<WithCallbackMethod_Land<WithCallbackMethod_Reboot<WithCallbackMethod_Shutdown<WithCallbackMethod_Terminate<WithCallbackMethod_Kill<WithCallbackMethod_ReturnToLaunch<WithCallbackMethod_GotoLocation<WithCallbackMethod_DoOrbit<WithCallbackMethod_Hold<WithCallbackMethod_ModeTakeoff<WithCallbackMethod_ModeHold<WithCallbackMethod_ModeMission<WithCallbackMethod_ModeReturnToLaunch<WithCallbackMethod_ModeLand<WithCallbackMethod_ModeOffboard<WithCallbackMethod_ModeFollowMe<WithCallbackMethod_ModeManual<WithCallbackMethod_ModeAltitudeControl<WithCallbackMethod_ModePositionControl<WithCallbackMethod_ModeAcro<WithCallbackMethod_ModeStabilized<WithCallbackMethod_SetActuator<WithCallbackMethod_TransitionToFixedwing<WithCallbackMethod_TransitionToMulticopter<WithCallbackMethod_GetTakeoffAltitude<WithCallbackMethod_SetTakeoffAltitude<WithCallbackMethod_GetMaximumSpeed<WithCallbackMethod_SetMaximumSpeed<WithCallbackMethod_GetReturnToLaunchAltitude<WithCallbackMethod_SetReturnToLaunchAltitude<WithCallbackMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > CallbackService;
   typedef CallbackService ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_Arm : public BaseClass {
@@ -2130,12 +2988,216 @@ class ActionService final {
     }
   };
   template <class BaseClass>
+  class WithGenericMethod_ModeTakeoff : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeTakeoff() {
+      ::grpc::Service::MarkMethodGeneric(12);
+    }
+    ~WithGenericMethod_ModeTakeoff() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeTakeoff(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeTakeoffRequest* /*request*/, ::mavsdk::rpc::action::ModeTakeoffResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeHold : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeHold() {
+      ::grpc::Service::MarkMethodGeneric(13);
+    }
+    ~WithGenericMethod_ModeHold() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeHold(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeHoldRequest* /*request*/, ::mavsdk::rpc::action::ModeHoldResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeMission : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeMission() {
+      ::grpc::Service::MarkMethodGeneric(14);
+    }
+    ~WithGenericMethod_ModeMission() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeMission(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeMissionRequest* /*request*/, ::mavsdk::rpc::action::ModeMissionResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeReturnToLaunch : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeReturnToLaunch() {
+      ::grpc::Service::MarkMethodGeneric(15);
+    }
+    ~WithGenericMethod_ModeReturnToLaunch() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeReturnToLaunch(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* /*request*/, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeLand : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeLand() {
+      ::grpc::Service::MarkMethodGeneric(16);
+    }
+    ~WithGenericMethod_ModeLand() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeLand(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeLandRequest* /*request*/, ::mavsdk::rpc::action::ModeLandResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeOffboard : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeOffboard() {
+      ::grpc::Service::MarkMethodGeneric(17);
+    }
+    ~WithGenericMethod_ModeOffboard() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeOffboard(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeOffboardRequest* /*request*/, ::mavsdk::rpc::action::ModeOffboardResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeFollowMe : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeFollowMe() {
+      ::grpc::Service::MarkMethodGeneric(18);
+    }
+    ~WithGenericMethod_ModeFollowMe() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeFollowMe(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeFollowMeRequest* /*request*/, ::mavsdk::rpc::action::ModeFollowMeResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeManual : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeManual() {
+      ::grpc::Service::MarkMethodGeneric(19);
+    }
+    ~WithGenericMethod_ModeManual() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeManual(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeManualRequest* /*request*/, ::mavsdk::rpc::action::ModeManualResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeAltitudeControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeAltitudeControl() {
+      ::grpc::Service::MarkMethodGeneric(20);
+    }
+    ~WithGenericMethod_ModeAltitudeControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAltitudeControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* /*request*/, ::mavsdk::rpc::action::ModeAltitudeControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModePositionControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModePositionControl() {
+      ::grpc::Service::MarkMethodGeneric(21);
+    }
+    ~WithGenericMethod_ModePositionControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModePositionControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModePositionControlRequest* /*request*/, ::mavsdk::rpc::action::ModePositionControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeAcro : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeAcro() {
+      ::grpc::Service::MarkMethodGeneric(22);
+    }
+    ~WithGenericMethod_ModeAcro() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAcro(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAcroRequest* /*request*/, ::mavsdk::rpc::action::ModeAcroResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ModeStabilized : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ModeStabilized() {
+      ::grpc::Service::MarkMethodGeneric(23);
+    }
+    ~WithGenericMethod_ModeStabilized() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeStabilized(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeStabilizedRequest* /*request*/, ::mavsdk::rpc::action::ModeStabilizedResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
   class WithGenericMethod_SetActuator : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_SetActuator() {
-      ::grpc::Service::MarkMethodGeneric(12);
+      ::grpc::Service::MarkMethodGeneric(24);
     }
     ~WithGenericMethod_SetActuator() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2152,7 +3214,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_TransitionToFixedwing() {
-      ::grpc::Service::MarkMethodGeneric(13);
+      ::grpc::Service::MarkMethodGeneric(25);
     }
     ~WithGenericMethod_TransitionToFixedwing() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2169,7 +3231,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_TransitionToMulticopter() {
-      ::grpc::Service::MarkMethodGeneric(14);
+      ::grpc::Service::MarkMethodGeneric(26);
     }
     ~WithGenericMethod_TransitionToMulticopter() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2186,7 +3248,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_GetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodGeneric(15);
+      ::grpc::Service::MarkMethodGeneric(27);
     }
     ~WithGenericMethod_GetTakeoffAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2203,7 +3265,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_SetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodGeneric(16);
+      ::grpc::Service::MarkMethodGeneric(28);
     }
     ~WithGenericMethod_SetTakeoffAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2220,7 +3282,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_GetMaximumSpeed() {
-      ::grpc::Service::MarkMethodGeneric(17);
+      ::grpc::Service::MarkMethodGeneric(29);
     }
     ~WithGenericMethod_GetMaximumSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2237,7 +3299,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_SetMaximumSpeed() {
-      ::grpc::Service::MarkMethodGeneric(18);
+      ::grpc::Service::MarkMethodGeneric(30);
     }
     ~WithGenericMethod_SetMaximumSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2254,7 +3316,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_GetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodGeneric(19);
+      ::grpc::Service::MarkMethodGeneric(31);
     }
     ~WithGenericMethod_GetReturnToLaunchAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2271,7 +3333,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_SetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodGeneric(20);
+      ::grpc::Service::MarkMethodGeneric(32);
     }
     ~WithGenericMethod_SetReturnToLaunchAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2288,7 +3350,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithGenericMethod_SetCurrentSpeed() {
-      ::grpc::Service::MarkMethodGeneric(21);
+      ::grpc::Service::MarkMethodGeneric(33);
     }
     ~WithGenericMethod_SetCurrentSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2540,12 +3602,252 @@ class ActionService final {
     }
   };
   template <class BaseClass>
+  class WithRawMethod_ModeTakeoff : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeTakeoff() {
+      ::grpc::Service::MarkMethodRaw(12);
+    }
+    ~WithRawMethod_ModeTakeoff() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeTakeoff(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeTakeoffRequest* /*request*/, ::mavsdk::rpc::action::ModeTakeoffResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeTakeoff(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(12, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeHold : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeHold() {
+      ::grpc::Service::MarkMethodRaw(13);
+    }
+    ~WithRawMethod_ModeHold() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeHold(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeHoldRequest* /*request*/, ::mavsdk::rpc::action::ModeHoldResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeHold(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(13, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeMission : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeMission() {
+      ::grpc::Service::MarkMethodRaw(14);
+    }
+    ~WithRawMethod_ModeMission() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeMission(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeMissionRequest* /*request*/, ::mavsdk::rpc::action::ModeMissionResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeMission(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(14, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeReturnToLaunch : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeReturnToLaunch() {
+      ::grpc::Service::MarkMethodRaw(15);
+    }
+    ~WithRawMethod_ModeReturnToLaunch() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeReturnToLaunch(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* /*request*/, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeReturnToLaunch(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(15, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeLand : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeLand() {
+      ::grpc::Service::MarkMethodRaw(16);
+    }
+    ~WithRawMethod_ModeLand() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeLand(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeLandRequest* /*request*/, ::mavsdk::rpc::action::ModeLandResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeLand(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(16, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeOffboard : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeOffboard() {
+      ::grpc::Service::MarkMethodRaw(17);
+    }
+    ~WithRawMethod_ModeOffboard() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeOffboard(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeOffboardRequest* /*request*/, ::mavsdk::rpc::action::ModeOffboardResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeOffboard(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(17, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeFollowMe : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeFollowMe() {
+      ::grpc::Service::MarkMethodRaw(18);
+    }
+    ~WithRawMethod_ModeFollowMe() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeFollowMe(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeFollowMeRequest* /*request*/, ::mavsdk::rpc::action::ModeFollowMeResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeFollowMe(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(18, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeManual : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeManual() {
+      ::grpc::Service::MarkMethodRaw(19);
+    }
+    ~WithRawMethod_ModeManual() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeManual(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeManualRequest* /*request*/, ::mavsdk::rpc::action::ModeManualResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeManual(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(19, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeAltitudeControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeAltitudeControl() {
+      ::grpc::Service::MarkMethodRaw(20);
+    }
+    ~WithRawMethod_ModeAltitudeControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAltitudeControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* /*request*/, ::mavsdk::rpc::action::ModeAltitudeControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeAltitudeControl(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(20, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModePositionControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModePositionControl() {
+      ::grpc::Service::MarkMethodRaw(21);
+    }
+    ~WithRawMethod_ModePositionControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModePositionControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModePositionControlRequest* /*request*/, ::mavsdk::rpc::action::ModePositionControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModePositionControl(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(21, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeAcro : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeAcro() {
+      ::grpc::Service::MarkMethodRaw(22);
+    }
+    ~WithRawMethod_ModeAcro() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAcro(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAcroRequest* /*request*/, ::mavsdk::rpc::action::ModeAcroResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeAcro(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(22, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ModeStabilized : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ModeStabilized() {
+      ::grpc::Service::MarkMethodRaw(23);
+    }
+    ~WithRawMethod_ModeStabilized() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeStabilized(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeStabilizedRequest* /*request*/, ::mavsdk::rpc::action::ModeStabilizedResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestModeStabilized(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(23, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
   class WithRawMethod_SetActuator : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_SetActuator() {
-      ::grpc::Service::MarkMethodRaw(12);
+      ::grpc::Service::MarkMethodRaw(24);
     }
     ~WithRawMethod_SetActuator() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2556,7 +3858,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetActuator(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(12, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(24, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2565,7 +3867,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_TransitionToFixedwing() {
-      ::grpc::Service::MarkMethodRaw(13);
+      ::grpc::Service::MarkMethodRaw(25);
     }
     ~WithRawMethod_TransitionToFixedwing() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2576,7 +3878,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestTransitionToFixedwing(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(13, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(25, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2585,7 +3887,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_TransitionToMulticopter() {
-      ::grpc::Service::MarkMethodRaw(14);
+      ::grpc::Service::MarkMethodRaw(26);
     }
     ~WithRawMethod_TransitionToMulticopter() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2596,7 +3898,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestTransitionToMulticopter(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(14, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(26, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2605,7 +3907,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_GetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodRaw(15);
+      ::grpc::Service::MarkMethodRaw(27);
     }
     ~WithRawMethod_GetTakeoffAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2616,7 +3918,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestGetTakeoffAltitude(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(15, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(27, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2625,7 +3927,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_SetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodRaw(16);
+      ::grpc::Service::MarkMethodRaw(28);
     }
     ~WithRawMethod_SetTakeoffAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2636,7 +3938,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetTakeoffAltitude(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(16, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(28, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2645,7 +3947,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_GetMaximumSpeed() {
-      ::grpc::Service::MarkMethodRaw(17);
+      ::grpc::Service::MarkMethodRaw(29);
     }
     ~WithRawMethod_GetMaximumSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2656,7 +3958,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestGetMaximumSpeed(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(17, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(29, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2665,7 +3967,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_SetMaximumSpeed() {
-      ::grpc::Service::MarkMethodRaw(18);
+      ::grpc::Service::MarkMethodRaw(30);
     }
     ~WithRawMethod_SetMaximumSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2676,7 +3978,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetMaximumSpeed(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(18, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(30, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2685,7 +3987,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_GetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodRaw(19);
+      ::grpc::Service::MarkMethodRaw(31);
     }
     ~WithRawMethod_GetReturnToLaunchAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2696,7 +3998,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestGetReturnToLaunchAltitude(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(19, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(31, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2705,7 +4007,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_SetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodRaw(20);
+      ::grpc::Service::MarkMethodRaw(32);
     }
     ~WithRawMethod_SetReturnToLaunchAltitude() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2716,7 +4018,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetReturnToLaunchAltitude(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(20, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(32, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -2725,7 +4027,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawMethod_SetCurrentSpeed() {
-      ::grpc::Service::MarkMethodRaw(21);
+      ::grpc::Service::MarkMethodRaw(33);
     }
     ~WithRawMethod_SetCurrentSpeed() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2736,7 +4038,7 @@ class ActionService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     void RequestSetCurrentSpeed(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
-      ::grpc::Service::RequestAsyncUnary(21, context, request, response, new_call_cq, notification_cq, tag);
+      ::grpc::Service::RequestAsyncUnary(33, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -3004,12 +4306,276 @@ class ActionService final {
       ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
+  class WithRawCallbackMethod_ModeTakeoff : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeTakeoff() {
+      ::grpc::Service::MarkMethodRawCallback(12,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeTakeoff(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeTakeoff() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeTakeoff(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeTakeoffRequest* /*request*/, ::mavsdk::rpc::action::ModeTakeoffResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeTakeoff(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeHold : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeHold() {
+      ::grpc::Service::MarkMethodRawCallback(13,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeHold(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeHold() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeHold(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeHoldRequest* /*request*/, ::mavsdk::rpc::action::ModeHoldResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeHold(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeMission : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeMission() {
+      ::grpc::Service::MarkMethodRawCallback(14,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeMission(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeMission() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeMission(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeMissionRequest* /*request*/, ::mavsdk::rpc::action::ModeMissionResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeMission(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeReturnToLaunch : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeReturnToLaunch() {
+      ::grpc::Service::MarkMethodRawCallback(15,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeReturnToLaunch(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeReturnToLaunch() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeReturnToLaunch(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* /*request*/, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeReturnToLaunch(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeLand : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeLand() {
+      ::grpc::Service::MarkMethodRawCallback(16,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeLand(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeLand() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeLand(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeLandRequest* /*request*/, ::mavsdk::rpc::action::ModeLandResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeLand(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeOffboard : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeOffboard() {
+      ::grpc::Service::MarkMethodRawCallback(17,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeOffboard(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeOffboard() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeOffboard(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeOffboardRequest* /*request*/, ::mavsdk::rpc::action::ModeOffboardResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeOffboard(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeFollowMe : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeFollowMe() {
+      ::grpc::Service::MarkMethodRawCallback(18,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeFollowMe(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeFollowMe() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeFollowMe(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeFollowMeRequest* /*request*/, ::mavsdk::rpc::action::ModeFollowMeResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeFollowMe(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeManual : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeManual() {
+      ::grpc::Service::MarkMethodRawCallback(19,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeManual(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeManual() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeManual(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeManualRequest* /*request*/, ::mavsdk::rpc::action::ModeManualResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeManual(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeAltitudeControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeAltitudeControl() {
+      ::grpc::Service::MarkMethodRawCallback(20,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeAltitudeControl(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeAltitudeControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAltitudeControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* /*request*/, ::mavsdk::rpc::action::ModeAltitudeControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeAltitudeControl(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModePositionControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModePositionControl() {
+      ::grpc::Service::MarkMethodRawCallback(21,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModePositionControl(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModePositionControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModePositionControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModePositionControlRequest* /*request*/, ::mavsdk::rpc::action::ModePositionControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModePositionControl(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeAcro : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeAcro() {
+      ::grpc::Service::MarkMethodRawCallback(22,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeAcro(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeAcro() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeAcro(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAcroRequest* /*request*/, ::mavsdk::rpc::action::ModeAcroResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeAcro(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ModeStabilized : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ModeStabilized() {
+      ::grpc::Service::MarkMethodRawCallback(23,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ModeStabilized(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ModeStabilized() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ModeStabilized(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeStabilizedRequest* /*request*/, ::mavsdk::rpc::action::ModeStabilizedResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ModeStabilized(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
   class WithRawCallbackMethod_SetActuator : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_SetActuator() {
-      ::grpc::Service::MarkMethodRawCallback(12,
+      ::grpc::Service::MarkMethodRawCallback(24,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SetActuator(context, request, response); }));
@@ -3031,7 +4597,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_TransitionToFixedwing() {
-      ::grpc::Service::MarkMethodRawCallback(13,
+      ::grpc::Service::MarkMethodRawCallback(25,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->TransitionToFixedwing(context, request, response); }));
@@ -3053,7 +4619,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_TransitionToMulticopter() {
-      ::grpc::Service::MarkMethodRawCallback(14,
+      ::grpc::Service::MarkMethodRawCallback(26,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->TransitionToMulticopter(context, request, response); }));
@@ -3075,7 +4641,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_GetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodRawCallback(15,
+      ::grpc::Service::MarkMethodRawCallback(27,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetTakeoffAltitude(context, request, response); }));
@@ -3097,7 +4663,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_SetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodRawCallback(16,
+      ::grpc::Service::MarkMethodRawCallback(28,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SetTakeoffAltitude(context, request, response); }));
@@ -3119,7 +4685,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_GetMaximumSpeed() {
-      ::grpc::Service::MarkMethodRawCallback(17,
+      ::grpc::Service::MarkMethodRawCallback(29,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetMaximumSpeed(context, request, response); }));
@@ -3141,7 +4707,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_SetMaximumSpeed() {
-      ::grpc::Service::MarkMethodRawCallback(18,
+      ::grpc::Service::MarkMethodRawCallback(30,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SetMaximumSpeed(context, request, response); }));
@@ -3163,7 +4729,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_GetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodRawCallback(19,
+      ::grpc::Service::MarkMethodRawCallback(31,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetReturnToLaunchAltitude(context, request, response); }));
@@ -3185,7 +4751,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_SetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodRawCallback(20,
+      ::grpc::Service::MarkMethodRawCallback(32,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SetReturnToLaunchAltitude(context, request, response); }));
@@ -3207,7 +4773,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithRawCallbackMethod_SetCurrentSpeed() {
-      ::grpc::Service::MarkMethodRawCallback(21,
+      ::grpc::Service::MarkMethodRawCallback(33,
           new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
             [this](
                    ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SetCurrentSpeed(context, request, response); }));
@@ -3548,12 +5114,336 @@ class ActionService final {
     virtual ::grpc::Status StreamedHold(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::HoldRequest,::mavsdk::rpc::action::HoldResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeTakeoff : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeTakeoff() {
+      ::grpc::Service::MarkMethodStreamed(12,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeTakeoffRequest, ::mavsdk::rpc::action::ModeTakeoffResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeTakeoffRequest, ::mavsdk::rpc::action::ModeTakeoffResponse>* streamer) {
+                       return this->StreamedModeTakeoff(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeTakeoff() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeTakeoff(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeTakeoffRequest* /*request*/, ::mavsdk::rpc::action::ModeTakeoffResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeTakeoff(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeTakeoffRequest,::mavsdk::rpc::action::ModeTakeoffResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeHold : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeHold() {
+      ::grpc::Service::MarkMethodStreamed(13,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeHoldRequest, ::mavsdk::rpc::action::ModeHoldResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeHoldRequest, ::mavsdk::rpc::action::ModeHoldResponse>* streamer) {
+                       return this->StreamedModeHold(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeHold() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeHold(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeHoldRequest* /*request*/, ::mavsdk::rpc::action::ModeHoldResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeHold(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeHoldRequest,::mavsdk::rpc::action::ModeHoldResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeMission : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeMission() {
+      ::grpc::Service::MarkMethodStreamed(14,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeMissionRequest, ::mavsdk::rpc::action::ModeMissionResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeMissionRequest, ::mavsdk::rpc::action::ModeMissionResponse>* streamer) {
+                       return this->StreamedModeMission(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeMission() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeMission(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeMissionRequest* /*request*/, ::mavsdk::rpc::action::ModeMissionResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeMission(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeMissionRequest,::mavsdk::rpc::action::ModeMissionResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeReturnToLaunch : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeReturnToLaunch() {
+      ::grpc::Service::MarkMethodStreamed(15,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeReturnToLaunchRequest, ::mavsdk::rpc::action::ModeReturnToLaunchResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeReturnToLaunchRequest, ::mavsdk::rpc::action::ModeReturnToLaunchResponse>* streamer) {
+                       return this->StreamedModeReturnToLaunch(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeReturnToLaunch() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeReturnToLaunch(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeReturnToLaunchRequest* /*request*/, ::mavsdk::rpc::action::ModeReturnToLaunchResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeReturnToLaunch(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeReturnToLaunchRequest,::mavsdk::rpc::action::ModeReturnToLaunchResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeLand : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeLand() {
+      ::grpc::Service::MarkMethodStreamed(16,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeLandRequest, ::mavsdk::rpc::action::ModeLandResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeLandRequest, ::mavsdk::rpc::action::ModeLandResponse>* streamer) {
+                       return this->StreamedModeLand(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeLand() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeLand(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeLandRequest* /*request*/, ::mavsdk::rpc::action::ModeLandResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeLand(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeLandRequest,::mavsdk::rpc::action::ModeLandResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeOffboard : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeOffboard() {
+      ::grpc::Service::MarkMethodStreamed(17,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeOffboardRequest, ::mavsdk::rpc::action::ModeOffboardResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeOffboardRequest, ::mavsdk::rpc::action::ModeOffboardResponse>* streamer) {
+                       return this->StreamedModeOffboard(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeOffboard() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeOffboard(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeOffboardRequest* /*request*/, ::mavsdk::rpc::action::ModeOffboardResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeOffboard(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeOffboardRequest,::mavsdk::rpc::action::ModeOffboardResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeFollowMe : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeFollowMe() {
+      ::grpc::Service::MarkMethodStreamed(18,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeFollowMeRequest, ::mavsdk::rpc::action::ModeFollowMeResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeFollowMeRequest, ::mavsdk::rpc::action::ModeFollowMeResponse>* streamer) {
+                       return this->StreamedModeFollowMe(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeFollowMe() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeFollowMe(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeFollowMeRequest* /*request*/, ::mavsdk::rpc::action::ModeFollowMeResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeFollowMe(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeFollowMeRequest,::mavsdk::rpc::action::ModeFollowMeResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeManual : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeManual() {
+      ::grpc::Service::MarkMethodStreamed(19,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeManualRequest, ::mavsdk::rpc::action::ModeManualResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeManualRequest, ::mavsdk::rpc::action::ModeManualResponse>* streamer) {
+                       return this->StreamedModeManual(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeManual() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeManual(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeManualRequest* /*request*/, ::mavsdk::rpc::action::ModeManualResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeManual(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeManualRequest,::mavsdk::rpc::action::ModeManualResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeAltitudeControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeAltitudeControl() {
+      ::grpc::Service::MarkMethodStreamed(20,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeAltitudeControlRequest, ::mavsdk::rpc::action::ModeAltitudeControlResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeAltitudeControlRequest, ::mavsdk::rpc::action::ModeAltitudeControlResponse>* streamer) {
+                       return this->StreamedModeAltitudeControl(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeAltitudeControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeAltitudeControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAltitudeControlRequest* /*request*/, ::mavsdk::rpc::action::ModeAltitudeControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeAltitudeControl(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeAltitudeControlRequest,::mavsdk::rpc::action::ModeAltitudeControlResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModePositionControl : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModePositionControl() {
+      ::grpc::Service::MarkMethodStreamed(21,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModePositionControlRequest, ::mavsdk::rpc::action::ModePositionControlResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModePositionControlRequest, ::mavsdk::rpc::action::ModePositionControlResponse>* streamer) {
+                       return this->StreamedModePositionControl(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModePositionControl() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModePositionControl(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModePositionControlRequest* /*request*/, ::mavsdk::rpc::action::ModePositionControlResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModePositionControl(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModePositionControlRequest,::mavsdk::rpc::action::ModePositionControlResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeAcro : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeAcro() {
+      ::grpc::Service::MarkMethodStreamed(22,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeAcroRequest, ::mavsdk::rpc::action::ModeAcroResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeAcroRequest, ::mavsdk::rpc::action::ModeAcroResponse>* streamer) {
+                       return this->StreamedModeAcro(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeAcro() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeAcro(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeAcroRequest* /*request*/, ::mavsdk::rpc::action::ModeAcroResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeAcro(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeAcroRequest,::mavsdk::rpc::action::ModeAcroResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModeStabilized : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ModeStabilized() {
+      ::grpc::Service::MarkMethodStreamed(23,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::mavsdk::rpc::action::ModeStabilizedRequest, ::mavsdk::rpc::action::ModeStabilizedResponse>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::mavsdk::rpc::action::ModeStabilizedRequest, ::mavsdk::rpc::action::ModeStabilizedResponse>* streamer) {
+                       return this->StreamedModeStabilized(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ModeStabilized() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModeStabilized(::grpc::ServerContext* /*context*/, const ::mavsdk::rpc::action::ModeStabilizedRequest* /*request*/, ::mavsdk::rpc::action::ModeStabilizedResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModeStabilized(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::ModeStabilizedRequest,::mavsdk::rpc::action::ModeStabilizedResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
   class WithStreamedUnaryMethod_SetActuator : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_SetActuator() {
-      ::grpc::Service::MarkMethodStreamed(12,
+      ::grpc::Service::MarkMethodStreamed(24,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::SetActuatorRequest, ::mavsdk::rpc::action::SetActuatorResponse>(
             [this](::grpc::ServerContext* context,
@@ -3580,7 +5470,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_TransitionToFixedwing() {
-      ::grpc::Service::MarkMethodStreamed(13,
+      ::grpc::Service::MarkMethodStreamed(25,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::TransitionToFixedwingRequest, ::mavsdk::rpc::action::TransitionToFixedwingResponse>(
             [this](::grpc::ServerContext* context,
@@ -3607,7 +5497,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_TransitionToMulticopter() {
-      ::grpc::Service::MarkMethodStreamed(14,
+      ::grpc::Service::MarkMethodStreamed(26,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::TransitionToMulticopterRequest, ::mavsdk::rpc::action::TransitionToMulticopterResponse>(
             [this](::grpc::ServerContext* context,
@@ -3634,7 +5524,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_GetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodStreamed(15,
+      ::grpc::Service::MarkMethodStreamed(27,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::GetTakeoffAltitudeRequest, ::mavsdk::rpc::action::GetTakeoffAltitudeResponse>(
             [this](::grpc::ServerContext* context,
@@ -3661,7 +5551,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_SetTakeoffAltitude() {
-      ::grpc::Service::MarkMethodStreamed(16,
+      ::grpc::Service::MarkMethodStreamed(28,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::SetTakeoffAltitudeRequest, ::mavsdk::rpc::action::SetTakeoffAltitudeResponse>(
             [this](::grpc::ServerContext* context,
@@ -3688,7 +5578,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_GetMaximumSpeed() {
-      ::grpc::Service::MarkMethodStreamed(17,
+      ::grpc::Service::MarkMethodStreamed(29,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::GetMaximumSpeedRequest, ::mavsdk::rpc::action::GetMaximumSpeedResponse>(
             [this](::grpc::ServerContext* context,
@@ -3715,7 +5605,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_SetMaximumSpeed() {
-      ::grpc::Service::MarkMethodStreamed(18,
+      ::grpc::Service::MarkMethodStreamed(30,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::SetMaximumSpeedRequest, ::mavsdk::rpc::action::SetMaximumSpeedResponse>(
             [this](::grpc::ServerContext* context,
@@ -3742,7 +5632,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_GetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodStreamed(19,
+      ::grpc::Service::MarkMethodStreamed(31,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse>(
             [this](::grpc::ServerContext* context,
@@ -3769,7 +5659,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_SetReturnToLaunchAltitude() {
-      ::grpc::Service::MarkMethodStreamed(20,
+      ::grpc::Service::MarkMethodStreamed(32,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest, ::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse>(
             [this](::grpc::ServerContext* context,
@@ -3796,7 +5686,7 @@ class ActionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     WithStreamedUnaryMethod_SetCurrentSpeed() {
-      ::grpc::Service::MarkMethodStreamed(21,
+      ::grpc::Service::MarkMethodStreamed(33,
         new ::grpc::internal::StreamedUnaryHandler<
           ::mavsdk::rpc::action::SetCurrentSpeedRequest, ::mavsdk::rpc::action::SetCurrentSpeedResponse>(
             [this](::grpc::ServerContext* context,
@@ -3817,9 +5707,9 @@ class ActionService final {
     // replace default version of method with streamed unary
     virtual ::grpc::Status StreamedSetCurrentSpeed(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::mavsdk::rpc::action::SetCurrentSpeedRequest,::mavsdk::rpc::action::SetCurrentSpeedResponse>* server_unary_streamer) = 0;
   };
-  typedef WithStreamedUnaryMethod_Arm<WithStreamedUnaryMethod_Disarm<WithStreamedUnaryMethod_Takeoff<WithStreamedUnaryMethod_Land<WithStreamedUnaryMethod_Reboot<WithStreamedUnaryMethod_Shutdown<WithStreamedUnaryMethod_Terminate<WithStreamedUnaryMethod_Kill<WithStreamedUnaryMethod_ReturnToLaunch<WithStreamedUnaryMethod_GotoLocation<WithStreamedUnaryMethod_DoOrbit<WithStreamedUnaryMethod_Hold<WithStreamedUnaryMethod_SetActuator<WithStreamedUnaryMethod_TransitionToFixedwing<WithStreamedUnaryMethod_TransitionToMulticopter<WithStreamedUnaryMethod_GetTakeoffAltitude<WithStreamedUnaryMethod_SetTakeoffAltitude<WithStreamedUnaryMethod_GetMaximumSpeed<WithStreamedUnaryMethod_SetMaximumSpeed<WithStreamedUnaryMethod_GetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > StreamedUnaryService;
+  typedef WithStreamedUnaryMethod_Arm<WithStreamedUnaryMethod_Disarm<WithStreamedUnaryMethod_Takeoff<WithStreamedUnaryMethod_Land<WithStreamedUnaryMethod_Reboot<WithStreamedUnaryMethod_Shutdown<WithStreamedUnaryMethod_Terminate<WithStreamedUnaryMethod_Kill<WithStreamedUnaryMethod_ReturnToLaunch<WithStreamedUnaryMethod_GotoLocation<WithStreamedUnaryMethod_DoOrbit<WithStreamedUnaryMethod_Hold<WithStreamedUnaryMethod_ModeTakeoff<WithStreamedUnaryMethod_ModeHold<WithStreamedUnaryMethod_ModeMission<WithStreamedUnaryMethod_ModeReturnToLaunch<WithStreamedUnaryMethod_ModeLand<WithStreamedUnaryMethod_ModeOffboard<WithStreamedUnaryMethod_ModeFollowMe<WithStreamedUnaryMethod_ModeManual<WithStreamedUnaryMethod_ModeAltitudeControl<WithStreamedUnaryMethod_ModePositionControl<WithStreamedUnaryMethod_ModeAcro<WithStreamedUnaryMethod_ModeStabilized<WithStreamedUnaryMethod_SetActuator<WithStreamedUnaryMethod_TransitionToFixedwing<WithStreamedUnaryMethod_TransitionToMulticopter<WithStreamedUnaryMethod_GetTakeoffAltitude<WithStreamedUnaryMethod_SetTakeoffAltitude<WithStreamedUnaryMethod_GetMaximumSpeed<WithStreamedUnaryMethod_SetMaximumSpeed<WithStreamedUnaryMethod_GetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > StreamedUnaryService;
   typedef Service SplitStreamedService;
-  typedef WithStreamedUnaryMethod_Arm<WithStreamedUnaryMethod_Disarm<WithStreamedUnaryMethod_Takeoff<WithStreamedUnaryMethod_Land<WithStreamedUnaryMethod_Reboot<WithStreamedUnaryMethod_Shutdown<WithStreamedUnaryMethod_Terminate<WithStreamedUnaryMethod_Kill<WithStreamedUnaryMethod_ReturnToLaunch<WithStreamedUnaryMethod_GotoLocation<WithStreamedUnaryMethod_DoOrbit<WithStreamedUnaryMethod_Hold<WithStreamedUnaryMethod_SetActuator<WithStreamedUnaryMethod_TransitionToFixedwing<WithStreamedUnaryMethod_TransitionToMulticopter<WithStreamedUnaryMethod_GetTakeoffAltitude<WithStreamedUnaryMethod_SetTakeoffAltitude<WithStreamedUnaryMethod_GetMaximumSpeed<WithStreamedUnaryMethod_SetMaximumSpeed<WithStreamedUnaryMethod_GetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > StreamedService;
+  typedef WithStreamedUnaryMethod_Arm<WithStreamedUnaryMethod_Disarm<WithStreamedUnaryMethod_Takeoff<WithStreamedUnaryMethod_Land<WithStreamedUnaryMethod_Reboot<WithStreamedUnaryMethod_Shutdown<WithStreamedUnaryMethod_Terminate<WithStreamedUnaryMethod_Kill<WithStreamedUnaryMethod_ReturnToLaunch<WithStreamedUnaryMethod_GotoLocation<WithStreamedUnaryMethod_DoOrbit<WithStreamedUnaryMethod_Hold<WithStreamedUnaryMethod_ModeTakeoff<WithStreamedUnaryMethod_ModeHold<WithStreamedUnaryMethod_ModeMission<WithStreamedUnaryMethod_ModeReturnToLaunch<WithStreamedUnaryMethod_ModeLand<WithStreamedUnaryMethod_ModeOffboard<WithStreamedUnaryMethod_ModeFollowMe<WithStreamedUnaryMethod_ModeManual<WithStreamedUnaryMethod_ModeAltitudeControl<WithStreamedUnaryMethod_ModePositionControl<WithStreamedUnaryMethod_ModeAcro<WithStreamedUnaryMethod_ModeStabilized<WithStreamedUnaryMethod_SetActuator<WithStreamedUnaryMethod_TransitionToFixedwing<WithStreamedUnaryMethod_TransitionToMulticopter<WithStreamedUnaryMethod_GetTakeoffAltitude<WithStreamedUnaryMethod_SetTakeoffAltitude<WithStreamedUnaryMethod_GetMaximumSpeed<WithStreamedUnaryMethod_SetMaximumSpeed<WithStreamedUnaryMethod_GetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetReturnToLaunchAltitude<WithStreamedUnaryMethod_SetCurrentSpeed<Service > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace action

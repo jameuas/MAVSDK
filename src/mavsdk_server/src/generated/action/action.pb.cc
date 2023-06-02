@@ -306,6 +306,282 @@ struct HoldResponseDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HoldResponseDefaultTypeInternal _HoldResponse_default_instance_;
+constexpr ModeTakeoffRequest::ModeTakeoffRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeTakeoffRequestDefaultTypeInternal {
+  constexpr ModeTakeoffRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeTakeoffRequestDefaultTypeInternal() {}
+  union {
+    ModeTakeoffRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeTakeoffRequestDefaultTypeInternal _ModeTakeoffRequest_default_instance_;
+constexpr ModeTakeoffResponse::ModeTakeoffResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeTakeoffResponseDefaultTypeInternal {
+  constexpr ModeTakeoffResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeTakeoffResponseDefaultTypeInternal() {}
+  union {
+    ModeTakeoffResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeTakeoffResponseDefaultTypeInternal _ModeTakeoffResponse_default_instance_;
+constexpr ModeHoldRequest::ModeHoldRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeHoldRequestDefaultTypeInternal {
+  constexpr ModeHoldRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeHoldRequestDefaultTypeInternal() {}
+  union {
+    ModeHoldRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeHoldRequestDefaultTypeInternal _ModeHoldRequest_default_instance_;
+constexpr ModeHoldResponse::ModeHoldResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeHoldResponseDefaultTypeInternal {
+  constexpr ModeHoldResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeHoldResponseDefaultTypeInternal() {}
+  union {
+    ModeHoldResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeHoldResponseDefaultTypeInternal _ModeHoldResponse_default_instance_;
+constexpr ModeMissionRequest::ModeMissionRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeMissionRequestDefaultTypeInternal {
+  constexpr ModeMissionRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeMissionRequestDefaultTypeInternal() {}
+  union {
+    ModeMissionRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeMissionRequestDefaultTypeInternal _ModeMissionRequest_default_instance_;
+constexpr ModeMissionResponse::ModeMissionResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeMissionResponseDefaultTypeInternal {
+  constexpr ModeMissionResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeMissionResponseDefaultTypeInternal() {}
+  union {
+    ModeMissionResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeMissionResponseDefaultTypeInternal _ModeMissionResponse_default_instance_;
+constexpr ModeReturnToLaunchRequest::ModeReturnToLaunchRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeReturnToLaunchRequestDefaultTypeInternal {
+  constexpr ModeReturnToLaunchRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeReturnToLaunchRequestDefaultTypeInternal() {}
+  union {
+    ModeReturnToLaunchRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeReturnToLaunchRequestDefaultTypeInternal _ModeReturnToLaunchRequest_default_instance_;
+constexpr ModeReturnToLaunchResponse::ModeReturnToLaunchResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeReturnToLaunchResponseDefaultTypeInternal {
+  constexpr ModeReturnToLaunchResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeReturnToLaunchResponseDefaultTypeInternal() {}
+  union {
+    ModeReturnToLaunchResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeReturnToLaunchResponseDefaultTypeInternal _ModeReturnToLaunchResponse_default_instance_;
+constexpr ModeLandRequest::ModeLandRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeLandRequestDefaultTypeInternal {
+  constexpr ModeLandRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeLandRequestDefaultTypeInternal() {}
+  union {
+    ModeLandRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeLandRequestDefaultTypeInternal _ModeLandRequest_default_instance_;
+constexpr ModeLandResponse::ModeLandResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeLandResponseDefaultTypeInternal {
+  constexpr ModeLandResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeLandResponseDefaultTypeInternal() {}
+  union {
+    ModeLandResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeLandResponseDefaultTypeInternal _ModeLandResponse_default_instance_;
+constexpr ModeOffboardRequest::ModeOffboardRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeOffboardRequestDefaultTypeInternal {
+  constexpr ModeOffboardRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeOffboardRequestDefaultTypeInternal() {}
+  union {
+    ModeOffboardRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeOffboardRequestDefaultTypeInternal _ModeOffboardRequest_default_instance_;
+constexpr ModeOffboardResponse::ModeOffboardResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeOffboardResponseDefaultTypeInternal {
+  constexpr ModeOffboardResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeOffboardResponseDefaultTypeInternal() {}
+  union {
+    ModeOffboardResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeOffboardResponseDefaultTypeInternal _ModeOffboardResponse_default_instance_;
+constexpr ModeFollowMeRequest::ModeFollowMeRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeFollowMeRequestDefaultTypeInternal {
+  constexpr ModeFollowMeRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeFollowMeRequestDefaultTypeInternal() {}
+  union {
+    ModeFollowMeRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeFollowMeRequestDefaultTypeInternal _ModeFollowMeRequest_default_instance_;
+constexpr ModeFollowMeResponse::ModeFollowMeResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeFollowMeResponseDefaultTypeInternal {
+  constexpr ModeFollowMeResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeFollowMeResponseDefaultTypeInternal() {}
+  union {
+    ModeFollowMeResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeFollowMeResponseDefaultTypeInternal _ModeFollowMeResponse_default_instance_;
+constexpr ModeManualRequest::ModeManualRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeManualRequestDefaultTypeInternal {
+  constexpr ModeManualRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeManualRequestDefaultTypeInternal() {}
+  union {
+    ModeManualRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeManualRequestDefaultTypeInternal _ModeManualRequest_default_instance_;
+constexpr ModeManualResponse::ModeManualResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeManualResponseDefaultTypeInternal {
+  constexpr ModeManualResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeManualResponseDefaultTypeInternal() {}
+  union {
+    ModeManualResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeManualResponseDefaultTypeInternal _ModeManualResponse_default_instance_;
+constexpr ModeAltitudeControlRequest::ModeAltitudeControlRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeAltitudeControlRequestDefaultTypeInternal {
+  constexpr ModeAltitudeControlRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeAltitudeControlRequestDefaultTypeInternal() {}
+  union {
+    ModeAltitudeControlRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeAltitudeControlRequestDefaultTypeInternal _ModeAltitudeControlRequest_default_instance_;
+constexpr ModeAltitudeControlResponse::ModeAltitudeControlResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeAltitudeControlResponseDefaultTypeInternal {
+  constexpr ModeAltitudeControlResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeAltitudeControlResponseDefaultTypeInternal() {}
+  union {
+    ModeAltitudeControlResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeAltitudeControlResponseDefaultTypeInternal _ModeAltitudeControlResponse_default_instance_;
+constexpr ModePositionControlRequest::ModePositionControlRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModePositionControlRequestDefaultTypeInternal {
+  constexpr ModePositionControlRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModePositionControlRequestDefaultTypeInternal() {}
+  union {
+    ModePositionControlRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModePositionControlRequestDefaultTypeInternal _ModePositionControlRequest_default_instance_;
+constexpr ModePositionControlResponse::ModePositionControlResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModePositionControlResponseDefaultTypeInternal {
+  constexpr ModePositionControlResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModePositionControlResponseDefaultTypeInternal() {}
+  union {
+    ModePositionControlResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModePositionControlResponseDefaultTypeInternal _ModePositionControlResponse_default_instance_;
+constexpr ModeAcroRequest::ModeAcroRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeAcroRequestDefaultTypeInternal {
+  constexpr ModeAcroRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeAcroRequestDefaultTypeInternal() {}
+  union {
+    ModeAcroRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeAcroRequestDefaultTypeInternal _ModeAcroRequest_default_instance_;
+constexpr ModeAcroResponse::ModeAcroResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeAcroResponseDefaultTypeInternal {
+  constexpr ModeAcroResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeAcroResponseDefaultTypeInternal() {}
+  union {
+    ModeAcroResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeAcroResponseDefaultTypeInternal _ModeAcroResponse_default_instance_;
+constexpr ModeStabilizedRequest::ModeStabilizedRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ModeStabilizedRequestDefaultTypeInternal {
+  constexpr ModeStabilizedRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeStabilizedRequestDefaultTypeInternal() {}
+  union {
+    ModeStabilizedRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeStabilizedRequestDefaultTypeInternal _ModeStabilizedRequest_default_instance_;
+constexpr ModeStabilizedResponse::ModeStabilizedResponse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : action_result_(nullptr){}
+struct ModeStabilizedResponseDefaultTypeInternal {
+  constexpr ModeStabilizedResponseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ModeStabilizedResponseDefaultTypeInternal() {}
+  union {
+    ModeStabilizedResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ModeStabilizedResponseDefaultTypeInternal _ModeStabilizedResponse_default_instance_;
 constexpr SetActuatorRequest::SetActuatorRequest(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : index_(0)
@@ -562,7 +838,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ActionResultDefaultTypeInternal
 }  // namespace action
 }  // namespace rpc
 }  // namespace mavsdk
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_action_2faction_2eproto[45];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_action_2faction_2eproto[69];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_action_2faction_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_action_2faction_2eproto = nullptr;
 
@@ -709,6 +985,138 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_action_2faction_2eproto::offse
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::HoldResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeTakeoffRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeTakeoffResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeTakeoffResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeHoldRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeHoldResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeHoldResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeMissionRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeMissionResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeMissionResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeReturnToLaunchRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeReturnToLaunchResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeReturnToLaunchResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeLandRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeLandResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeLandResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeOffboardRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeOffboardResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeOffboardResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeFollowMeRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeFollowMeResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeFollowMeResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeManualRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeManualResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeManualResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeAltitudeControlRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeAltitudeControlResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeAltitudeControlResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModePositionControlRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModePositionControlResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModePositionControlResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeAcroRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeAcroResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeAcroResponse, action_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeStabilizedRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeStabilizedResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::ModeStabilizedResponse, action_result_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::mavsdk::rpc::action::SetActuatorRequest, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -861,27 +1269,51 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 125, -1, sizeof(::mavsdk::rpc::action::DoOrbitResponse)},
   { 131, -1, sizeof(::mavsdk::rpc::action::HoldRequest)},
   { 136, -1, sizeof(::mavsdk::rpc::action::HoldResponse)},
-  { 142, -1, sizeof(::mavsdk::rpc::action::SetActuatorRequest)},
-  { 149, -1, sizeof(::mavsdk::rpc::action::SetActuatorResponse)},
-  { 155, -1, sizeof(::mavsdk::rpc::action::TransitionToFixedwingRequest)},
-  { 160, -1, sizeof(::mavsdk::rpc::action::TransitionToFixedwingResponse)},
-  { 166, -1, sizeof(::mavsdk::rpc::action::TransitionToMulticopterRequest)},
-  { 171, -1, sizeof(::mavsdk::rpc::action::TransitionToMulticopterResponse)},
-  { 177, -1, sizeof(::mavsdk::rpc::action::GetTakeoffAltitudeRequest)},
-  { 182, -1, sizeof(::mavsdk::rpc::action::GetTakeoffAltitudeResponse)},
-  { 189, -1, sizeof(::mavsdk::rpc::action::SetTakeoffAltitudeRequest)},
-  { 195, -1, sizeof(::mavsdk::rpc::action::SetTakeoffAltitudeResponse)},
-  { 201, -1, sizeof(::mavsdk::rpc::action::GetMaximumSpeedRequest)},
-  { 206, -1, sizeof(::mavsdk::rpc::action::GetMaximumSpeedResponse)},
-  { 213, -1, sizeof(::mavsdk::rpc::action::SetMaximumSpeedRequest)},
-  { 219, -1, sizeof(::mavsdk::rpc::action::SetMaximumSpeedResponse)},
-  { 225, -1, sizeof(::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest)},
-  { 230, -1, sizeof(::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse)},
-  { 237, -1, sizeof(::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest)},
-  { 243, -1, sizeof(::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse)},
-  { 249, -1, sizeof(::mavsdk::rpc::action::SetCurrentSpeedRequest)},
-  { 255, -1, sizeof(::mavsdk::rpc::action::SetCurrentSpeedResponse)},
-  { 261, -1, sizeof(::mavsdk::rpc::action::ActionResult)},
+  { 142, -1, sizeof(::mavsdk::rpc::action::ModeTakeoffRequest)},
+  { 147, -1, sizeof(::mavsdk::rpc::action::ModeTakeoffResponse)},
+  { 153, -1, sizeof(::mavsdk::rpc::action::ModeHoldRequest)},
+  { 158, -1, sizeof(::mavsdk::rpc::action::ModeHoldResponse)},
+  { 164, -1, sizeof(::mavsdk::rpc::action::ModeMissionRequest)},
+  { 169, -1, sizeof(::mavsdk::rpc::action::ModeMissionResponse)},
+  { 175, -1, sizeof(::mavsdk::rpc::action::ModeReturnToLaunchRequest)},
+  { 180, -1, sizeof(::mavsdk::rpc::action::ModeReturnToLaunchResponse)},
+  { 186, -1, sizeof(::mavsdk::rpc::action::ModeLandRequest)},
+  { 191, -1, sizeof(::mavsdk::rpc::action::ModeLandResponse)},
+  { 197, -1, sizeof(::mavsdk::rpc::action::ModeOffboardRequest)},
+  { 202, -1, sizeof(::mavsdk::rpc::action::ModeOffboardResponse)},
+  { 208, -1, sizeof(::mavsdk::rpc::action::ModeFollowMeRequest)},
+  { 213, -1, sizeof(::mavsdk::rpc::action::ModeFollowMeResponse)},
+  { 219, -1, sizeof(::mavsdk::rpc::action::ModeManualRequest)},
+  { 224, -1, sizeof(::mavsdk::rpc::action::ModeManualResponse)},
+  { 230, -1, sizeof(::mavsdk::rpc::action::ModeAltitudeControlRequest)},
+  { 235, -1, sizeof(::mavsdk::rpc::action::ModeAltitudeControlResponse)},
+  { 241, -1, sizeof(::mavsdk::rpc::action::ModePositionControlRequest)},
+  { 246, -1, sizeof(::mavsdk::rpc::action::ModePositionControlResponse)},
+  { 252, -1, sizeof(::mavsdk::rpc::action::ModeAcroRequest)},
+  { 257, -1, sizeof(::mavsdk::rpc::action::ModeAcroResponse)},
+  { 263, -1, sizeof(::mavsdk::rpc::action::ModeStabilizedRequest)},
+  { 268, -1, sizeof(::mavsdk::rpc::action::ModeStabilizedResponse)},
+  { 274, -1, sizeof(::mavsdk::rpc::action::SetActuatorRequest)},
+  { 281, -1, sizeof(::mavsdk::rpc::action::SetActuatorResponse)},
+  { 287, -1, sizeof(::mavsdk::rpc::action::TransitionToFixedwingRequest)},
+  { 292, -1, sizeof(::mavsdk::rpc::action::TransitionToFixedwingResponse)},
+  { 298, -1, sizeof(::mavsdk::rpc::action::TransitionToMulticopterRequest)},
+  { 303, -1, sizeof(::mavsdk::rpc::action::TransitionToMulticopterResponse)},
+  { 309, -1, sizeof(::mavsdk::rpc::action::GetTakeoffAltitudeRequest)},
+  { 314, -1, sizeof(::mavsdk::rpc::action::GetTakeoffAltitudeResponse)},
+  { 321, -1, sizeof(::mavsdk::rpc::action::SetTakeoffAltitudeRequest)},
+  { 327, -1, sizeof(::mavsdk::rpc::action::SetTakeoffAltitudeResponse)},
+  { 333, -1, sizeof(::mavsdk::rpc::action::GetMaximumSpeedRequest)},
+  { 338, -1, sizeof(::mavsdk::rpc::action::GetMaximumSpeedResponse)},
+  { 345, -1, sizeof(::mavsdk::rpc::action::SetMaximumSpeedRequest)},
+  { 351, -1, sizeof(::mavsdk::rpc::action::SetMaximumSpeedResponse)},
+  { 357, -1, sizeof(::mavsdk::rpc::action::GetReturnToLaunchAltitudeRequest)},
+  { 362, -1, sizeof(::mavsdk::rpc::action::GetReturnToLaunchAltitudeResponse)},
+  { 369, -1, sizeof(::mavsdk::rpc::action::SetReturnToLaunchAltitudeRequest)},
+  { 375, -1, sizeof(::mavsdk::rpc::action::SetReturnToLaunchAltitudeResponse)},
+  { 381, -1, sizeof(::mavsdk::rpc::action::SetCurrentSpeedRequest)},
+  { 387, -1, sizeof(::mavsdk::rpc::action::SetCurrentSpeedResponse)},
+  { 393, -1, sizeof(::mavsdk::rpc::action::ActionResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -909,6 +1341,30 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_DoOrbitResponse_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_HoldRequest_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_HoldResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeTakeoffRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeTakeoffResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeHoldRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeHoldResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeMissionRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeMissionResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeReturnToLaunchRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeReturnToLaunchResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeLandRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeLandResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeOffboardRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeOffboardResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeFollowMeRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeFollowMeResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeManualRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeManualResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeAltitudeControlRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeAltitudeControlResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModePositionControlRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModePositionControlResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeAcroRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeAcroResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeStabilizedRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_ModeStabilizedResponse_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_SetActuatorRequest_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_SetActuatorResponse_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mavsdk::rpc::action::_TransitionToFixedwingRequest_default_instance_),
@@ -969,123 +1425,185 @@ const char descriptor_table_protodef_action_2faction_2eproto[] PROTOBUF_SECTION_
   "sponse\0226\n\raction_result\030\001 \001(\0132\037.mavsdk.r"
   "pc.action.ActionResult\"\r\n\013HoldRequest\"F\n"
   "\014HoldResponse\0226\n\raction_result\030\001 \001(\0132\037.m"
-  "avsdk.rpc.action.ActionResult\"2\n\022SetActu"
-  "atorRequest\022\r\n\005index\030\001 \001(\005\022\r\n\005value\030\002 \001("
-  "\002\"M\n\023SetActuatorResponse\0226\n\raction_resul"
-  "t\030\001 \001(\0132\037.mavsdk.rpc.action.ActionResult"
-  "\"\036\n\034TransitionToFixedwingRequest\"W\n\035Tran"
-  "sitionToFixedwingResponse\0226\n\raction_resu"
-  "lt\030\001 \001(\0132\037.mavsdk.rpc.action.ActionResul"
-  "t\" \n\036TransitionToMulticopterRequest\"Y\n\037T"
-  "ransitionToMulticopterResponse\0226\n\raction"
+  "avsdk.rpc.action.ActionResult\"\024\n\022ModeTak"
+  "eoffRequest\"M\n\023ModeTakeoffResponse\0226\n\rac"
+  "tion_result\030\001 \001(\0132\037.mavsdk.rpc.action.Ac"
+  "tionResult\"\021\n\017ModeHoldRequest\"J\n\020ModeHol"
+  "dResponse\0226\n\raction_result\030\001 \001(\0132\037.mavsd"
+  "k.rpc.action.ActionResult\"\024\n\022ModeMission"
+  "Request\"M\n\023ModeMissionResponse\0226\n\raction"
   "_result\030\001 \001(\0132\037.mavsdk.rpc.action.Action"
-  "Result\"\033\n\031GetTakeoffAltitudeRequest\"f\n\032G"
-  "etTakeoffAltitudeResponse\0226\n\raction_resu"
+  "Result\"\033\n\031ModeReturnToLaunchRequest\"T\n\032M"
+  "odeReturnToLaunchResponse\0226\n\raction_resu"
   "lt\030\001 \001(\0132\037.mavsdk.rpc.action.ActionResul"
-  "t\022\020\n\010altitude\030\002 \001(\002\"-\n\031SetTakeoffAltitud"
-  "eRequest\022\020\n\010altitude\030\001 \001(\002\"T\n\032SetTakeoff"
-  "AltitudeResponse\0226\n\raction_result\030\001 \001(\0132"
-  "\037.mavsdk.rpc.action.ActionResult\"\030\n\026GetM"
-  "aximumSpeedRequest\"`\n\027GetMaximumSpeedRes"
-  "ponse\0226\n\raction_result\030\001 \001(\0132\037.mavsdk.rp"
-  "c.action.ActionResult\022\r\n\005speed\030\002 \001(\002\"\'\n\026"
-  "SetMaximumSpeedRequest\022\r\n\005speed\030\001 \001(\002\"Q\n"
-  "\027SetMaximumSpeedResponse\0226\n\raction_resul"
-  "t\030\001 \001(\0132\037.mavsdk.rpc.action.ActionResult"
-  "\"\"\n GetReturnToLaunchAltitudeRequest\"x\n!"
-  "GetReturnToLaunchAltitudeResponse\0226\n\ract"
+  "t\"\021\n\017ModeLandRequest\"J\n\020ModeLandResponse"
+  "\0226\n\raction_result\030\001 \001(\0132\037.mavsdk.rpc.act"
+  "ion.ActionResult\"\025\n\023ModeOffboardRequest\""
+  "N\n\024ModeOffboardResponse\0226\n\raction_result"
+  "\030\001 \001(\0132\037.mavsdk.rpc.action.ActionResult\""
+  "\025\n\023ModeFollowMeRequest\"N\n\024ModeFollowMeRe"
+  "sponse\0226\n\raction_result\030\001 \001(\0132\037.mavsdk.r"
+  "pc.action.ActionResult\"\023\n\021ModeManualRequ"
+  "est\"L\n\022ModeManualResponse\0226\n\raction_resu"
+  "lt\030\001 \001(\0132\037.mavsdk.rpc.action.ActionResul"
+  "t\"\034\n\032ModeAltitudeControlRequest\"U\n\033ModeA"
+  "ltitudeControlResponse\0226\n\raction_result\030"
+  "\001 \001(\0132\037.mavsdk.rpc.action.ActionResult\"\034"
+  "\n\032ModePositionControlRequest\"U\n\033ModePosi"
+  "tionControlResponse\0226\n\raction_result\030\001 \001"
+  "(\0132\037.mavsdk.rpc.action.ActionResult\"\021\n\017M"
+  "odeAcroRequest\"J\n\020ModeAcroResponse\0226\n\rac"
+  "tion_result\030\001 \001(\0132\037.mavsdk.rpc.action.Ac"
+  "tionResult\"\027\n\025ModeStabilizedRequest\"P\n\026M"
+  "odeStabilizedResponse\0226\n\raction_result\030\001"
+  " \001(\0132\037.mavsdk.rpc.action.ActionResult\"2\n"
+  "\022SetActuatorRequest\022\r\n\005index\030\001 \001(\005\022\r\n\005va"
+  "lue\030\002 \001(\002\"M\n\023SetActuatorResponse\0226\n\racti"
+  "on_result\030\001 \001(\0132\037.mavsdk.rpc.action.Acti"
+  "onResult\"\036\n\034TransitionToFixedwingRequest"
+  "\"W\n\035TransitionToFixedwingResponse\0226\n\ract"
   "ion_result\030\001 \001(\0132\037.mavsdk.rpc.action.Act"
-  "ionResult\022\033\n\023relative_altitude_m\030\002 \001(\002\"\?"
-  "\n SetReturnToLaunchAltitudeRequest\022\033\n\023re"
-  "lative_altitude_m\030\001 \001(\002\"[\n!SetReturnToLa"
-  "unchAltitudeResponse\0226\n\raction_result\030\001 "
-  "\001(\0132\037.mavsdk.rpc.action.ActionResult\"+\n\026"
-  "SetCurrentSpeedRequest\022\021\n\tspeed_m_s\030\001 \001("
-  "\002\"Q\n\027SetCurrentSpeedResponse\0226\n\raction_r"
+  "ionResult\" \n\036TransitionToMulticopterRequ"
+  "est\"Y\n\037TransitionToMulticopterResponse\0226"
+  "\n\raction_result\030\001 \001(\0132\037.mavsdk.rpc.actio"
+  "n.ActionResult\"\033\n\031GetTakeoffAltitudeRequ"
+  "est\"f\n\032GetTakeoffAltitudeResponse\0226\n\ract"
+  "ion_result\030\001 \001(\0132\037.mavsdk.rpc.action.Act"
+  "ionResult\022\020\n\010altitude\030\002 \001(\002\"-\n\031SetTakeof"
+  "fAltitudeRequest\022\020\n\010altitude\030\001 \001(\002\"T\n\032Se"
+  "tTakeoffAltitudeResponse\0226\n\raction_resul"
+  "t\030\001 \001(\0132\037.mavsdk.rpc.action.ActionResult"
+  "\"\030\n\026GetMaximumSpeedRequest\"`\n\027GetMaximum"
+  "SpeedResponse\0226\n\raction_result\030\001 \001(\0132\037.m"
+  "avsdk.rpc.action.ActionResult\022\r\n\005speed\030\002"
+  " \001(\002\"\'\n\026SetMaximumSpeedRequest\022\r\n\005speed\030"
+  "\001 \001(\002\"Q\n\027SetMaximumSpeedResponse\0226\n\racti"
+  "on_result\030\001 \001(\0132\037.mavsdk.rpc.action.Acti"
+  "onResult\"\"\n GetReturnToLaunchAltitudeReq"
+  "uest\"x\n!GetReturnToLaunchAltitudeRespons"
+  "e\0226\n\raction_result\030\001 \001(\0132\037.mavsdk.rpc.ac"
+  "tion.ActionResult\022\033\n\023relative_altitude_m"
+  "\030\002 \001(\002\"\?\n SetReturnToLaunchAltitudeReque"
+  "st\022\033\n\023relative_altitude_m\030\001 \001(\002\"[\n!SetRe"
+  "turnToLaunchAltitudeResponse\0226\n\raction_r"
   "esult\030\001 \001(\0132\037.mavsdk.rpc.action.ActionRe"
-  "sult\"\335\003\n\014ActionResult\0226\n\006result\030\001 \001(\0162&."
-  "mavsdk.rpc.action.ActionResult.Result\022\022\n"
-  "\nresult_str\030\002 \001(\t\"\200\003\n\006Result\022\022\n\016RESULT_U"
-  "NKNOWN\020\000\022\022\n\016RESULT_SUCCESS\020\001\022\024\n\020RESULT_N"
-  "O_SYSTEM\020\002\022\033\n\027RESULT_CONNECTION_ERROR\020\003\022"
-  "\017\n\013RESULT_BUSY\020\004\022\031\n\025RESULT_COMMAND_DENIE"
-  "D\020\005\022.\n*RESULT_COMMAND_DENIED_LANDED_STAT"
-  "E_UNKNOWN\020\006\022$\n RESULT_COMMAND_DENIED_NOT"
-  "_LANDED\020\007\022\022\n\016RESULT_TIMEOUT\020\010\022*\n&RESULT_"
-  "VTOL_TRANSITION_SUPPORT_UNKNOWN\020\t\022%\n!RES"
-  "ULT_NO_VTOL_TRANSITION_SUPPORT\020\n\022\032\n\026RESU"
-  "LT_PARAMETER_ERROR\020\013\022\026\n\022RESULT_UNSUPPORT"
-  "ED\020\014*\363\001\n\020OrbitYawBehavior\0222\n.ORBIT_YAW_B"
-  "EHAVIOR_HOLD_FRONT_TO_CIRCLE_CENTER\020\000\022+\n"
-  "\'ORBIT_YAW_BEHAVIOR_HOLD_INITIAL_HEADING"
-  "\020\001\022#\n\037ORBIT_YAW_BEHAVIOR_UNCONTROLLED\020\002\022"
-  "3\n/ORBIT_YAW_BEHAVIOR_HOLD_FRONT_TANGENT"
-  "_TO_CIRCLE\020\003\022$\n ORBIT_YAW_BEHAVIOR_RC_CO"
-  "NTROLLED\020\0042\246\021\n\rActionService\022F\n\003Arm\022\035.ma"
-  "vsdk.rpc.action.ArmRequest\032\036.mavsdk.rpc."
-  "action.ArmResponse\"\000\022O\n\006Disarm\022 .mavsdk."
-  "rpc.action.DisarmRequest\032!.mavsdk.rpc.ac"
-  "tion.DisarmResponse\"\000\022R\n\007Takeoff\022!.mavsd"
-  "k.rpc.action.TakeoffRequest\032\".mavsdk.rpc"
-  ".action.TakeoffResponse\"\000\022I\n\004Land\022\036.mavs"
-  "dk.rpc.action.LandRequest\032\037.mavsdk.rpc.a"
-  "ction.LandResponse\"\000\022O\n\006Reboot\022 .mavsdk."
-  "rpc.action.RebootRequest\032!.mavsdk.rpc.ac"
-  "tion.RebootResponse\"\000\022U\n\010Shutdown\022\".mavs"
-  "dk.rpc.action.ShutdownRequest\032#.mavsdk.r"
-  "pc.action.ShutdownResponse\"\000\022X\n\tTerminat"
-  "e\022#.mavsdk.rpc.action.TerminateRequest\032$"
-  ".mavsdk.rpc.action.TerminateResponse\"\000\022I"
-  "\n\004Kill\022\036.mavsdk.rpc.action.KillRequest\032\037"
-  ".mavsdk.rpc.action.KillResponse\"\000\022g\n\016Ret"
-  "urnToLaunch\022(.mavsdk.rpc.action.ReturnTo"
-  "LaunchRequest\032).mavsdk.rpc.action.Return"
-  "ToLaunchResponse\"\000\022a\n\014GotoLocation\022&.mav"
-  "sdk.rpc.action.GotoLocationRequest\032\'.mav"
-  "sdk.rpc.action.GotoLocationResponse\"\000\022R\n"
-  "\007DoOrbit\022!.mavsdk.rpc.action.DoOrbitRequ"
-  "est\032\".mavsdk.rpc.action.DoOrbitResponse\""
-  "\000\022I\n\004Hold\022\036.mavsdk.rpc.action.HoldReques"
-  "t\032\037.mavsdk.rpc.action.HoldResponse\"\000\022^\n\013"
-  "SetActuator\022%.mavsdk.rpc.action.SetActua"
-  "torRequest\032&.mavsdk.rpc.action.SetActuat"
-  "orResponse\"\000\022|\n\025TransitionToFixedwing\022/."
-  "mavsdk.rpc.action.TransitionToFixedwingR"
-  "equest\0320.mavsdk.rpc.action.TransitionToF"
-  "ixedwingResponse\"\000\022\202\001\n\027TransitionToMulti"
-  "copter\0221.mavsdk.rpc.action.TransitionToM"
-  "ulticopterRequest\0322.mavsdk.rpc.action.Tr"
-  "ansitionToMulticopterResponse\"\000\022s\n\022GetTa"
-  "keoffAltitude\022,.mavsdk.rpc.action.GetTak"
-  "eoffAltitudeRequest\032-.mavsdk.rpc.action."
-  "GetTakeoffAltitudeResponse\"\000\022s\n\022SetTakeo"
-  "ffAltitude\022,.mavsdk.rpc.action.SetTakeof"
-  "fAltitudeRequest\032-.mavsdk.rpc.action.Set"
-  "TakeoffAltitudeResponse\"\000\022j\n\017GetMaximumS"
-  "peed\022).mavsdk.rpc.action.GetMaximumSpeed"
-  "Request\032*.mavsdk.rpc.action.GetMaximumSp"
-  "eedResponse\"\000\022j\n\017SetMaximumSpeed\022).mavsd"
-  "k.rpc.action.SetMaximumSpeedRequest\032*.ma"
-  "vsdk.rpc.action.SetMaximumSpeedResponse\""
-  "\000\022\210\001\n\031GetReturnToLaunchAltitude\0223.mavsdk"
-  ".rpc.action.GetReturnToLaunchAltitudeReq"
-  "uest\0324.mavsdk.rpc.action.GetReturnToLaun"
-  "chAltitudeResponse\"\000\022\210\001\n\031SetReturnToLaun"
-  "chAltitude\0223.mavsdk.rpc.action.SetReturn"
-  "ToLaunchAltitudeRequest\0324.mavsdk.rpc.act"
-  "ion.SetReturnToLaunchAltitudeResponse\"\000\022"
-  "j\n\017SetCurrentSpeed\022).mavsdk.rpc.action.S"
-  "etCurrentSpeedRequest\032*.mavsdk.rpc.actio"
-  "n.SetCurrentSpeedResponse\"\000B\037\n\020io.mavsdk"
-  ".actionB\013ActionProtob\006proto3"
+  "sult\"+\n\026SetCurrentSpeedRequest\022\021\n\tspeed_"
+  "m_s\030\001 \001(\002\"Q\n\027SetCurrentSpeedResponse\0226\n\r"
+  "action_result\030\001 \001(\0132\037.mavsdk.rpc.action."
+  "ActionResult\"\335\003\n\014ActionResult\0226\n\006result\030"
+  "\001 \001(\0162&.mavsdk.rpc.action.ActionResult.R"
+  "esult\022\022\n\nresult_str\030\002 \001(\t\"\200\003\n\006Result\022\022\n\016"
+  "RESULT_UNKNOWN\020\000\022\022\n\016RESULT_SUCCESS\020\001\022\024\n\020"
+  "RESULT_NO_SYSTEM\020\002\022\033\n\027RESULT_CONNECTION_"
+  "ERROR\020\003\022\017\n\013RESULT_BUSY\020\004\022\031\n\025RESULT_COMMA"
+  "ND_DENIED\020\005\022.\n*RESULT_COMMAND_DENIED_LAN"
+  "DED_STATE_UNKNOWN\020\006\022$\n RESULT_COMMAND_DE"
+  "NIED_NOT_LANDED\020\007\022\022\n\016RESULT_TIMEOUT\020\010\022*\n"
+  "&RESULT_VTOL_TRANSITION_SUPPORT_UNKNOWN\020"
+  "\t\022%\n!RESULT_NO_VTOL_TRANSITION_SUPPORT\020\n"
+  "\022\032\n\026RESULT_PARAMETER_ERROR\020\013\022\026\n\022RESULT_U"
+  "NSUPPORTED\020\014*\363\001\n\020OrbitYawBehavior\0222\n.ORB"
+  "IT_YAW_BEHAVIOR_HOLD_FRONT_TO_CIRCLE_CEN"
+  "TER\020\000\022+\n\'ORBIT_YAW_BEHAVIOR_HOLD_INITIAL"
+  "_HEADING\020\001\022#\n\037ORBIT_YAW_BEHAVIOR_UNCONTR"
+  "OLLED\020\002\0223\n/ORBIT_YAW_BEHAVIOR_HOLD_FRONT"
+  "_TANGENT_TO_CIRCLE\020\003\022$\n ORBIT_YAW_BEHAVI"
+  "OR_RC_CONTROLLED\020\0042\334\032\n\rActionService\022F\n\003"
+  "Arm\022\035.mavsdk.rpc.action.ArmRequest\032\036.mav"
+  "sdk.rpc.action.ArmResponse\"\000\022O\n\006Disarm\022 "
+  ".mavsdk.rpc.action.DisarmRequest\032!.mavsd"
+  "k.rpc.action.DisarmResponse\"\000\022R\n\007Takeoff"
+  "\022!.mavsdk.rpc.action.TakeoffRequest\032\".ma"
+  "vsdk.rpc.action.TakeoffResponse\"\000\022I\n\004Lan"
+  "d\022\036.mavsdk.rpc.action.LandRequest\032\037.mavs"
+  "dk.rpc.action.LandResponse\"\000\022O\n\006Reboot\022 "
+  ".mavsdk.rpc.action.RebootRequest\032!.mavsd"
+  "k.rpc.action.RebootResponse\"\000\022U\n\010Shutdow"
+  "n\022\".mavsdk.rpc.action.ShutdownRequest\032#."
+  "mavsdk.rpc.action.ShutdownResponse\"\000\022X\n\t"
+  "Terminate\022#.mavsdk.rpc.action.TerminateR"
+  "equest\032$.mavsdk.rpc.action.TerminateResp"
+  "onse\"\000\022I\n\004Kill\022\036.mavsdk.rpc.action.KillR"
+  "equest\032\037.mavsdk.rpc.action.KillResponse\""
+  "\000\022g\n\016ReturnToLaunch\022(.mavsdk.rpc.action."
+  "ReturnToLaunchRequest\032).mavsdk.rpc.actio"
+  "n.ReturnToLaunchResponse\"\000\022a\n\014GotoLocati"
+  "on\022&.mavsdk.rpc.action.GotoLocationReque"
+  "st\032\'.mavsdk.rpc.action.GotoLocationRespo"
+  "nse\"\000\022R\n\007DoOrbit\022!.mavsdk.rpc.action.DoO"
+  "rbitRequest\032\".mavsdk.rpc.action.DoOrbitR"
+  "esponse\"\000\022I\n\004Hold\022\036.mavsdk.rpc.action.Ho"
+  "ldRequest\032\037.mavsdk.rpc.action.HoldRespon"
+  "se\"\000\022^\n\013ModeTakeoff\022%.mavsdk.rpc.action."
+  "ModeTakeoffRequest\032&.mavsdk.rpc.action.M"
+  "odeTakeoffResponse\"\000\022U\n\010ModeHold\022\".mavsd"
+  "k.rpc.action.ModeHoldRequest\032#.mavsdk.rp"
+  "c.action.ModeHoldResponse\"\000\022^\n\013ModeMissi"
+  "on\022%.mavsdk.rpc.action.ModeMissionReques"
+  "t\032&.mavsdk.rpc.action.ModeMissionRespons"
+  "e\"\000\022s\n\022ModeReturnToLaunch\022,.mavsdk.rpc.a"
+  "ction.ModeReturnToLaunchRequest\032-.mavsdk"
+  ".rpc.action.ModeReturnToLaunchResponse\"\000"
+  "\022U\n\010ModeLand\022\".mavsdk.rpc.action.ModeLan"
+  "dRequest\032#.mavsdk.rpc.action.ModeLandRes"
+  "ponse\"\000\022a\n\014ModeOffboard\022&.mavsdk.rpc.act"
+  "ion.ModeOffboardRequest\032\'.mavsdk.rpc.act"
+  "ion.ModeOffboardResponse\"\000\022a\n\014ModeFollow"
+  "Me\022&.mavsdk.rpc.action.ModeFollowMeReque"
+  "st\032\'.mavsdk.rpc.action.ModeFollowMeRespo"
+  "nse\"\000\022[\n\nModeManual\022$.mavsdk.rpc.action."
+  "ModeManualRequest\032%.mavsdk.rpc.action.Mo"
+  "deManualResponse\"\000\022v\n\023ModeAltitudeContro"
+  "l\022-.mavsdk.rpc.action.ModeAltitudeContro"
+  "lRequest\032..mavsdk.rpc.action.ModeAltitud"
+  "eControlResponse\"\000\022v\n\023ModePositionContro"
+  "l\022-.mavsdk.rpc.action.ModePositionContro"
+  "lRequest\032..mavsdk.rpc.action.ModePositio"
+  "nControlResponse\"\000\022U\n\010ModeAcro\022\".mavsdk."
+  "rpc.action.ModeAcroRequest\032#.mavsdk.rpc."
+  "action.ModeAcroResponse\"\000\022g\n\016ModeStabili"
+  "zed\022(.mavsdk.rpc.action.ModeStabilizedRe"
+  "quest\032).mavsdk.rpc.action.ModeStabilized"
+  "Response\"\000\022^\n\013SetActuator\022%.mavsdk.rpc.a"
+  "ction.SetActuatorRequest\032&.mavsdk.rpc.ac"
+  "tion.SetActuatorResponse\"\000\022|\n\025Transition"
+  "ToFixedwing\022/.mavsdk.rpc.action.Transiti"
+  "onToFixedwingRequest\0320.mavsdk.rpc.action"
+  ".TransitionToFixedwingResponse\"\000\022\202\001\n\027Tra"
+  "nsitionToMulticopter\0221.mavsdk.rpc.action"
+  ".TransitionToMulticopterRequest\0322.mavsdk"
+  ".rpc.action.TransitionToMulticopterRespo"
+  "nse\"\000\022s\n\022GetTakeoffAltitude\022,.mavsdk.rpc"
+  ".action.GetTakeoffAltitudeRequest\032-.mavs"
+  "dk.rpc.action.GetTakeoffAltitudeResponse"
+  "\"\000\022s\n\022SetTakeoffAltitude\022,.mavsdk.rpc.ac"
+  "tion.SetTakeoffAltitudeRequest\032-.mavsdk."
+  "rpc.action.SetTakeoffAltitudeResponse\"\000\022"
+  "j\n\017GetMaximumSpeed\022).mavsdk.rpc.action.G"
+  "etMaximumSpeedRequest\032*.mavsdk.rpc.actio"
+  "n.GetMaximumSpeedResponse\"\000\022j\n\017SetMaximu"
+  "mSpeed\022).mavsdk.rpc.action.SetMaximumSpe"
+  "edRequest\032*.mavsdk.rpc.action.SetMaximum"
+  "SpeedResponse\"\000\022\210\001\n\031GetReturnToLaunchAlt"
+  "itude\0223.mavsdk.rpc.action.GetReturnToLau"
+  "nchAltitudeRequest\0324.mavsdk.rpc.action.G"
+  "etReturnToLaunchAltitudeResponse\"\000\022\210\001\n\031S"
+  "etReturnToLaunchAltitude\0223.mavsdk.rpc.ac"
+  "tion.SetReturnToLaunchAltitudeRequest\0324."
+  "mavsdk.rpc.action.SetReturnToLaunchAltit"
+  "udeResponse\"\000\022j\n\017SetCurrentSpeed\022).mavsd"
+  "k.rpc.action.SetCurrentSpeedRequest\032*.ma"
+  "vsdk.rpc.action.SetCurrentSpeedResponse\""
+  "\000B\037\n\020io.mavsdk.actionB\013ActionProtob\006prot"
+  "o3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_action_2faction_2eproto_deps[1] = {
   &::descriptor_table_mavsdk_5foptions_2eproto,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_action_2faction_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_action_2faction_2eproto = {
-  false, false, 5788, descriptor_table_protodef_action_2faction_2eproto, "action/action.proto", 
-  &descriptor_table_action_2faction_2eproto_once, descriptor_table_action_2faction_2eproto_deps, 1, 45,
+  false, false, 8242, descriptor_table_protodef_action_2faction_2eproto, "action/action.proto", 
+  &descriptor_table_action_2faction_2eproto_once, descriptor_table_action_2faction_2eproto_deps, 1, 69,
   schemas, file_default_instances, TableStruct_action_2faction_2eproto::offsets,
   file_level_metadata_action_2faction_2eproto, file_level_enum_descriptors_action_2faction_2eproto, file_level_service_descriptors_action_2faction_2eproto,
 };
@@ -5652,6 +6170,4242 @@ void HoldResponse::InternalSwap(HoldResponse* other) {
 
 // ===================================================================
 
+class ModeTakeoffRequest::_Internal {
+ public:
+};
+
+ModeTakeoffRequest::ModeTakeoffRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeTakeoffRequest)
+}
+ModeTakeoffRequest::ModeTakeoffRequest(const ModeTakeoffRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeTakeoffRequest)
+}
+
+inline void ModeTakeoffRequest::SharedCtor() {
+}
+
+ModeTakeoffRequest::~ModeTakeoffRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeTakeoffRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeTakeoffRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeTakeoffRequest::ArenaDtor(void* object) {
+  ModeTakeoffRequest* _this = reinterpret_cast< ModeTakeoffRequest* >(object);
+  (void)_this;
+}
+void ModeTakeoffRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeTakeoffRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeTakeoffRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeTakeoffRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeTakeoffRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeTakeoffRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeTakeoffRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeTakeoffRequest)
+  return target;
+}
+
+size_t ModeTakeoffRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeTakeoffRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeTakeoffRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeTakeoffRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeTakeoffRequest::GetClassData() const { return &_class_data_; }
+
+void ModeTakeoffRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeTakeoffRequest *>(to)->MergeFrom(
+      static_cast<const ModeTakeoffRequest &>(from));
+}
+
+
+void ModeTakeoffRequest::MergeFrom(const ModeTakeoffRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeTakeoffRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeTakeoffRequest::CopyFrom(const ModeTakeoffRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeTakeoffRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeTakeoffRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeTakeoffRequest::InternalSwap(ModeTakeoffRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeTakeoffRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[24]);
+}
+
+// ===================================================================
+
+class ModeTakeoffResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeTakeoffResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeTakeoffResponse::_Internal::action_result(const ModeTakeoffResponse* msg) {
+  return *msg->action_result_;
+}
+ModeTakeoffResponse::ModeTakeoffResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeTakeoffResponse)
+}
+ModeTakeoffResponse::ModeTakeoffResponse(const ModeTakeoffResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeTakeoffResponse)
+}
+
+inline void ModeTakeoffResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeTakeoffResponse::~ModeTakeoffResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeTakeoffResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeTakeoffResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeTakeoffResponse::ArenaDtor(void* object) {
+  ModeTakeoffResponse* _this = reinterpret_cast< ModeTakeoffResponse* >(object);
+  (void)_this;
+}
+void ModeTakeoffResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeTakeoffResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeTakeoffResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeTakeoffResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeTakeoffResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeTakeoffResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeTakeoffResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeTakeoffResponse)
+  return target;
+}
+
+size_t ModeTakeoffResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeTakeoffResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeTakeoffResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeTakeoffResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeTakeoffResponse::GetClassData() const { return &_class_data_; }
+
+void ModeTakeoffResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeTakeoffResponse *>(to)->MergeFrom(
+      static_cast<const ModeTakeoffResponse &>(from));
+}
+
+
+void ModeTakeoffResponse::MergeFrom(const ModeTakeoffResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeTakeoffResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeTakeoffResponse::CopyFrom(const ModeTakeoffResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeTakeoffResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeTakeoffResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeTakeoffResponse::InternalSwap(ModeTakeoffResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeTakeoffResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[25]);
+}
+
+// ===================================================================
+
+class ModeHoldRequest::_Internal {
+ public:
+};
+
+ModeHoldRequest::ModeHoldRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeHoldRequest)
+}
+ModeHoldRequest::ModeHoldRequest(const ModeHoldRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeHoldRequest)
+}
+
+inline void ModeHoldRequest::SharedCtor() {
+}
+
+ModeHoldRequest::~ModeHoldRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeHoldRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeHoldRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeHoldRequest::ArenaDtor(void* object) {
+  ModeHoldRequest* _this = reinterpret_cast< ModeHoldRequest* >(object);
+  (void)_this;
+}
+void ModeHoldRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeHoldRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeHoldRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeHoldRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeHoldRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeHoldRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeHoldRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeHoldRequest)
+  return target;
+}
+
+size_t ModeHoldRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeHoldRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeHoldRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeHoldRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeHoldRequest::GetClassData() const { return &_class_data_; }
+
+void ModeHoldRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeHoldRequest *>(to)->MergeFrom(
+      static_cast<const ModeHoldRequest &>(from));
+}
+
+
+void ModeHoldRequest::MergeFrom(const ModeHoldRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeHoldRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeHoldRequest::CopyFrom(const ModeHoldRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeHoldRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeHoldRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeHoldRequest::InternalSwap(ModeHoldRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeHoldRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[26]);
+}
+
+// ===================================================================
+
+class ModeHoldResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeHoldResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeHoldResponse::_Internal::action_result(const ModeHoldResponse* msg) {
+  return *msg->action_result_;
+}
+ModeHoldResponse::ModeHoldResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeHoldResponse)
+}
+ModeHoldResponse::ModeHoldResponse(const ModeHoldResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeHoldResponse)
+}
+
+inline void ModeHoldResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeHoldResponse::~ModeHoldResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeHoldResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeHoldResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeHoldResponse::ArenaDtor(void* object) {
+  ModeHoldResponse* _this = reinterpret_cast< ModeHoldResponse* >(object);
+  (void)_this;
+}
+void ModeHoldResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeHoldResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeHoldResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeHoldResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeHoldResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeHoldResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeHoldResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeHoldResponse)
+  return target;
+}
+
+size_t ModeHoldResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeHoldResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeHoldResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeHoldResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeHoldResponse::GetClassData() const { return &_class_data_; }
+
+void ModeHoldResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeHoldResponse *>(to)->MergeFrom(
+      static_cast<const ModeHoldResponse &>(from));
+}
+
+
+void ModeHoldResponse::MergeFrom(const ModeHoldResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeHoldResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeHoldResponse::CopyFrom(const ModeHoldResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeHoldResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeHoldResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeHoldResponse::InternalSwap(ModeHoldResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeHoldResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[27]);
+}
+
+// ===================================================================
+
+class ModeMissionRequest::_Internal {
+ public:
+};
+
+ModeMissionRequest::ModeMissionRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeMissionRequest)
+}
+ModeMissionRequest::ModeMissionRequest(const ModeMissionRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeMissionRequest)
+}
+
+inline void ModeMissionRequest::SharedCtor() {
+}
+
+ModeMissionRequest::~ModeMissionRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeMissionRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeMissionRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeMissionRequest::ArenaDtor(void* object) {
+  ModeMissionRequest* _this = reinterpret_cast< ModeMissionRequest* >(object);
+  (void)_this;
+}
+void ModeMissionRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeMissionRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeMissionRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeMissionRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeMissionRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeMissionRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeMissionRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeMissionRequest)
+  return target;
+}
+
+size_t ModeMissionRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeMissionRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeMissionRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeMissionRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeMissionRequest::GetClassData() const { return &_class_data_; }
+
+void ModeMissionRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeMissionRequest *>(to)->MergeFrom(
+      static_cast<const ModeMissionRequest &>(from));
+}
+
+
+void ModeMissionRequest::MergeFrom(const ModeMissionRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeMissionRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeMissionRequest::CopyFrom(const ModeMissionRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeMissionRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeMissionRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeMissionRequest::InternalSwap(ModeMissionRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeMissionRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[28]);
+}
+
+// ===================================================================
+
+class ModeMissionResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeMissionResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeMissionResponse::_Internal::action_result(const ModeMissionResponse* msg) {
+  return *msg->action_result_;
+}
+ModeMissionResponse::ModeMissionResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeMissionResponse)
+}
+ModeMissionResponse::ModeMissionResponse(const ModeMissionResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeMissionResponse)
+}
+
+inline void ModeMissionResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeMissionResponse::~ModeMissionResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeMissionResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeMissionResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeMissionResponse::ArenaDtor(void* object) {
+  ModeMissionResponse* _this = reinterpret_cast< ModeMissionResponse* >(object);
+  (void)_this;
+}
+void ModeMissionResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeMissionResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeMissionResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeMissionResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeMissionResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeMissionResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeMissionResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeMissionResponse)
+  return target;
+}
+
+size_t ModeMissionResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeMissionResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeMissionResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeMissionResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeMissionResponse::GetClassData() const { return &_class_data_; }
+
+void ModeMissionResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeMissionResponse *>(to)->MergeFrom(
+      static_cast<const ModeMissionResponse &>(from));
+}
+
+
+void ModeMissionResponse::MergeFrom(const ModeMissionResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeMissionResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeMissionResponse::CopyFrom(const ModeMissionResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeMissionResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeMissionResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeMissionResponse::InternalSwap(ModeMissionResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeMissionResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[29]);
+}
+
+// ===================================================================
+
+class ModeReturnToLaunchRequest::_Internal {
+ public:
+};
+
+ModeReturnToLaunchRequest::ModeReturnToLaunchRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+}
+ModeReturnToLaunchRequest::ModeReturnToLaunchRequest(const ModeReturnToLaunchRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+}
+
+inline void ModeReturnToLaunchRequest::SharedCtor() {
+}
+
+ModeReturnToLaunchRequest::~ModeReturnToLaunchRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeReturnToLaunchRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeReturnToLaunchRequest::ArenaDtor(void* object) {
+  ModeReturnToLaunchRequest* _this = reinterpret_cast< ModeReturnToLaunchRequest* >(object);
+  (void)_this;
+}
+void ModeReturnToLaunchRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeReturnToLaunchRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeReturnToLaunchRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeReturnToLaunchRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeReturnToLaunchRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+  return target;
+}
+
+size_t ModeReturnToLaunchRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeReturnToLaunchRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeReturnToLaunchRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeReturnToLaunchRequest::GetClassData() const { return &_class_data_; }
+
+void ModeReturnToLaunchRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeReturnToLaunchRequest *>(to)->MergeFrom(
+      static_cast<const ModeReturnToLaunchRequest &>(from));
+}
+
+
+void ModeReturnToLaunchRequest::MergeFrom(const ModeReturnToLaunchRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeReturnToLaunchRequest::CopyFrom(const ModeReturnToLaunchRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeReturnToLaunchRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeReturnToLaunchRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeReturnToLaunchRequest::InternalSwap(ModeReturnToLaunchRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeReturnToLaunchRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[30]);
+}
+
+// ===================================================================
+
+class ModeReturnToLaunchResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeReturnToLaunchResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeReturnToLaunchResponse::_Internal::action_result(const ModeReturnToLaunchResponse* msg) {
+  return *msg->action_result_;
+}
+ModeReturnToLaunchResponse::ModeReturnToLaunchResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+}
+ModeReturnToLaunchResponse::ModeReturnToLaunchResponse(const ModeReturnToLaunchResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+}
+
+inline void ModeReturnToLaunchResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeReturnToLaunchResponse::~ModeReturnToLaunchResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeReturnToLaunchResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeReturnToLaunchResponse::ArenaDtor(void* object) {
+  ModeReturnToLaunchResponse* _this = reinterpret_cast< ModeReturnToLaunchResponse* >(object);
+  (void)_this;
+}
+void ModeReturnToLaunchResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeReturnToLaunchResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeReturnToLaunchResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeReturnToLaunchResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeReturnToLaunchResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+  return target;
+}
+
+size_t ModeReturnToLaunchResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeReturnToLaunchResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeReturnToLaunchResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeReturnToLaunchResponse::GetClassData() const { return &_class_data_; }
+
+void ModeReturnToLaunchResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeReturnToLaunchResponse *>(to)->MergeFrom(
+      static_cast<const ModeReturnToLaunchResponse &>(from));
+}
+
+
+void ModeReturnToLaunchResponse::MergeFrom(const ModeReturnToLaunchResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeReturnToLaunchResponse::CopyFrom(const ModeReturnToLaunchResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeReturnToLaunchResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeReturnToLaunchResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeReturnToLaunchResponse::InternalSwap(ModeReturnToLaunchResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeReturnToLaunchResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[31]);
+}
+
+// ===================================================================
+
+class ModeLandRequest::_Internal {
+ public:
+};
+
+ModeLandRequest::ModeLandRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeLandRequest)
+}
+ModeLandRequest::ModeLandRequest(const ModeLandRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeLandRequest)
+}
+
+inline void ModeLandRequest::SharedCtor() {
+}
+
+ModeLandRequest::~ModeLandRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeLandRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeLandRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeLandRequest::ArenaDtor(void* object) {
+  ModeLandRequest* _this = reinterpret_cast< ModeLandRequest* >(object);
+  (void)_this;
+}
+void ModeLandRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeLandRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeLandRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeLandRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeLandRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeLandRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeLandRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeLandRequest)
+  return target;
+}
+
+size_t ModeLandRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeLandRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeLandRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeLandRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeLandRequest::GetClassData() const { return &_class_data_; }
+
+void ModeLandRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeLandRequest *>(to)->MergeFrom(
+      static_cast<const ModeLandRequest &>(from));
+}
+
+
+void ModeLandRequest::MergeFrom(const ModeLandRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeLandRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeLandRequest::CopyFrom(const ModeLandRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeLandRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeLandRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeLandRequest::InternalSwap(ModeLandRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeLandRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[32]);
+}
+
+// ===================================================================
+
+class ModeLandResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeLandResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeLandResponse::_Internal::action_result(const ModeLandResponse* msg) {
+  return *msg->action_result_;
+}
+ModeLandResponse::ModeLandResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeLandResponse)
+}
+ModeLandResponse::ModeLandResponse(const ModeLandResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeLandResponse)
+}
+
+inline void ModeLandResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeLandResponse::~ModeLandResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeLandResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeLandResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeLandResponse::ArenaDtor(void* object) {
+  ModeLandResponse* _this = reinterpret_cast< ModeLandResponse* >(object);
+  (void)_this;
+}
+void ModeLandResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeLandResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeLandResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeLandResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeLandResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeLandResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeLandResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeLandResponse)
+  return target;
+}
+
+size_t ModeLandResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeLandResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeLandResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeLandResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeLandResponse::GetClassData() const { return &_class_data_; }
+
+void ModeLandResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeLandResponse *>(to)->MergeFrom(
+      static_cast<const ModeLandResponse &>(from));
+}
+
+
+void ModeLandResponse::MergeFrom(const ModeLandResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeLandResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeLandResponse::CopyFrom(const ModeLandResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeLandResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeLandResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeLandResponse::InternalSwap(ModeLandResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeLandResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[33]);
+}
+
+// ===================================================================
+
+class ModeOffboardRequest::_Internal {
+ public:
+};
+
+ModeOffboardRequest::ModeOffboardRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeOffboardRequest)
+}
+ModeOffboardRequest::ModeOffboardRequest(const ModeOffboardRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeOffboardRequest)
+}
+
+inline void ModeOffboardRequest::SharedCtor() {
+}
+
+ModeOffboardRequest::~ModeOffboardRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeOffboardRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeOffboardRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeOffboardRequest::ArenaDtor(void* object) {
+  ModeOffboardRequest* _this = reinterpret_cast< ModeOffboardRequest* >(object);
+  (void)_this;
+}
+void ModeOffboardRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeOffboardRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeOffboardRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeOffboardRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeOffboardRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeOffboardRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeOffboardRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeOffboardRequest)
+  return target;
+}
+
+size_t ModeOffboardRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeOffboardRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeOffboardRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeOffboardRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeOffboardRequest::GetClassData() const { return &_class_data_; }
+
+void ModeOffboardRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeOffboardRequest *>(to)->MergeFrom(
+      static_cast<const ModeOffboardRequest &>(from));
+}
+
+
+void ModeOffboardRequest::MergeFrom(const ModeOffboardRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeOffboardRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeOffboardRequest::CopyFrom(const ModeOffboardRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeOffboardRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeOffboardRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeOffboardRequest::InternalSwap(ModeOffboardRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeOffboardRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[34]);
+}
+
+// ===================================================================
+
+class ModeOffboardResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeOffboardResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeOffboardResponse::_Internal::action_result(const ModeOffboardResponse* msg) {
+  return *msg->action_result_;
+}
+ModeOffboardResponse::ModeOffboardResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeOffboardResponse)
+}
+ModeOffboardResponse::ModeOffboardResponse(const ModeOffboardResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeOffboardResponse)
+}
+
+inline void ModeOffboardResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeOffboardResponse::~ModeOffboardResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeOffboardResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeOffboardResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeOffboardResponse::ArenaDtor(void* object) {
+  ModeOffboardResponse* _this = reinterpret_cast< ModeOffboardResponse* >(object);
+  (void)_this;
+}
+void ModeOffboardResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeOffboardResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeOffboardResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeOffboardResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeOffboardResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeOffboardResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeOffboardResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeOffboardResponse)
+  return target;
+}
+
+size_t ModeOffboardResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeOffboardResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeOffboardResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeOffboardResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeOffboardResponse::GetClassData() const { return &_class_data_; }
+
+void ModeOffboardResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeOffboardResponse *>(to)->MergeFrom(
+      static_cast<const ModeOffboardResponse &>(from));
+}
+
+
+void ModeOffboardResponse::MergeFrom(const ModeOffboardResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeOffboardResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeOffboardResponse::CopyFrom(const ModeOffboardResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeOffboardResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeOffboardResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeOffboardResponse::InternalSwap(ModeOffboardResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeOffboardResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[35]);
+}
+
+// ===================================================================
+
+class ModeFollowMeRequest::_Internal {
+ public:
+};
+
+ModeFollowMeRequest::ModeFollowMeRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeFollowMeRequest)
+}
+ModeFollowMeRequest::ModeFollowMeRequest(const ModeFollowMeRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeFollowMeRequest)
+}
+
+inline void ModeFollowMeRequest::SharedCtor() {
+}
+
+ModeFollowMeRequest::~ModeFollowMeRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeFollowMeRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeFollowMeRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeFollowMeRequest::ArenaDtor(void* object) {
+  ModeFollowMeRequest* _this = reinterpret_cast< ModeFollowMeRequest* >(object);
+  (void)_this;
+}
+void ModeFollowMeRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeFollowMeRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeFollowMeRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeFollowMeRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeFollowMeRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeFollowMeRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeFollowMeRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeFollowMeRequest)
+  return target;
+}
+
+size_t ModeFollowMeRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeFollowMeRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeFollowMeRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeFollowMeRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeFollowMeRequest::GetClassData() const { return &_class_data_; }
+
+void ModeFollowMeRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeFollowMeRequest *>(to)->MergeFrom(
+      static_cast<const ModeFollowMeRequest &>(from));
+}
+
+
+void ModeFollowMeRequest::MergeFrom(const ModeFollowMeRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeFollowMeRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeFollowMeRequest::CopyFrom(const ModeFollowMeRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeFollowMeRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeFollowMeRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeFollowMeRequest::InternalSwap(ModeFollowMeRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeFollowMeRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[36]);
+}
+
+// ===================================================================
+
+class ModeFollowMeResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeFollowMeResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeFollowMeResponse::_Internal::action_result(const ModeFollowMeResponse* msg) {
+  return *msg->action_result_;
+}
+ModeFollowMeResponse::ModeFollowMeResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeFollowMeResponse)
+}
+ModeFollowMeResponse::ModeFollowMeResponse(const ModeFollowMeResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeFollowMeResponse)
+}
+
+inline void ModeFollowMeResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeFollowMeResponse::~ModeFollowMeResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeFollowMeResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeFollowMeResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeFollowMeResponse::ArenaDtor(void* object) {
+  ModeFollowMeResponse* _this = reinterpret_cast< ModeFollowMeResponse* >(object);
+  (void)_this;
+}
+void ModeFollowMeResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeFollowMeResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeFollowMeResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeFollowMeResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeFollowMeResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeFollowMeResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeFollowMeResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeFollowMeResponse)
+  return target;
+}
+
+size_t ModeFollowMeResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeFollowMeResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeFollowMeResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeFollowMeResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeFollowMeResponse::GetClassData() const { return &_class_data_; }
+
+void ModeFollowMeResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeFollowMeResponse *>(to)->MergeFrom(
+      static_cast<const ModeFollowMeResponse &>(from));
+}
+
+
+void ModeFollowMeResponse::MergeFrom(const ModeFollowMeResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeFollowMeResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeFollowMeResponse::CopyFrom(const ModeFollowMeResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeFollowMeResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeFollowMeResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeFollowMeResponse::InternalSwap(ModeFollowMeResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeFollowMeResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[37]);
+}
+
+// ===================================================================
+
+class ModeManualRequest::_Internal {
+ public:
+};
+
+ModeManualRequest::ModeManualRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeManualRequest)
+}
+ModeManualRequest::ModeManualRequest(const ModeManualRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeManualRequest)
+}
+
+inline void ModeManualRequest::SharedCtor() {
+}
+
+ModeManualRequest::~ModeManualRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeManualRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeManualRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeManualRequest::ArenaDtor(void* object) {
+  ModeManualRequest* _this = reinterpret_cast< ModeManualRequest* >(object);
+  (void)_this;
+}
+void ModeManualRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeManualRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeManualRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeManualRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeManualRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeManualRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeManualRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeManualRequest)
+  return target;
+}
+
+size_t ModeManualRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeManualRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeManualRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeManualRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeManualRequest::GetClassData() const { return &_class_data_; }
+
+void ModeManualRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeManualRequest *>(to)->MergeFrom(
+      static_cast<const ModeManualRequest &>(from));
+}
+
+
+void ModeManualRequest::MergeFrom(const ModeManualRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeManualRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeManualRequest::CopyFrom(const ModeManualRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeManualRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeManualRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeManualRequest::InternalSwap(ModeManualRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeManualRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[38]);
+}
+
+// ===================================================================
+
+class ModeManualResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeManualResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeManualResponse::_Internal::action_result(const ModeManualResponse* msg) {
+  return *msg->action_result_;
+}
+ModeManualResponse::ModeManualResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeManualResponse)
+}
+ModeManualResponse::ModeManualResponse(const ModeManualResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeManualResponse)
+}
+
+inline void ModeManualResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeManualResponse::~ModeManualResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeManualResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeManualResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeManualResponse::ArenaDtor(void* object) {
+  ModeManualResponse* _this = reinterpret_cast< ModeManualResponse* >(object);
+  (void)_this;
+}
+void ModeManualResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeManualResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeManualResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeManualResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeManualResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeManualResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeManualResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeManualResponse)
+  return target;
+}
+
+size_t ModeManualResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeManualResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeManualResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeManualResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeManualResponse::GetClassData() const { return &_class_data_; }
+
+void ModeManualResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeManualResponse *>(to)->MergeFrom(
+      static_cast<const ModeManualResponse &>(from));
+}
+
+
+void ModeManualResponse::MergeFrom(const ModeManualResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeManualResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeManualResponse::CopyFrom(const ModeManualResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeManualResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeManualResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeManualResponse::InternalSwap(ModeManualResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeManualResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[39]);
+}
+
+// ===================================================================
+
+class ModeAltitudeControlRequest::_Internal {
+ public:
+};
+
+ModeAltitudeControlRequest::ModeAltitudeControlRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeAltitudeControlRequest)
+}
+ModeAltitudeControlRequest::ModeAltitudeControlRequest(const ModeAltitudeControlRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeAltitudeControlRequest)
+}
+
+inline void ModeAltitudeControlRequest::SharedCtor() {
+}
+
+ModeAltitudeControlRequest::~ModeAltitudeControlRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeAltitudeControlRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeAltitudeControlRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeAltitudeControlRequest::ArenaDtor(void* object) {
+  ModeAltitudeControlRequest* _this = reinterpret_cast< ModeAltitudeControlRequest* >(object);
+  (void)_this;
+}
+void ModeAltitudeControlRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeAltitudeControlRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeAltitudeControlRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeAltitudeControlRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeAltitudeControlRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeAltitudeControlRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeAltitudeControlRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeAltitudeControlRequest)
+  return target;
+}
+
+size_t ModeAltitudeControlRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeAltitudeControlRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeAltitudeControlRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeAltitudeControlRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeAltitudeControlRequest::GetClassData() const { return &_class_data_; }
+
+void ModeAltitudeControlRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeAltitudeControlRequest *>(to)->MergeFrom(
+      static_cast<const ModeAltitudeControlRequest &>(from));
+}
+
+
+void ModeAltitudeControlRequest::MergeFrom(const ModeAltitudeControlRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeAltitudeControlRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeAltitudeControlRequest::CopyFrom(const ModeAltitudeControlRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeAltitudeControlRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeAltitudeControlRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeAltitudeControlRequest::InternalSwap(ModeAltitudeControlRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeAltitudeControlRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[40]);
+}
+
+// ===================================================================
+
+class ModeAltitudeControlResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeAltitudeControlResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeAltitudeControlResponse::_Internal::action_result(const ModeAltitudeControlResponse* msg) {
+  return *msg->action_result_;
+}
+ModeAltitudeControlResponse::ModeAltitudeControlResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeAltitudeControlResponse)
+}
+ModeAltitudeControlResponse::ModeAltitudeControlResponse(const ModeAltitudeControlResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeAltitudeControlResponse)
+}
+
+inline void ModeAltitudeControlResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeAltitudeControlResponse::~ModeAltitudeControlResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeAltitudeControlResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeAltitudeControlResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeAltitudeControlResponse::ArenaDtor(void* object) {
+  ModeAltitudeControlResponse* _this = reinterpret_cast< ModeAltitudeControlResponse* >(object);
+  (void)_this;
+}
+void ModeAltitudeControlResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeAltitudeControlResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeAltitudeControlResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeAltitudeControlResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeAltitudeControlResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeAltitudeControlResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeAltitudeControlResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeAltitudeControlResponse)
+  return target;
+}
+
+size_t ModeAltitudeControlResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeAltitudeControlResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeAltitudeControlResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeAltitudeControlResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeAltitudeControlResponse::GetClassData() const { return &_class_data_; }
+
+void ModeAltitudeControlResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeAltitudeControlResponse *>(to)->MergeFrom(
+      static_cast<const ModeAltitudeControlResponse &>(from));
+}
+
+
+void ModeAltitudeControlResponse::MergeFrom(const ModeAltitudeControlResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeAltitudeControlResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeAltitudeControlResponse::CopyFrom(const ModeAltitudeControlResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeAltitudeControlResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeAltitudeControlResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeAltitudeControlResponse::InternalSwap(ModeAltitudeControlResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeAltitudeControlResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[41]);
+}
+
+// ===================================================================
+
+class ModePositionControlRequest::_Internal {
+ public:
+};
+
+ModePositionControlRequest::ModePositionControlRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModePositionControlRequest)
+}
+ModePositionControlRequest::ModePositionControlRequest(const ModePositionControlRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModePositionControlRequest)
+}
+
+inline void ModePositionControlRequest::SharedCtor() {
+}
+
+ModePositionControlRequest::~ModePositionControlRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModePositionControlRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModePositionControlRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModePositionControlRequest::ArenaDtor(void* object) {
+  ModePositionControlRequest* _this = reinterpret_cast< ModePositionControlRequest* >(object);
+  (void)_this;
+}
+void ModePositionControlRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModePositionControlRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModePositionControlRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModePositionControlRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModePositionControlRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModePositionControlRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModePositionControlRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModePositionControlRequest)
+  return target;
+}
+
+size_t ModePositionControlRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModePositionControlRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModePositionControlRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModePositionControlRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModePositionControlRequest::GetClassData() const { return &_class_data_; }
+
+void ModePositionControlRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModePositionControlRequest *>(to)->MergeFrom(
+      static_cast<const ModePositionControlRequest &>(from));
+}
+
+
+void ModePositionControlRequest::MergeFrom(const ModePositionControlRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModePositionControlRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModePositionControlRequest::CopyFrom(const ModePositionControlRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModePositionControlRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModePositionControlRequest::IsInitialized() const {
+  return true;
+}
+
+void ModePositionControlRequest::InternalSwap(ModePositionControlRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModePositionControlRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[42]);
+}
+
+// ===================================================================
+
+class ModePositionControlResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModePositionControlResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModePositionControlResponse::_Internal::action_result(const ModePositionControlResponse* msg) {
+  return *msg->action_result_;
+}
+ModePositionControlResponse::ModePositionControlResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModePositionControlResponse)
+}
+ModePositionControlResponse::ModePositionControlResponse(const ModePositionControlResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModePositionControlResponse)
+}
+
+inline void ModePositionControlResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModePositionControlResponse::~ModePositionControlResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModePositionControlResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModePositionControlResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModePositionControlResponse::ArenaDtor(void* object) {
+  ModePositionControlResponse* _this = reinterpret_cast< ModePositionControlResponse* >(object);
+  (void)_this;
+}
+void ModePositionControlResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModePositionControlResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModePositionControlResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModePositionControlResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModePositionControlResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModePositionControlResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModePositionControlResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModePositionControlResponse)
+  return target;
+}
+
+size_t ModePositionControlResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModePositionControlResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModePositionControlResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModePositionControlResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModePositionControlResponse::GetClassData() const { return &_class_data_; }
+
+void ModePositionControlResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModePositionControlResponse *>(to)->MergeFrom(
+      static_cast<const ModePositionControlResponse &>(from));
+}
+
+
+void ModePositionControlResponse::MergeFrom(const ModePositionControlResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModePositionControlResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModePositionControlResponse::CopyFrom(const ModePositionControlResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModePositionControlResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModePositionControlResponse::IsInitialized() const {
+  return true;
+}
+
+void ModePositionControlResponse::InternalSwap(ModePositionControlResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModePositionControlResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[43]);
+}
+
+// ===================================================================
+
+class ModeAcroRequest::_Internal {
+ public:
+};
+
+ModeAcroRequest::ModeAcroRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeAcroRequest)
+}
+ModeAcroRequest::ModeAcroRequest(const ModeAcroRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeAcroRequest)
+}
+
+inline void ModeAcroRequest::SharedCtor() {
+}
+
+ModeAcroRequest::~ModeAcroRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeAcroRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeAcroRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeAcroRequest::ArenaDtor(void* object) {
+  ModeAcroRequest* _this = reinterpret_cast< ModeAcroRequest* >(object);
+  (void)_this;
+}
+void ModeAcroRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeAcroRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeAcroRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeAcroRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeAcroRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeAcroRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeAcroRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeAcroRequest)
+  return target;
+}
+
+size_t ModeAcroRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeAcroRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeAcroRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeAcroRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeAcroRequest::GetClassData() const { return &_class_data_; }
+
+void ModeAcroRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeAcroRequest *>(to)->MergeFrom(
+      static_cast<const ModeAcroRequest &>(from));
+}
+
+
+void ModeAcroRequest::MergeFrom(const ModeAcroRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeAcroRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeAcroRequest::CopyFrom(const ModeAcroRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeAcroRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeAcroRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeAcroRequest::InternalSwap(ModeAcroRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeAcroRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[44]);
+}
+
+// ===================================================================
+
+class ModeAcroResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeAcroResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeAcroResponse::_Internal::action_result(const ModeAcroResponse* msg) {
+  return *msg->action_result_;
+}
+ModeAcroResponse::ModeAcroResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeAcroResponse)
+}
+ModeAcroResponse::ModeAcroResponse(const ModeAcroResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeAcroResponse)
+}
+
+inline void ModeAcroResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeAcroResponse::~ModeAcroResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeAcroResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeAcroResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeAcroResponse::ArenaDtor(void* object) {
+  ModeAcroResponse* _this = reinterpret_cast< ModeAcroResponse* >(object);
+  (void)_this;
+}
+void ModeAcroResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeAcroResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeAcroResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeAcroResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeAcroResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeAcroResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeAcroResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeAcroResponse)
+  return target;
+}
+
+size_t ModeAcroResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeAcroResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeAcroResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeAcroResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeAcroResponse::GetClassData() const { return &_class_data_; }
+
+void ModeAcroResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeAcroResponse *>(to)->MergeFrom(
+      static_cast<const ModeAcroResponse &>(from));
+}
+
+
+void ModeAcroResponse::MergeFrom(const ModeAcroResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeAcroResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeAcroResponse::CopyFrom(const ModeAcroResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeAcroResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeAcroResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeAcroResponse::InternalSwap(ModeAcroResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeAcroResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[45]);
+}
+
+// ===================================================================
+
+class ModeStabilizedRequest::_Internal {
+ public:
+};
+
+ModeStabilizedRequest::ModeStabilizedRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeStabilizedRequest)
+}
+ModeStabilizedRequest::ModeStabilizedRequest(const ModeStabilizedRequest& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeStabilizedRequest)
+}
+
+inline void ModeStabilizedRequest::SharedCtor() {
+}
+
+ModeStabilizedRequest::~ModeStabilizedRequest() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeStabilizedRequest)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeStabilizedRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ModeStabilizedRequest::ArenaDtor(void* object) {
+  ModeStabilizedRequest* _this = reinterpret_cast< ModeStabilizedRequest* >(object);
+  (void)_this;
+}
+void ModeStabilizedRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeStabilizedRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeStabilizedRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeStabilizedRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeStabilizedRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeStabilizedRequest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeStabilizedRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeStabilizedRequest)
+  return target;
+}
+
+size_t ModeStabilizedRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeStabilizedRequest)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeStabilizedRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeStabilizedRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeStabilizedRequest::GetClassData() const { return &_class_data_; }
+
+void ModeStabilizedRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeStabilizedRequest *>(to)->MergeFrom(
+      static_cast<const ModeStabilizedRequest &>(from));
+}
+
+
+void ModeStabilizedRequest::MergeFrom(const ModeStabilizedRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeStabilizedRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeStabilizedRequest::CopyFrom(const ModeStabilizedRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeStabilizedRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeStabilizedRequest::IsInitialized() const {
+  return true;
+}
+
+void ModeStabilizedRequest::InternalSwap(ModeStabilizedRequest* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeStabilizedRequest::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[46]);
+}
+
+// ===================================================================
+
+class ModeStabilizedResponse::_Internal {
+ public:
+  static const ::mavsdk::rpc::action::ActionResult& action_result(const ModeStabilizedResponse* msg);
+};
+
+const ::mavsdk::rpc::action::ActionResult&
+ModeStabilizedResponse::_Internal::action_result(const ModeStabilizedResponse* msg) {
+  return *msg->action_result_;
+}
+ModeStabilizedResponse::ModeStabilizedResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:mavsdk.rpc.action.ModeStabilizedResponse)
+}
+ModeStabilizedResponse::ModeStabilizedResponse(const ModeStabilizedResponse& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_action_result()) {
+    action_result_ = new ::mavsdk::rpc::action::ActionResult(*from.action_result_);
+  } else {
+    action_result_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:mavsdk.rpc.action.ModeStabilizedResponse)
+}
+
+inline void ModeStabilizedResponse::SharedCtor() {
+action_result_ = nullptr;
+}
+
+ModeStabilizedResponse::~ModeStabilizedResponse() {
+  // @@protoc_insertion_point(destructor:mavsdk.rpc.action.ModeStabilizedResponse)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void ModeStabilizedResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete action_result_;
+}
+
+void ModeStabilizedResponse::ArenaDtor(void* object) {
+  ModeStabilizedResponse* _this = reinterpret_cast< ModeStabilizedResponse* >(object);
+  (void)_this;
+}
+void ModeStabilizedResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ModeStabilizedResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void ModeStabilizedResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:mavsdk.rpc.action.ModeStabilizedResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && action_result_ != nullptr) {
+    delete action_result_;
+  }
+  action_result_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ModeStabilizedResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .mavsdk.rpc.action.ActionResult action_result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_action_result(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ModeStabilizedResponse::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mavsdk.rpc.action.ModeStabilizedResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::action_result(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:mavsdk.rpc.action.ModeStabilizedResponse)
+  return target;
+}
+
+size_t ModeStabilizedResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:mavsdk.rpc.action.ModeStabilizedResponse)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  if (this->_internal_has_action_result()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *action_result_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ModeStabilizedResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ModeStabilizedResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ModeStabilizedResponse::GetClassData() const { return &_class_data_; }
+
+void ModeStabilizedResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ModeStabilizedResponse *>(to)->MergeFrom(
+      static_cast<const ModeStabilizedResponse &>(from));
+}
+
+
+void ModeStabilizedResponse::MergeFrom(const ModeStabilizedResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:mavsdk.rpc.action.ModeStabilizedResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_action_result()) {
+    _internal_mutable_action_result()->::mavsdk::rpc::action::ActionResult::MergeFrom(from._internal_action_result());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ModeStabilizedResponse::CopyFrom(const ModeStabilizedResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:mavsdk.rpc.action.ModeStabilizedResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ModeStabilizedResponse::IsInitialized() const {
+  return true;
+}
+
+void ModeStabilizedResponse::InternalSwap(ModeStabilizedResponse* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(action_result_, other->action_result_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ModeStabilizedResponse::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
+      file_level_metadata_action_2faction_2eproto[47]);
+}
+
+// ===================================================================
+
 class SetActuatorRequest::_Internal {
  public:
 };
@@ -5865,7 +10619,7 @@ void SetActuatorRequest::InternalSwap(SetActuatorRequest* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SetActuatorRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[24]);
+      file_level_metadata_action_2faction_2eproto[48]);
 }
 
 // ===================================================================
@@ -6065,7 +10819,7 @@ void SetActuatorResponse::InternalSwap(SetActuatorResponse* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SetActuatorResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[25]);
+      file_level_metadata_action_2faction_2eproto[49]);
 }
 
 // ===================================================================
@@ -6218,7 +10972,7 @@ void TransitionToFixedwingRequest::InternalSwap(TransitionToFixedwingRequest* ot
 ::PROTOBUF_NAMESPACE_ID::Metadata TransitionToFixedwingRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[26]);
+      file_level_metadata_action_2faction_2eproto[50]);
 }
 
 // ===================================================================
@@ -6418,7 +11172,7 @@ void TransitionToFixedwingResponse::InternalSwap(TransitionToFixedwingResponse* 
 ::PROTOBUF_NAMESPACE_ID::Metadata TransitionToFixedwingResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[27]);
+      file_level_metadata_action_2faction_2eproto[51]);
 }
 
 // ===================================================================
@@ -6571,7 +11325,7 @@ void TransitionToMulticopterRequest::InternalSwap(TransitionToMulticopterRequest
 ::PROTOBUF_NAMESPACE_ID::Metadata TransitionToMulticopterRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[28]);
+      file_level_metadata_action_2faction_2eproto[52]);
 }
 
 // ===================================================================
@@ -6771,7 +11525,7 @@ void TransitionToMulticopterResponse::InternalSwap(TransitionToMulticopterRespon
 ::PROTOBUF_NAMESPACE_ID::Metadata TransitionToMulticopterResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[29]);
+      file_level_metadata_action_2faction_2eproto[53]);
 }
 
 // ===================================================================
@@ -6924,7 +11678,7 @@ void GetTakeoffAltitudeRequest::InternalSwap(GetTakeoffAltitudeRequest* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata GetTakeoffAltitudeRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[30]);
+      file_level_metadata_action_2faction_2eproto[54]);
 }
 
 // ===================================================================
@@ -7155,7 +11909,7 @@ void GetTakeoffAltitudeResponse::InternalSwap(GetTakeoffAltitudeResponse* other)
 ::PROTOBUF_NAMESPACE_ID::Metadata GetTakeoffAltitudeResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[31]);
+      file_level_metadata_action_2faction_2eproto[55]);
 }
 
 // ===================================================================
@@ -7338,7 +12092,7 @@ void SetTakeoffAltitudeRequest::InternalSwap(SetTakeoffAltitudeRequest* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SetTakeoffAltitudeRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[32]);
+      file_level_metadata_action_2faction_2eproto[56]);
 }
 
 // ===================================================================
@@ -7538,7 +12292,7 @@ void SetTakeoffAltitudeResponse::InternalSwap(SetTakeoffAltitudeResponse* other)
 ::PROTOBUF_NAMESPACE_ID::Metadata SetTakeoffAltitudeResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[33]);
+      file_level_metadata_action_2faction_2eproto[57]);
 }
 
 // ===================================================================
@@ -7691,7 +12445,7 @@ void GetMaximumSpeedRequest::InternalSwap(GetMaximumSpeedRequest* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata GetMaximumSpeedRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[34]);
+      file_level_metadata_action_2faction_2eproto[58]);
 }
 
 // ===================================================================
@@ -7922,7 +12676,7 @@ void GetMaximumSpeedResponse::InternalSwap(GetMaximumSpeedResponse* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata GetMaximumSpeedResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[35]);
+      file_level_metadata_action_2faction_2eproto[59]);
 }
 
 // ===================================================================
@@ -8105,7 +12859,7 @@ void SetMaximumSpeedRequest::InternalSwap(SetMaximumSpeedRequest* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SetMaximumSpeedRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[36]);
+      file_level_metadata_action_2faction_2eproto[60]);
 }
 
 // ===================================================================
@@ -8305,7 +13059,7 @@ void SetMaximumSpeedResponse::InternalSwap(SetMaximumSpeedResponse* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SetMaximumSpeedResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[37]);
+      file_level_metadata_action_2faction_2eproto[61]);
 }
 
 // ===================================================================
@@ -8458,7 +13212,7 @@ void GetReturnToLaunchAltitudeRequest::InternalSwap(GetReturnToLaunchAltitudeReq
 ::PROTOBUF_NAMESPACE_ID::Metadata GetReturnToLaunchAltitudeRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[38]);
+      file_level_metadata_action_2faction_2eproto[62]);
 }
 
 // ===================================================================
@@ -8689,7 +13443,7 @@ void GetReturnToLaunchAltitudeResponse::InternalSwap(GetReturnToLaunchAltitudeRe
 ::PROTOBUF_NAMESPACE_ID::Metadata GetReturnToLaunchAltitudeResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[39]);
+      file_level_metadata_action_2faction_2eproto[63]);
 }
 
 // ===================================================================
@@ -8872,7 +13626,7 @@ void SetReturnToLaunchAltitudeRequest::InternalSwap(SetReturnToLaunchAltitudeReq
 ::PROTOBUF_NAMESPACE_ID::Metadata SetReturnToLaunchAltitudeRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[40]);
+      file_level_metadata_action_2faction_2eproto[64]);
 }
 
 // ===================================================================
@@ -9072,7 +13826,7 @@ void SetReturnToLaunchAltitudeResponse::InternalSwap(SetReturnToLaunchAltitudeRe
 ::PROTOBUF_NAMESPACE_ID::Metadata SetReturnToLaunchAltitudeResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[41]);
+      file_level_metadata_action_2faction_2eproto[65]);
 }
 
 // ===================================================================
@@ -9255,7 +14009,7 @@ void SetCurrentSpeedRequest::InternalSwap(SetCurrentSpeedRequest* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SetCurrentSpeedRequest::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[42]);
+      file_level_metadata_action_2faction_2eproto[66]);
 }
 
 // ===================================================================
@@ -9455,7 +14209,7 @@ void SetCurrentSpeedResponse::InternalSwap(SetCurrentSpeedResponse* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SetCurrentSpeedResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[43]);
+      file_level_metadata_action_2faction_2eproto[67]);
 }
 
 // ===================================================================
@@ -9683,7 +14437,7 @@ void ActionResult::InternalSwap(ActionResult* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata ActionResult::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_action_2faction_2eproto_getter, &descriptor_table_action_2faction_2eproto_once,
-      file_level_metadata_action_2faction_2eproto[44]);
+      file_level_metadata_action_2faction_2eproto[68]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
@@ -9762,6 +14516,78 @@ template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::HoldRequest* Arena::CreateMa
 }
 template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::HoldResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::HoldResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mavsdk::rpc::action::HoldResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeTakeoffRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeTakeoffRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeTakeoffRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeTakeoffResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeTakeoffResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeTakeoffResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeHoldRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeHoldRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeHoldRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeHoldResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeHoldResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeHoldResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeMissionRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeMissionRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeMissionRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeMissionResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeMissionResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeMissionResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeReturnToLaunchRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeReturnToLaunchRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeReturnToLaunchRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeReturnToLaunchResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeReturnToLaunchResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeReturnToLaunchResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeLandRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeLandRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeLandRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeLandResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeLandResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeLandResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeOffboardRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeOffboardRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeOffboardRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeOffboardResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeOffboardResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeOffboardResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeFollowMeRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeFollowMeRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeFollowMeRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeFollowMeResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeFollowMeResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeFollowMeResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeManualRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeManualRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeManualRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeManualResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeManualResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeManualResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeAltitudeControlRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeAltitudeControlRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeAltitudeControlRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeAltitudeControlResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeAltitudeControlResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeAltitudeControlResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModePositionControlRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModePositionControlRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModePositionControlRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModePositionControlResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModePositionControlResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModePositionControlResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeAcroRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeAcroRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeAcroRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeAcroResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeAcroResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeAcroResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeStabilizedRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeStabilizedRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeStabilizedRequest >(arena);
+}
+template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::ModeStabilizedResponse* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::ModeStabilizedResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mavsdk::rpc::action::ModeStabilizedResponse >(arena);
 }
 template<> PROTOBUF_NOINLINE ::mavsdk::rpc::action::SetActuatorRequest* Arena::CreateMaybeMessage< ::mavsdk::rpc::action::SetActuatorRequest >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mavsdk::rpc::action::SetActuatorRequest >(arena);

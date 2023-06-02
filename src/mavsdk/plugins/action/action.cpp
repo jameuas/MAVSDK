@@ -188,6 +188,174 @@ Action::Result Action::hold() const
 
 
 
+void Action::mode_takeoff_async(const ResultCallback callback)
+{
+    _impl->mode_takeoff_async(callback);
+}
+
+
+
+Action::Result Action::mode_takeoff() const
+{
+    return _impl->mode_takeoff();
+}
+
+
+
+void Action::mode_hold_async(const ResultCallback callback)
+{
+    _impl->mode_hold_async(callback);
+}
+
+
+
+Action::Result Action::mode_hold() const
+{
+    return _impl->mode_hold();
+}
+
+
+
+void Action::mode_mission_async(const ResultCallback callback)
+{
+    _impl->mode_mission_async(callback);
+}
+
+
+
+Action::Result Action::mode_mission() const
+{
+    return _impl->mode_mission();
+}
+
+
+
+void Action::mode_return_to_launch_async(const ResultCallback callback)
+{
+    _impl->mode_return_to_launch_async(callback);
+}
+
+
+
+Action::Result Action::mode_return_to_launch() const
+{
+    return _impl->mode_return_to_launch();
+}
+
+
+
+void Action::mode_land_async(const ResultCallback callback)
+{
+    _impl->mode_land_async(callback);
+}
+
+
+
+Action::Result Action::mode_land() const
+{
+    return _impl->mode_land();
+}
+
+
+
+void Action::mode_offboard_async(const ResultCallback callback)
+{
+    _impl->mode_offboard_async(callback);
+}
+
+
+
+Action::Result Action::mode_offboard() const
+{
+    return _impl->mode_offboard();
+}
+
+
+
+void Action::mode_follow_me_async(const ResultCallback callback)
+{
+    _impl->mode_follow_me_async(callback);
+}
+
+
+
+Action::Result Action::mode_follow_me() const
+{
+    return _impl->mode_follow_me();
+}
+
+
+
+void Action::mode_manual_async(const ResultCallback callback)
+{
+    _impl->mode_manual_async(callback);
+}
+
+
+
+Action::Result Action::mode_manual() const
+{
+    return _impl->mode_manual();
+}
+
+
+
+void Action::mode_altitude_control_async(const ResultCallback callback)
+{
+    _impl->mode_altitude_control_async(callback);
+}
+
+
+
+Action::Result Action::mode_altitude_control() const
+{
+    return _impl->mode_altitude_control();
+}
+
+
+
+void Action::mode_position_control_async(const ResultCallback callback)
+{
+    _impl->mode_position_control_async(callback);
+}
+
+
+
+Action::Result Action::mode_position_control() const
+{
+    return _impl->mode_position_control();
+}
+
+
+
+void Action::mode_acro_async(const ResultCallback callback)
+{
+    _impl->mode_acro_async(callback);
+}
+
+
+
+Action::Result Action::mode_acro() const
+{
+    return _impl->mode_acro();
+}
+
+
+
+void Action::mode_stabilized_async(const ResultCallback callback)
+{
+    _impl->mode_stabilized_async(callback);
+}
+
+
+
+Action::Result Action::mode_stabilized() const
+{
+    return _impl->mode_stabilized();
+}
+
+
+
 void Action::set_actuator_async(int32_t index, float value, const ResultCallback callback)
 {
     _impl->set_actuator_async(index, value, callback);

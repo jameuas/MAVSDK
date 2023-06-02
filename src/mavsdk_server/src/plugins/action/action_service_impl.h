@@ -514,6 +514,342 @@ public:
         return grpc::Status::OK;
     }
 
+    grpc::Status ModeTakeoff(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeTakeoffRequest* /* request */,
+        rpc::action::ModeTakeoffResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_takeoff();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeHold(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeHoldRequest* /* request */,
+        rpc::action::ModeHoldResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_hold();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeMission(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeMissionRequest* /* request */,
+        rpc::action::ModeMissionResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_mission();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeReturnToLaunch(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeReturnToLaunchRequest* /* request */,
+        rpc::action::ModeReturnToLaunchResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_return_to_launch();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeLand(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeLandRequest* /* request */,
+        rpc::action::ModeLandResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_land();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeOffboard(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeOffboardRequest* /* request */,
+        rpc::action::ModeOffboardResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_offboard();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeFollowMe(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeFollowMeRequest* /* request */,
+        rpc::action::ModeFollowMeResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_follow_me();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeManual(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeManualRequest* /* request */,
+        rpc::action::ModeManualResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_manual();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeAltitudeControl(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeAltitudeControlRequest* /* request */,
+        rpc::action::ModeAltitudeControlResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_altitude_control();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModePositionControl(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModePositionControlRequest* /* request */,
+        rpc::action::ModePositionControlResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_position_control();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeAcro(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeAcroRequest* /* request */,
+        rpc::action::ModeAcroResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_acro();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
+    grpc::Status ModeStabilized(
+        grpc::ServerContext* /* context */,
+        const rpc::action::ModeStabilizedRequest* /* request */,
+        rpc::action::ModeStabilizedResponse* response) override
+    {
+        if (_lazy_plugin.maybe_plugin() == nullptr) {
+            
+            if (response != nullptr) {
+                auto result = mavsdk::Action::Result::NoSystem;
+                fillResponseWithResult(response, result);
+            }
+            
+            return grpc::Status::OK;
+        }
+
+        
+        auto result = _lazy_plugin.maybe_plugin()->mode_stabilized();
+        
+
+        
+        if (response != nullptr) {
+            fillResponseWithResult(response, result);
+        }
+        
+
+        return grpc::Status::OK;
+    }
+
     grpc::Status SetActuator(
         grpc::ServerContext* /* context */,
         const rpc::action::SetActuatorRequest* request,

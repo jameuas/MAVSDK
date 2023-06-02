@@ -42,6 +42,18 @@ public:
         const double longitude_deg,
         const double absolute_altitude_m);
     Action::Result hold() const;
+    Action::Result mode_takeoff() const;
+    Action::Result mode_hold() const;
+    Action::Result mode_mission() const;
+    Action::Result mode_return_to_launch() const;
+    Action::Result mode_land() const;
+    Action::Result mode_offboard() const;
+    Action::Result mode_follow_me() const;
+    Action::Result mode_manual() const;
+    Action::Result mode_altitude_control() const;
+    Action::Result mode_position_control() const;
+    Action::Result mode_acro() const;
+    Action::Result mode_stabilized() const;
     Action::Result set_actuator(const int index, const float value);
     Action::Result transition_to_fixedwing() const;
     Action::Result transition_to_multicopter() const;
@@ -70,6 +82,18 @@ public:
         const double absolute_altitude_m,
         const Action::ResultCallback& callback);
     void hold_async(const Action::ResultCallback& callback) const;
+    void mode_takeoff_async(const Action::ResultCallback& callback) const;
+    void mode_hold_async(const Action::ResultCallback& callback) const;
+    void mode_mission_async(const Action::ResultCallback& callback) const;
+    void mode_return_to_launch_async(const Action::ResultCallback& callback) const;
+    void mode_land_async(const Action::ResultCallback& callback) const;
+    void mode_offboard_async(const Action::ResultCallback& callback) const;
+    void mode_follow_me_async(const Action::ResultCallback& callback) const;
+    void mode_manual_async(const Action::ResultCallback& callback) const;
+    void mode_altitude_control_async(const Action::ResultCallback& callback) const;
+    void mode_position_control_async(const Action::ResultCallback& callback) const;
+    void mode_acro_async(const Action::ResultCallback& callback) const;
+    void mode_stabilized_async(const Action::ResultCallback& callback) const;
     void
     set_actuator_async(const int index, const float value, const Action::ResultCallback& callback);
     void transition_to_fixedwing_async(const Action::ResultCallback& callback) const;
